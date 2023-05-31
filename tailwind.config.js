@@ -1,18 +1,42 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
+const withMT = require("@material-tailwind/react/utils/withMT");
+
+module.exports = withMT({
+  darkMode: "class",
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    screens: {
+      tablex: { max: "960px" },
+      tablet: { min: "905px" },
+      mobil: { max: "600px" },
+    },
+
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      fontFamily: {
+        sans: ["Helvetica", "Arial", "sans-serif"],
+        serif: ["ui-serif", "Georgia"],
+        mono: ["ui-monospace", "SFMono-Regular"],
+        display: ["Oswald"],
+        body: ['"Open Sans"'],
+      },
+      colors: {
+        xgray: {
+          dark: " RGBA(0, 0, 0, 0.93)",
+          medium: "#c7c7c7",
+          light: "#e5e5e5",
+          extralight: "#efefef",
+          normal: "#f5f5f5",
+        },
+        xpu: {
+          medium: "#4c4a78",
+        },
+        card: {
+          dark: "#303134",
+        }
       },
     },
+
+    plugins: [],
   },
-  plugins: [],
-}
+});
+
+

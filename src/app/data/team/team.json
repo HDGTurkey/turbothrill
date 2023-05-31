@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "image": "Images/team/team1.jpg",
+    "name": "Burak Ziyanak",
+    "slug_name": "burak-ziyanak",
+    "designation": "Project manager",
+    "linkedin": "https://www.linkedin.com/in/elifemr/",
+    "github": "https://github.com/elselif",
+    "twitter": "https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoidHIifQ%3D%3D%22%7D"
+  },
+  {
+    "id": 2,
+    "image": "Images/team/team1.jpg",
+    "name": "Yakup Sarı",
+    "slug_name": "yakup-sarı",
+    "designation": "Project Lead",
+    "linkedin": "https://www.linkedin.com/in/elifemr/",
+    "github": "https://github.com/elselif",
+    "twitter": "https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoidHIifQ%3D%3D%22%7D"
+  },
+
+  {
+    "id": 3,
+    "image": "Images/team/team2.jpg",
+    "name": "Elif Emre",
+    "slug_name": "elif-emre",
+    "designation": "Front-end / API",
+    "linkedin": "https://www.linkedin.com/in/elifemr/",
+    "github": "https://github.com/elselif",
+    "twitter": "https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoidHIifQ%3D%3D%22%7D"
+  },
+  {
+    "id": 4,
+    "image": "Images/team/team1.jpg",
+    "name": "Yusuf Dur",
+    "slug_name": "yusuf-dur",
+    "designation": "Back-end Developer",
+    "linkedin": "https://www.linkedin.com/in/elifemr/",
+    "github": "https://github.com/elselif",
+    "twitter": "https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoidHIifQ%3D%3D%22%7D"
+  }
+]
