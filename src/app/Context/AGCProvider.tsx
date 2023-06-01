@@ -8,7 +8,7 @@ import {
 import agconnect from "@hw-agconnect/api";
 import "@hw-agconnect/auth";
 import "@hw-agconnect/instance";
-import { context } from "../../app/config/agconnect-services.js";
+import { agConnectConfig } from "../../app/config/agconnect-services.js";
 
 export const AGCContext = createContext<any>({executeQuery: undefined});
 type x = {
@@ -23,8 +23,8 @@ export const AGCProvider: React.FC<x> = ({ children }) => {
   async function init() {
     setLoading(true);
 
-    agconnect.instance().configInstance(context);
-    AGConnectCloudDB.initialize(context);
+    agconnect.instance().configInstance(agConnectConfig);
+    AGConnectCloudDB.initialize(agConnectConfig);
     const schema = require("../../app/config/Data.json");
     const agcCloudDB = AGConnectCloudDB.getInstance();
     agcCloudDB.createObjectType(schema);
