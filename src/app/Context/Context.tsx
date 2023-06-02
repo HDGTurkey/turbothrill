@@ -19,14 +19,13 @@ type Props = {
 };
 
 export const Provider = ({ children }: Props) => {
-    let localTheme = "light"
 
     useEffect(() => {
-        localTheme = localStorage.getItem('theme') || 'light'
+        setTheme(localStorage.getItem('theme') || 'light')
     },[]);
     
     
-    const [theme, setTheme] = useState(localTheme)
+    const [theme, setTheme] = useState('light')
     const [lang, setLang] = useState('en')
 
     const data = {
