@@ -10,12 +10,14 @@ import { HelloDiv } from '../app/Components/Home/HelloDiv';
 export default function HomePage() {
   return (
     <>
-      <HelloDiv />
-      <WhatWeDo />
-      <About />
-      <OurEvents />
-      <FeatureEvent />
-      <Partner />
+      <div className='container mx-auto'>
+        <HelloDiv />
+        <WhatWeDo />
+        <About />
+        <OurEvents />
+        <FeatureEvent />
+        <Partner />
+      </div>
     </>
   );
 }
