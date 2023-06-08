@@ -11,7 +11,6 @@ export const Pagination: React.FC<{
 }> = (props) => {
 
     const pageNumbers = [];
-    //let location = useLocation();
 
     if (props.currentPage === 1) {
         pageNumbers.push(props.currentPage);
@@ -53,8 +52,8 @@ export const Pagination: React.FC<{
                 {pageNumbers.map(number => (
                     <Link key={number} href={`${props.pageName}?page=${number}`}>
                         <li key={number} onClick={() => { props._setCurrentPage(number) }}
-                            className={` border ${data.theme === 'light' ? 'text-gray-500 bg-white border border-gray-300  hover:bg-gray-100 hover:text-gray-700  ' : 'bg-gray-800 border-gray-700 text-gray-400 hover:bg-gray-700 hover:text-white '} px-3 py-2 leading-tight ` + (props.currentPage === number ? 'active' : '')}>
-                            <button className='page-link'>
+                            className={` border ${data.theme === 'light' ? 'text-gray-500 bg-white border border-gray-300  hover:bg-gray-100 hover:text-gray-700  ' : 'bg-gray-800 border-gray-700 text-gray-400 hover:bg-gray-700 hover:text-white '} px-3 py-2 leading-tight ${data.theme === 'light' ? "border-2 border-orange-800" : "border-2 border-orange-800"}` + (props.currentPage === number ? 'active' : '')}>
+                            <button className={"page-link "}>
                                 {number}
                             </button>
                         </li>
