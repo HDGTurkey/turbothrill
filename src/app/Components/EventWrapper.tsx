@@ -13,7 +13,7 @@ function EventWrapper() {
     const agcContext = useContext(AGCContext)
     const location = useRouter();
     //event states
-    const [events, setEvents] = useState(EventClassic)
+    const [events, setEvents] = useState([])
     const [loading, setLoading] = useState(false)
     const data = useSite()
 
@@ -21,13 +21,19 @@ function EventWrapper() {
     const [eventsPerPage] = useState(6);
     const [currentPage, setCurrentPage] = useState(1);
     const [totalPages, setTotalPage] = useState(0);
-    const [eventsLength] = useState(Object.keys(EventClassic).length);
+    const [eventsLength, setEventsLength] = useState(Object.keys(events).length);
     
     async function getEvents() {
         setLoading(true);
         setEvents(await agcContext.executeQuery(eventsModel));
         setLoading(false);
       }
+
+      useEffect(()=>{
+        setEventsLength(events.length)
+        console.log(eventsLength);
+        
+      },[events])
 
     useEffect(() => {
 
@@ -47,7 +53,7 @@ function EventWrapper() {
         } else if ((eventsLength % eventsPerPage) != 0) {
             setTotalPage((Math.floor(eventsLength / eventsPerPage)) + 1)
         }
-    },[])
+    },[eventsLength])
 
     //backward currentPage set fonksiyonu
     const _setCurrentPage = (currentPage: number) => {
