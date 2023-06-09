@@ -13,6 +13,8 @@ const BlogDetail: React.FC = () => {
   //const { title } = useParams<{ title: string }>();
   const router = useRouter();
   const lowercaseTitle = router.query.slug?.toString().toLowerCase();
+  console.log(lowercaseTitle);
+  
   const data = BlogClassicData.filter((blog: Blog) => blog.slug_title === lowercaseTitle);
 
   const animationProps = useSpring({
@@ -22,6 +24,8 @@ const BlogDetail: React.FC = () => {
   });
 
   useEffect(() => {
+    
+    
     window.scrollTo(0, 0);
   }, []);
 

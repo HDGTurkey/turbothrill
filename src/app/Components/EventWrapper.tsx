@@ -1,14 +1,16 @@
-import { useState, useEffect } from 'react'
-import { useLocation } from 'react-router-dom';
+import { useState, useEffect, useContext } from 'react'
 import { useSite } from '../Context/Context'
-import axios from 'axios'
 import EventCard from './Cards/EventCard';
 import { Pagination } from '../utils/Pagination';
 import EventClassic from '../data/event/EventClassic.json';
 import {useRouter} from 'next/router';
+import { AGCContext } from '../Context/AGCProvider';
+import { events as eventsModel } from "../../app/model/events.js";
+
 
 function EventWrapper() {
 
+    const agcContext = useContext(AGCContext)
     const location = useRouter();
     //event states
     const [events, setEvents] = useState([])
@@ -19,11 +21,23 @@ function EventWrapper() {
     const [eventsPerPage] = useState(6);
     const [currentPage, setCurrentPage] = useState(1);
     const [totalPages, setTotalPage] = useState(0);
-    const [eventsLength] = useState(Object.keys(EventClassic).length);
-
+    const [eventsLength, setEventsLength] = useState(Object.keys(events).length);
     
+    async function getEvents() {
+        setLoading(true);
+        setEvents(await agcContext.executeQuery(eventsModel));
+        setLoading(false);
+      }
+
+      useEffect(()=>{
+        setEventsLength(events.length)
+        console.log(eventsLength);
+        
+      },[events])
 
     useEffect(() => {
+
+        getEvents();
 
         const page = location.query.page?.toString() || ""
 
@@ -39,7 +53,7 @@ function EventWrapper() {
         } else if ((eventsLength % eventsPerPage) != 0) {
             setTotalPage((Math.floor(eventsLength / eventsPerPage)) + 1)
         }
-    })
+    },[eventsLength])
 
     //backward currentPage set fonksiyonu
     const _setCurrentPage = (currentPage: number) => {
@@ -81,6 +95,7 @@ function EventWrapper() {
                 </form>
             </div>
             <div className='flex mt-10 justify-between pt-8 max-w-7xl mx-auto text-left'>
+                {loading ? "Loading" :
                 <table className="table-auto w-full  " >
                     <thead>
                         <tr>
@@ -91,7 +106,7 @@ function EventWrapper() {
                         </tr>
                     </thead>
                     <tbody>
-                        {EventClassic.map((event, key) => {
+                        {events.map((event, key) => {
                             if (totalPages >= 1 && key >= ((currentPage - 1) * eventsPerPage) && key < (currentPage * eventsPerPage)) {
                                 return (
                                     <tr key={key} className={`border-b-2 p-2 transition-colors rounded ${data.theme === 'light' ? 'hover:bg-gray-200' : 'hover:bg-gray-800'}`}>
@@ -107,6 +122,7 @@ function EventWrapper() {
                         )}
                     </tbody>
                 </table>
+                }
             </div>
             {/* <div className="max-w-7xl mx-auto mt-3 text-right flex align-right"> */}
             <div className={`max-w-7xl mx-auto mt-3 text-right border-[0.5px] rounded-lg ${data.theme === 'light' ? 'border-gray-300' : ' border-gray-700'}`}>
