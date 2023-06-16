@@ -7,9 +7,6 @@ import { useRouter } from 'next/router';
 import { AGCContext } from '../../app/Context/AGCProvider';
 import { events as eventsModel } from "../../app/model/events.js";
 
-interface Event {
-     slug_name: string;
-}
 
 const EventDetailPage: React.FC = () => {
      const themeData = useSite();
@@ -17,11 +14,20 @@ const EventDetailPage: React.FC = () => {
      const agcContext = useContext(AGCContext)
      const [loading, setLoading] = useState(false);
      // const eventData = agcContext.executeQuery(eventsModel);
-     const [eventData, setEventData] = useState([])
+     interface Events {
+          name: string;
+          slug_name: string;
+          description: string;
+          date: Date;
+          state: string;
+          locName: string;
+          locAddress: string;
+      }
+     const [eventData, setEventData] = useState<Array<Events>>([])
 
      // slugname set 
      const router = useRouter();
-     const slugName = location.pathname.split("/")[location.pathname.split("/").length  - 1]
+     const [slugName] = useState(location.pathname.split("/")[location.pathname.split("/").length  - 1])
      //const {slug} = router.query;
      //const [slugName , setSlugName] = useState(router.query.slug?.toString().toLowerCase());
      // const data = eventData.filter((event: Event) => event.slug_name === lowercaseTitle);
