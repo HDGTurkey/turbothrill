@@ -4,8 +4,16 @@ import GuestListClassic from '../../app/data/event/GuestListClassic.json';
 import { useSite } from "../../app/Context/Context";
 import { useRouter } from 'next/router';
 
+// image icons
+import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+
 import { AGCContext } from '../../app/Context/AGCProvider';
 import { events as eventsModel } from "../../app/model/events.js";
+
+
+
 
 
 const EventDetailPage: React.FC = () => {
@@ -82,14 +90,17 @@ const EventDetailPage: React.FC = () => {
                               </div>
 
 
-                              <div className={`p-5 mb-5  border-solid border-2 shadow-md w-auto rounded-lg flex items-start ${themeData.theme === 'light' ? 'bg-white text-black' : 'bg-black text-white'}`}>
-                                   <img alt="img" className="w-5 h-5" src="https://img.icons8.com/material-outlined/24/null/calendar--v1.png" />
+                              <div className={`p-5 mb-5  border-solid border-2 shadow-md w-auto rounded-lg flex space-x-4 items-start ${themeData.theme === 'light' ? 'bg-white text-black' : 'bg-black text-white'}`}>
+                                   {/* <img alt="img" className="w-5 h-5 bg-black " src="https://img.icons8.com/material-outlined/24/null/calendar--v1.png" /> */}
+                                   <CalendarTodayIcon className=''></CalendarTodayIcon>
                                    <p className=" ">{eventData[0]?.date ? new Date(eventData[0]?.date).toLocaleDateString() : ""}</p>
-                                   <img alt="img" className="w-5 h-5" src="https://img.icons8.com/material-outlined/24/null/clock--v1.png" />
+                                   {/* <img alt="img" className="w-5 h-5" src="https://img.icons8.com/material-outlined/24/null/clock--v1.png" /> */}
+                                   <AccessTimeIcon></AccessTimeIcon>
                                    <p className=" ">{eventData[0]?.date ? new Date(eventData[0]?.date).toLocaleTimeString() : ""}</p>
                               </div>
                               <div className={`p-5 mb-5 border-solid border-2 shadow-md w-auto rounded-lg flex items-start ${themeData.theme === 'light' ? 'bg-white text-black' : 'bg-black text-white'}`}>
-                                   <img alt="img" className='w-6 h-6' src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/null/external-marker-map-pin-flatart-icons-outline-flatarticons.png" />
+                                   {/* <img alt="img" className='w-6 h-6' src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/null/external-marker-map-pin-flatart-icons-outline-flatarticons.png" /> */}
+                                   <LocationOnIcon></LocationOnIcon>
                                    <div className='justify-items-start mx-2'>
                                         <p>{eventData[0]?.locName}</p>
                                         <p>{eventData[0]?.locAddress}</p>
