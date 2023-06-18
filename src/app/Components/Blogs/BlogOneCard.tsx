@@ -36,7 +36,7 @@ export const BlogOneCard = () => {
     <>
       <div className=' max-w-7xl mx-auto py-3'>
         {BlogContentListOne.map((val: any, key) => (
-          <Link key={key} href={`/blog-details/${val.slug_title}`} className={`grid grid-cols-1  rounded-sm lg:grid-cols-2 p-2 bg-gradient-to-l  transition-all ${data.theme === 'light' ? "bg-[#c3c3c3] from-gray-100 hover:bg-gray-100 " : " bg-[#101010] from-gray-800 text-white hover:bg-gray-800 "} `}>
+          <Link key={key} href={`/blog-details/${val.slug_title}`} className={`grid grid-cols-1 p-5 rounded-sm lg:grid-cols-2   transition-all ${data.theme === 'light' ? "bg-gray-100  hover:bg-gray-200 shadow-md " : " bg-[#101010] from-gray-800 text-white hover:bg-gray-800 "} `}>
             <div className='overflow-hidden'>
               <img src={require('../../assets/Images/employees.jpeg').default.src} alt={val.imgAlt} className='transform-gpu transition-transform hover:scale-125' />
             </div>
@@ -50,7 +50,7 @@ export const BlogOneCard = () => {
               </div>
               <div className='py-3'>{val.excerpt}</div>
               <div className='pb-5 pt-5'>
-                <button type="button" className="pb-5text-white bg-orange-700 hover:bg-orange-800  font-medium rounded-sm text-sm px-5 py-2.5 text-center inline-flex items-center">
+              <button type="button" className="pb-3 text-white bg-[#ec373c] hover:bg-[#cc2e32  font-medium rounded-md text-sm px-5 py-2.5 text-center inline-flex items-center">
                   {val.btnText}
                   <svg aria-hidden="true" className="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>

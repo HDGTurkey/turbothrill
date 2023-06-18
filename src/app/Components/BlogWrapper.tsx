@@ -75,7 +75,7 @@ export const BlogWrapper = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@yagmrpolat`)
+    fetch(`https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@elselif`)
       .then(res => res.json())
       .then(response => {
         setMediumData(response.items);
@@ -102,9 +102,9 @@ export const BlogWrapper = () => {
             })}
         </div>
         <div className={`max-w-7xl mx-auto mt-3 text-right border-[0.5px] rounded-lg ${data.theme === 'light' ? 'border-gray-300' : ' border-gray-700'}`}>
-          {/* {totalPages > 1 && */}
+           {/* {totalPages > 1 && 
             <Pagination pageName={location.pathname} currentPage={currentPage} totalPages={totalPages} _setCurrentPage={_setCurrentPage} />
-          {/* } */}
+           }  */}
         </div>
       </>
   )
