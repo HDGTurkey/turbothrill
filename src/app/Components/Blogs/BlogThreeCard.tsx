@@ -15,19 +15,19 @@ const BlogThreeCard = ({ blogData }: Props) => {
   return (
     <div className='max-w-7xl mx-auto mt-1'>
       <div className=' flex '>
-        <Link href={`/blog-details/${blogData.slug_title}`} className={` bg-gradient-to-t transition-all ${data.theme === 'light' ? " bg-[#c3c3c3] from-gray-200 hover:bg-gray-100 " : " bg-[#101010] from-gray-800 text-white hover:bg-gray-800 "} rounded-sm p-2`}>
+        <Link href={`/blog-details/${blogData.title}`} className={` bg-gradient-to-t transition-all ${data.theme === 'light' ? " bg-[#c3c3c3] from-gray-200 hover:bg-gray-100 " : " bg-[#101010] from-gray-800 text-white hover:bg-gray-800 "} rounded-sm p-2`}>
           <div className='overflow-hidden'>
-            <img src={require(`../../assets/Images/blog/370/blog-${blogData.id}.jpg`).default.src} alt="NaN " className='transform-gpu transition-transform hover:scale-125' />
+            <img src={blogData.thumbnail} alt="NaN " className='transform-gpu transition-transform hover:scale-125' />
           </div>
           <div className='my-auto mx-auto px-10 text-left '>
-            <Link href={`/blog-details/${blogData.slug_title}`}>
-              <h3 className='text-2xl py-3 font-bold uppercase'> {blogData.id}){blogData.title.length > 25 ? `${blogData.title.substring(0, 25)}...` : blogData.title}</h3>
+            <Link href={`/blog-details/${blogData.title}`}>
+              <h3 className='text-2xl py-3 font-bold uppercase'> {blogData.title}){blogData.title.length > 25 ? `${blogData.title.substring(0, 25)}...` : blogData.title}</h3>
             </Link>
             <div className="meta-post">
-              <a href="/home" className='pr-2 border-r-2 border-green-900'>Yakup Sarı</a>
+              <a href="/home" className='pr-2 border-r-2 border-green-900'>{blogData.author}</a>
               <a href="/home" className='pl-2'> 10.01.2023</a>
             </div>
-            <div className='py-3'>{blogData.excerpt.length > 150 ? `${blogData.excerpt.substring(0, 150)}...` : blogData.excerpt}</div>
+            {/* <div className='py-3'>{blogData.excerpt.length > 150 ? `${blogData.excerpt.substring(0, 150)}...` : blogData.excerpt}</div> */}
             <div className='pb-5 pt-5'>
               <button type="button" className="pb-5text-white bg-orange-700 hover:bg-orange-800  font-medium rounded-sm text-sm px-5 py-2.5 text-center inline-flex items-center">
                 Devamını Oku
