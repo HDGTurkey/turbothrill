@@ -20,9 +20,9 @@ export default function Navbar(props: any) {
   
   const navigation = [
     { name: "Home", href: "/" },
-    { name: "Events", href: "/events" },
-    { name: "Team", href: "/team" },
     { name: "About", href: "/about" },
+    { name: "Team", href: "/team" },
+    { name: "Events", href: "/events" },
     { name: "Blogs", href: "/blogs?page=1" },
   ];
   return (
@@ -34,7 +34,7 @@ export default function Navbar(props: any) {
       >
         <Disclosure
           as="nav"
-          className={`${theme === "light" ? "bg-gray-100" : "bg-gray-800"}`}
+          className={`${theme === "light" ? "bg-gray-100 shadow-md" : "bg-[#262626] shadow-md"}`}
         >
           {({ open }) => (
             <>
@@ -73,7 +73,7 @@ export default function Navbar(props: any) {
                     <div className="hidden sm:ml-6 lg:block">
                       <div className="flex space-x-6 transition-all">
                         {navigation.map((item, i) => (
-                          <ActiveLink key={i} href={item.href} activeClassName="bg-[rgb(255,100,11)] text-white px-5" className="hover:bg-[rgb(255,162,133)] transition-all hover:text-white px-auto px-3 py-2 rounded-[3px] text-sm font-medium" >{item.name}</ActiveLink>
+                          <ActiveLink key={i} href={item.href} activeClassName="bg-[#ec373c] text-white px-5" className="hover:bg-[#ec373c] transition-all hover:text-white px-auto px-3 py-2 rounded-[3px] text-sm font-medium" >{item.name}</ActiveLink>
                         ))}
                       </div>
                     </div>
@@ -88,9 +88,9 @@ export default function Navbar(props: any) {
                       <span
                         className={`${
                           theme === "light"
-                            ? "bg-white"
-                            : "bg-gray-700 border-black"
-                        } bg-white rounded hidden md:block border `}
+                            ? "bg-gray-100"
+                            : "bg-gray-700 border-[#262626]"
+                        } bg-white rounded hidden md:block  `}
                       >
                         <SwitchTheme />
                       </span>

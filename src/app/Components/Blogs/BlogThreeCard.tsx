@@ -22,7 +22,7 @@ const BlogThreeCard = ({ blogData }: Props) => {
   return (
     <div className='max-w-7xl mx-auto mt-1'>
       <div className=' flex '>
-        <Link href={`${blogData.link}`} className={`transition-all p-5 ${data.theme === 'light' ? "bg-gray-100 hover:bg-gray-200 shadow-md" : "bg-[#101010] from-gray-800 text-white hover:bg-gray-800 shadow-md"} rounded-sm p-2`}>
+        <Link href={`${blogData.link}`} className={`transition-all p-5 ${data.theme === 'light' ? "bg-gray-100 hover:bg-gray-200 shadow-md" : "bg-[#262626] from-gray-800 text-white hover:bg-[#333333] shadow-md"} rounded-sm p-2`}>
           <div className='overflow-hidden'>
             <img src={blogData.thumbnail} alt="NaN " className='transform-gpu transition-transform hover:scale-125' />
           </div>

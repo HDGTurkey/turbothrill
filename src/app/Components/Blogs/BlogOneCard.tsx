@@ -36,7 +36,7 @@ export const BlogOneCard = () => {
     <>
       <div className=' max-w-7xl mx-auto py-3'>
         {BlogContentListOne.map((val: any, key) => (
-          <Link key={key} href={`/blog-details/${val.slug_title}`} className={`grid grid-cols-1 p-5 rounded-sm lg:grid-cols-2   transition-all ${data.theme === 'light' ? "bg-gray-100  hover:bg-gray-200 shadow-md " : " bg-[#101010] from-gray-800 text-white hover:bg-gray-800 "} `}>
+          <Link key={key} href={`/blog-details/${val.slug_title}`} className={`grid grid-cols-1 p-5 rounded-sm lg:grid-cols-2   transition-all ${data.theme === 'light' ? "bg-gray-100  hover:bg-gray-200 shadow-md " : " bg-[#262626] from-gray-800 text-white hover:bg-[#333333] "} `}>
             <div className='overflow-hidden'>
               <img src={require('../../assets/Images/employees.jpeg').default.src} alt={val.imgAlt} className='transform-gpu transition-transform hover:scale-125' />
             </div>
