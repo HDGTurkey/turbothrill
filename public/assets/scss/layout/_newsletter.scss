@@ -1,0 +1,82 @@
+/*----------------------------------------*/
+/*  20. newsletter CSS START
+/*----------------------------------------*/
+
+
+
+@use '../utils' as *;
+
+.tp-suscribe-newslatter {
+    background-repeat: no-repeat;
+}
+
+.tp-news-letter-bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.tp-news-title {
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--tp-common-white);
+    @media #{$lg} {
+        font-size: 40px;
+    }
+    @media #{$md} {
+        margin-bottom: 30px;
+    }
+    @media #{$xs} {
+        font-size: 29px;
+        margin-bottom: 20px;
+    }
+}
+
+.tp-submit-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    @media #{$xs} {
+        position: relative;
+        top: 0;
+        transform:inherit;
+    }
+}
+.tp-news-button {
+    & input {
+        height: 80px;
+        width: 100%;
+        border: 0;
+        background-color: #6461FF;
+        box-shadow: 0px, 14px rgba(35, 33, 142, 0.04);
+        border-radius: 5px;
+        font-weight: 400;
+        font-size: 14px;
+        color: var(--tp-common-white);
+        padding-left: 30px;
+        padding-right: 240px;
+
+        @media #{$lg} {
+            padding-right: 200px;
+        }
+
+        @media #{$md} {
+            height: 60px;
+        }
+        @media #{$xs} {
+            padding-left: 20px;
+            padding-right: 10px;
+            height: 60px;
+            margin-bottom: 20px;
+        }
+
+        &::placeholder {
+            color: var(--tp-common-white);
+        }
+    }
+}
+.tp-news-sub-wrapper {
+    @media #{$md} {
+        margin-bottom: 70px;
+    }
+}

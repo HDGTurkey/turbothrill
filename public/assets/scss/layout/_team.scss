@@ -1,0 +1,231 @@
+/*----------------------------------------*/
+/*  25. team CSS START
+/*----------------------------------------*/
+
+
+@use '../utils' as *;
+
+.tp-team-item{
+    position: relative;
+    overflow: hidden;
+    &__img{
+        & img{
+            border-radius: 10px;
+        }
+    }
+    &__info{
+        background-color: var(--tp-theme-primary);
+        position: absolute;
+        left: 0;
+        bottom: -20px;
+        width: 100%;
+        padding: 25px 50px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s;
+        @media #{$xl}{
+            padding: 25px 25px;
+        }
+    }
+    &__icon{
+        & i {
+            font-size: 36px;
+            -webkit-text-stroke: 1px #292930;
+            color: transparent;
+            transform: rotate(45deg);
+            font-weight: 700;
+            @include title-animation();
+        }
+    }
+    &:hover{
+        & .tp-team-item__icon{
+            & i{
+                @include title-animation-hover();
+                transform: rotate(45deg);
+            }
+        }
+        & .tp-team-title{
+            @include title-animation-hover();
+        }
+        & .tp-team-subtitle{
+            @include subtitle-animation-hover();
+        }
+        & .tp-team-item__info{
+            opacity: 1;
+            visibility: visible;
+            bottom: 0;
+        }
+    }
+}
+.tp-team-title{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--tp-common-black);
+    @include title-animation();
+    &:hover{
+        color: var(--tp-theme-1);
+    }
+}
+.tp-team-subtitle{
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--tp-common-black);
+    @include title-animation();
+}
+.tp-team-overlay{
+    position: relative;
+    &__img{
+        & img{
+            border-radius: 10px;
+        }
+    }
+    &::after{
+        background-color: var(--tp-theme-secondary);
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        content: '';
+        position: absolute;
+        border-radius: 10px;
+    }
+    &__info{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 5;
+        width: 100%;
+        & .team-title{
+            font-size: 26px;
+            font-weight: 500;
+            color: var(--tp-common-black);
+            &:hover{
+                color: var(--tp-theme-1);
+                transition: .3s;
+            }
+        }
+        & i{
+            font-size: 85px;
+            -webkit-text-stroke: 2px #292930;
+            color: transparent;
+            transform: rotate(45deg);
+            font-weight: 700;
+            transition: .3s;
+            &:hover{
+                -webkit-text-stroke: 2px var(--tp-theme-1);
+            }
+        }
+    }
+}
+
+.tpteam{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--tp-common-blue);
+        border-radius: 10px;
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s;
+    }
+    &__shape-1{
+        position: absolute;
+        top: -70px;
+        left:-60px;
+        z-index: 2;
+        transition: .6s;
+    }
+    &__shape-2{
+        position: absolute;
+        bottom: -70px;
+        right:-60px;
+        z-index: 2;
+        transition: .6s;
+    }
+    &__thumb{
+        & img{
+            border-radius: 10px;
+            max-width: 100%;
+        }
+    }
+    &__content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9;
+        transition: .3s;
+        width: 100%;
+        & i{
+            font-size: 15px;
+            color: var(--tp-common-black);
+            padding: 0px 15px;
+            transition: .3s;
+            &:hover{
+                color: var(--tp-common-white);
+            }
+        }
+    }
+    &:hover{
+        &::after{
+            opacity: 1;
+            visibility: visible;
+        }
+        & .tpteam__content{
+            opacity: 1;
+            visibility: visible;
+        } 
+        & .tpteam__shape-1{
+            left: 0;
+            top: 0;
+        } 
+        & .tpteam__shape-2{
+            right: 0;
+            bottom: 0;
+        } 
+    }
+}
+.tp-team-sm-title{
+    color: var(--tp-common-black);
+    font-size: 22px;
+    font-weight: 500;
+    transition: .3s;
+    &:hover{
+        color: var(--tp-common-white);
+    }
+}
+.tp-team-sm-subtitle{
+    color: var(--tp-common-black);
+    font-size: 12px;
+    font-weight: 500;
+    transition: .3s;
+    padding-bottom: 5px;
+    &:hover{
+        color: var(--tp-common-white);
+    }
+}
+.bp-team-shape-1{
+    position: absolute;
+    top: 160px;
+    left: 145px;
+    animation: rotate2 15s linear infinite;
+}
+.ac-team-title{
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--tp-common-black);
+    letter-spacing: -2px;
+}

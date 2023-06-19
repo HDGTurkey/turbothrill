@@ -1,0 +1,47 @@
+@use '../utils' as *;
+
+
+.breadcrumb{
+    &__pt-310{
+        padding-top: 300px;
+        padding-bottom: 145px;
+        @media #{$md,$xs} {
+            padding-top: 120px;
+        }
+    }
+    &__title{
+        font-size: 65px;
+        color: var(--tp-common-black);
+        font-weight: 700;
+        margin-bottom: 40px;
+        @media #{$xs} {
+            font-size: 40px;
+         }
+    }
+}
+.ac-about-shape-img {
+	position: absolute;
+	bottom: -17px;
+	left: 34px;
+    z-index: 999;
+}
+.ac-testimonial-space{
+    padding-top: 115px;
+    padding-bottom: 130px;
+    @media #{$xs} {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+.breadcrumb__area {
+    @media #{$xl} {
+        background-size: cover;
+        background-position: right;
+    }
+    @media #{$lg,$md,$xs} {
+        background-size: cover;
+        background-position: left;
+    }
+}
+
+

@@ -1,0 +1,35 @@
+/*----------------------------------------*/
+/*  07. chose CSS START
+/*----------------------------------------*/
+
+@use '../utils' as *;
+
+.bp-chose-1{
+    position: absolute;
+    bottom: 104px;
+    left: 144px;
+    animation: rotate2 15s linear infinite;
+}
+.bp-chose-2{
+    position: absolute;
+    bottom: 87px;
+    right: 132px;
+    animation: rotate2 15s linear infinite;
+}
+.bp-chose-3{
+    position: absolute;
+    top: 135px;
+    right: 132px;
+    animation: moving 9s linear infinite;
+}
+.ac-chose-bg{
+    background-color: var(--tp-grey-1);
+    border-radius: 20px;
+    padding: 80px 80px 50px 80px;
+    @media #{$xl} {
+        padding: 40px 40px 0px 40px;
+    }
+    @media #{$xs} {
+        padding: 30px 30px 0px 30px;
+    }
+}

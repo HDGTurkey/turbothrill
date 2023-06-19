@@ -1,0 +1,313 @@
+/*----------------------------------------*/
+/*  08. contact CSS START
+/*----------------------------------------*/
+
+@use '../utils' as *;
+
+.tp-contact-title{
+    margin-bottom: 50px;
+    color: var(--tp-common-black);
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    display: flex;
+    align-items: center;
+    & svg{
+        margin-right: 10px;
+        flex: 0 0 auto;
+    }
+}
+.tpcontact{
+    &__form{
+        & input{
+            width: 100%;
+            height: 60px;
+            padding-left: 20px;
+            border: none;
+            border-radius: 10px;
+            color: #8A90A2;
+            // margin-bottom: 30px;
+            &::placeholder{
+                font-size: 15px;
+                color: #8A90A2;
+            }
+        }
+        & textarea{
+            width: 100%;
+            resize: none;
+            border: none;
+            height: 215px;
+            display: inline-block;
+            // margin-bottom: 30px;
+            border-radius: 10px;
+            padding: 28px;
+            color: #8A90A2;
+            &:focus{
+                outline: none;
+            }
+            &::placeholder{
+                font-size: 15px;
+                color: #8A90A2;
+            }
+        }
+    }
+    &__form-2{
+        @media #{$lg}{
+            padding-left: 40px;
+        }
+        @media #{$md,$xs}{
+            padding-left: 0px;
+            margin-top: 40px;
+        }
+        padding-left: 80px;
+        & input{
+            background-color: var(--tp-grey-1);
+            height: 65px;
+            padding-right: 20px;
+        }
+        & textarea{
+            background-color: var(--tp-grey-1);
+        }
+    }
+    &__form-3{
+        background-color: transparent;
+        & input{
+            border: 1px solid #EFF1F6;
+        }
+        & textarea{
+            border: 1px solid #EFF1F6 ;
+        }
+    }
+}
+.tp-border-left{
+    border-left: 1px solid rgba(41, 41, 48, .1);
+    padding-left: 100px;
+    margin-left: 20px;
+    @media #{$lg} {
+        border-left:transparent;
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+    @media #{$md,$xs} {
+        border-left:transparent;
+        padding-left: 0px;
+        margin-left: 0px;
+        margin-top: 60px;
+    }
+}
+.tp-contact-thumb{
+    & img{
+        max-width: 100%;
+    }
+}
+.tp-contact-info{
+    & span{
+        color: #8A90A2;
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 400;
+        padding-right: 33px;
+        &:hover{
+            color: var(--tp-theme-1);
+        }
+    }
+}
+.contact-space-40{
+    margin-left: 40px;
+    @media #{$lg} {
+        margin-left: 0;
+    }
+    @media #{$md} {
+        margin-bottom: 70px;
+    }
+    @media #{$xs} {
+        margin-left: 0;
+        margin-bottom: 70px;
+    }
+}
+
+.contact-title{
+    font-weight: 700;
+    color: var(--tp-common-black);
+    font-size: 22px;
+}
+.tp-contact-big-title{
+    font-size: 65px;
+    font-weight: 700;
+    color: var(--tp-common-black);
+    margin-bottom: 60px;
+}
+
+.login-space{
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+.tp-login-title{
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--tp-common-black);
+    padding-bottom: 30px;
+    @media #{$xs} {
+        font-size: 30px;
+    }
+}
+.tp-login-thumb{
+    & img{
+        max-width: 100%;
+    }
+}
+.tplogin{
+    width: 420px;
+    &__form{
+        & .tp-mail{
+            margin-bottom: 15px;
+            & label{
+                color: var(--tp-common-black);
+                display: block;
+                font-size: 14px;
+                font-weight: 500;
+                margin-bottom: 8px;
+            }
+            & input{
+                height: 60px;
+                width: 100%;
+                background-color: var(--tp-grey-1);
+                border: 0;
+                border-radius: 5px;
+                padding: 0px 20px;
+                color: #B2B0C1;
+                &::placeholder{
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #B2B0C1;
+                }
+            }
+        }
+        & .tp-password{
+            padding-bottom: 30px;
+            & label{
+                color: var(--tp-common-black);
+                display: block;
+                font-size: 14px;
+                font-weight: 500;
+                margin-bottom: 8px;
+            }
+            & input{
+                width: 100%;
+                height: 60px;
+                background-color: var(--tp-grey-1);
+                border: 0;
+                border-radius: 5px;
+                padding: 0px 20px;
+                color: #B2B0C1;
+                &::placeholder{
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #B2B0C1;
+                }
+            }
+        }
+        & .tp-number{
+            padding-bottom: 10px;
+            & label{
+                color: var(--tp-common-black);
+                display: block;
+                font-size: 14px;
+                font-weight: 500;
+                margin-bottom: 8px;
+            }
+            & input{
+                width: 100%;
+                height: 60px;
+                background-color: var(--tp-grey-1);
+                border: 0;
+                border-radius: 5px;
+                padding: 0px 20px;
+                color: #B2B0C1;
+                &::placeholder{
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #B2B0C1;
+                }
+            }
+        }
+        & .tp-forgot-password{
+            margin-bottom: 40px;
+            & .checkbox{
+                & label{
+                    color: var(--tp-common-black);
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+            }
+            & .forgot{
+                & a{
+                    color: #007AFF;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+            }
+        }
+        & .tp-signup{
+            margin-top: 20px;
+            & .account{
+                & a{
+                    color: var(--tp-common-black);
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+            }
+            & .signin{
+                & a{
+                    color: #007AFF;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+.tp-login-wrapper{
+    @media #{$xs} {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.tp-404-thumb{
+    & img{
+        max-width: 100%;
+    }
+}
+.tp-404-circle{
+    position: relative;
+    &::after{
+        top: -170px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        border-radius: 50%;
+        position: absolute;
+        content: '';
+        width: 1200px;
+        height: 1200px;
+        background-color: var(--tp-common-white);
+        display: inline-block;
+        @media #{$md} {
+        width: 750px;
+        height: 750px;
+        top: 55px;
+        }
+        @media #{$xs} {
+        width: 320px;
+        height: 320px;
+        top: 155px;
+        }
+        @media #{$sm} {
+        width: 550px;
+        height: 550px;
+        top: 96px;
+        }
+    }
+}

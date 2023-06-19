@@ -1,0 +1,14 @@
+/*----------------------------------------*/
+/*  04. brand CSS START
+/*----------------------------------------*/
+
+@use '../utils' as *;
+
+.tp-business-tab{
+    & button{
+        font-size: 18px; 
+        color: var(--tp-common-black);
+        font-weight: 500;
+        
+    }
+}

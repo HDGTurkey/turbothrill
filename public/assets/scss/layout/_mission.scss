@@ -1,0 +1,160 @@
+/*----------------------------------------*/
+/*  18. mission CSS START
+/*----------------------------------------*/
+
+
+@use '../utils' as *;
+
+
+.tp-mission-tab{
+    display: inline-block;
+    border: 2px solid var(--tp-common-black);
+    border-radius: 10px;
+    padding: 0px 15px ;
+    margin-bottom: 55px;
+    & button{
+        color: var(--tp-common-black);
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: capitalize;
+        padding: 20px 45px;
+        position: relative;
+        margin: 7px 0;
+        margin-left: -5px;
+        margin-right: -2px;
+        border-radius: 10px;
+        @media #{$xl}{
+            padding: 20px 40px;  
+        }
+        @media #{$lg}{
+            padding: 15px 20px;  
+        }
+        @media #{$xs}{
+            padding: 19px 21px;  
+        }
+        &::after{
+            position: absolute;
+            content: '';
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+            width: 1px;
+            height: 40px;
+            background-color: #B5B5B5;
+            @media #{$lg}{
+                height: 20px;  
+            }
+        }
+        &::before {
+            content: "";
+            height: 100%;
+            width: 102%;
+            top: 0;
+            left: -2px;
+            background: var(--tp-common-blue);
+            position: absolute;
+            z-index: 1;
+            opacity: 0;
+            visibility: hidden;
+            border-radius: 10px;
+        }
+        &:last-child{
+            &::after{
+                display: none;
+            }
+        }
+        & span{
+            position: relative;
+            z-index: 9;
+        }
+    }
+}
+.tp-mission-tab button.active{
+    background-color: var(--tp-common-blue);
+    &::before{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.tp-mission-title{
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--tp-common-black);
+    margin-bottom: 40px;
+    @media #{$lg}{ 
+       font-size: 42px;
+    }
+    @media #{$xs}{ 
+       font-size: 28px;
+    }
+    
+
+}
+.tpmission{
+    &__content{
+        & p{
+            font-size: 18px;
+            font-weight: 400;
+            color: #8A90A2;
+            padding-right: 62px;
+            @media #{$xl}{
+                & br {
+                    display: none;
+                } 
+            }
+            @media #{$lg}{
+                font-size: 15px;
+                & br {
+                    display: none;
+                } 
+            }
+            @media #{$xs}{
+                padding-right: 0;
+                font-size: 15px;
+                & br {
+                    display: none;
+                } 
+            }
+        }
+    }
+}
+.tp-mission-img {
+	margin-left: 110px;
+    & img{
+        max-width: 100%;
+    }
+    @media #{$lg}{ 
+        margin-left: 0px;
+    }
+    @media #{$md}{ 
+        margin-left: 0px;
+        margin-top: 50px;
+    }
+    @media #{$xs}{ 
+        margin-left: 0px;
+        margin-top: 50px;
+    }
+}
+
+.bp-mission-shape-1{
+    position: absolute;
+    top: 140px;
+    left: 44px;
+    animation: rotate2 15s linear infinite;
+}
+.bp-mission-shape-2{
+    position: absolute;
+    bottom: 50px;
+    left: 44px;
+    animation: moving 9s linear infinite;
+    @media #{$xxl,$xl,$lg,$md,$xs} {
+        bottom: -50px;
+    }
+}
+.bp-mission-shape-3{
+    position: absolute;
+    bottom: 0;
+    right: 13%;
+    animation: rotate2 15s linear infinite;
+}
