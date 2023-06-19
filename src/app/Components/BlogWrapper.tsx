@@ -32,7 +32,7 @@ export const BlogWrapper = () => {
   const [loading, setLoading] = useState(false)
 
   // pagination states
-  const [blogsPerPage] = useState(6);
+  const [blogsPerPage] = useState(10);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPage] = useState(0);
   const [blogsLength, setBlogsLength] = useState(Object.keys(blogs).length);
@@ -71,11 +71,27 @@ export const BlogWrapper = () => {
     setCurrentPage(currentPage)
   }
 
+  const [mediumData, setMediumData] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    fetch(`https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@elselif`)
+      .then(res => res.json())
+      .then(response => {
+        setMediumData(response.items);
+        setBlogsLength(response.items.length);
+        setIsLoading(false);
+      })
+      .catch(err => console.log(err));
+  }, []);
+
+  const finalData = mediumData.slice(0, 10);
+
   return (
     loading ? "Loading" :
       <>
         <div className="max-w-7xl mx-auto grid gap-3 grid-cols-1 lg:grid-cols-3">
-          {Array.from(blogs).map((single, key) => {
+          {finalData.map((single, key) => {
               if (totalPages >= 1 && key >= ((currentPage - 1) * blogsPerPage) && key < (currentPage * blogsPerPage)) {
                 return (
                   <div key={key} className="flex" data-aos="fade-up">
@@ -86,9 +102,9 @@ export const BlogWrapper = () => {
             })}
         </div>
         <div className={`max-w-7xl mx-auto mt-3 text-right border-[0.5px] rounded-lg ${data.theme === 'light' ? 'border-gray-300' : ' border-gray-700'}`}>
-          {totalPages > 1 &&
+           {/* {totalPages > 1 && 
             <Pagination pageName={location.pathname} currentPage={currentPage} totalPages={totalPages} _setCurrentPage={_setCurrentPage} />
-          }
+           }  */}
         </div>
       </>
   )

@@ -14,15 +14,21 @@ export const BlogsList = () => {
   const page = searchParams?.get('page');
 
   return (
-    <>
-      <PageTitle title='Blogs List' />
-      {page === "1" &&
-        <BlogContentListOneCard />
-        //  &&
-        // <BlogContentListTwoCard />
-      }
-      <BlogWrapper />
-    </>
+    <div className=''>
+
+      <PageTitle title='Blogs List' img='/medium.svg' />
+      <div>
+
+
+        {page === "1" &&
+          <BlogContentListOneCard />
+          // &&
+          // <BlogContentListTwoCard />
+        }
+        <BlogWrapper />
+      </div>
+    </div>
+
   )
 }
 

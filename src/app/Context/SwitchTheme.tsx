@@ -15,8 +15,8 @@ export const SwitchTheme = () => {
       <button
         className={
           theme === "light"
-            ? "bg-white"
-            : "bg-gray-700 text-gray-300 border-black"
+            ? "bg-gray-100"
+            : "bg-[#262626] text-white "
         }
         onClick={() => setTheme(theme === "light" ? "dark" : "light")}
         style={{
