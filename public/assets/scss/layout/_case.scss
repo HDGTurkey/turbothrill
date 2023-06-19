@@ -1,0 +1,142 @@
+/*----------------------------------------*/
+/*  05. case CSS START
+/*----------------------------------------*/
+
+@use '../utils' as *;
+
+
+.cd-banner-img{
+    & img{
+        border-radius: 20px;
+        max-width: 100%;
+    }
+}
+.cd-case-title{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--tp-common-black);
+    padding-bottom: 15px;
+}
+.cd-project-info-box{
+    padding-right: 80px;
+    padding-left: 80px;
+    @media #{$xl} {
+        padding-right: 60px;
+        padding-left: 40px;
+    }
+    @media #{$lg} {
+        padding-right: 20px;
+        padding-left: 40px;
+    }
+    @media #{$md} {
+        padding-right: 0px;
+        padding-left: 20px;
+    }
+    @media #{$xs} {
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-bottom: 30px;
+    }
+    & p{
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 25px;
+        margin-bottom: 0;
+    }
+}
+.cd-client-details{
+    padding-left: 40px;
+    @media #{$lg,$md,$xs} {
+        padding-left: 0;
+    }
+    @media #{$xs} {
+        padding-left: 10px;
+        margin-bottom: 20px;
+    }
+    & p{
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 0;
+        padding-bottom: 20px;
+        & span{
+            color: var(--tp-common-black);
+        }
+    }
+}
+.cd-project-wrapper{
+    border: 1px solid #EBEBEB;
+    padding: 70px 0;
+    border-radius: 20px;
+    @media #{$md} {
+        padding: 23px 0;
+    }
+    @media #{$xs} {
+        padding: 10px 0;
+    }
+}
+.cd-social-icon{
+    padding-left: 70px;
+    @media #{$lg} {
+        padding-left: 40px;
+    }
+    @media #{$md} {
+        padding-left: 30px;
+    }
+    @media #{$xs} {
+        padding-left: 10px;
+    }
+    & a{
+        display: block;
+        width: 45px;
+        height: 45px;
+        border: 1px solid #EBEBEB;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 45px;
+        margin-bottom: 10px;
+        @media #{$xs} {
+           display: inline-block;
+           margin-right: 20px;
+        }
+    }
+}
+.cd-si-color-1{
+    color: #4267B2;
+    &:hover{
+        background-color: #4267B2;
+        color: var(--tp-common-white);
+        border-color: #4267B2;
+    }
+}
+.cd-si-color-2{
+    color: #E40028;
+    &:hover{
+        background-color: #E40028;
+        color: var(--tp-common-white);
+        border-color: #E40028;
+    }
+}
+.cd-si-color-3{
+    color: #1DA1F2;
+    &:hover{
+        background-color: #1DA1F2;
+        color: var(--tp-common-white);
+        border-color: #1DA1F2;
+    }
+}
+
+.cd-info-box{
+    padding-left: 80px;
+    padding-right: 110px;
+    @media #{$xl} {
+        padding-left: 35px;
+        padding-right: 100px;
+    }
+    @media #{$md,$xs} {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    @media #{$lg} {
+        padding-left: 45px;
+    }
+}

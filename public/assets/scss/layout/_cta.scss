@@ -1,0 +1,57 @@
+/*----------------------------------------*/
+/*  10. cta CSS START
+/*----------------------------------------*/
+
+@use '../utils' as *;
+
+.tp-cta-bottom-wrapper{
+    background-color: #F9FAFB;
+    padding-top: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: -115px;
+    position: relative;
+    z-index: 9;
+    @media #{$md}{
+        margin-top: -25px;
+    }
+    @media #{$xs}{
+        margin-top: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+}
+
+.tp-btn-white-lg {
+    transition: .4s;
+    &:hover{
+        transform: translateY(-10px);
+    }
+}
+.tp-cta-img-item{
+    @media #{$xs}{
+        padding-top: 50px;
+    }
+    & img{
+        @media #{$lg,$md}{
+            max-width: 100%;
+
+        }
+        @media #{$xs}{
+            max-width: 100%;
+            transform: rotateY(180deg);
+        }
+
+    }
+}
+.tp-cta-section-title-box{
+    @media #{$md}{
+        padding-left: 0;
+    }
+    @media #{$xs}{
+        padding-left: 0;
+    }
+}

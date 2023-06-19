@@ -1,0 +1,157 @@
+/*----------------------------------------*/
+/*  19. news CSS START
+/*----------------------------------------*/
+
+
+@use '../utils' as *;
+
+.tp-news-letter-box {
+    background-color: var(--tp-theme-1);
+    padding-top: 82px;
+    padding-bottom: 82px;
+    border-radius: 20px;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    @media #{$xs} {
+        background-size: cover;
+    }
+}
+.tp-news-button {
+    & .tp-btn-yellow {
+        @media #{$lg} {
+            padding: 0 30px;
+        }
+        @media #{$md} {
+            height: 50px;
+            line-height: 50px;
+            padding: 0 25px;
+        }
+    }
+}
+
+.tp-news-wrapper {
+    @media #{$lg} {
+        padding-left: 35px;
+    }
+
+    @media #{$md} {
+        padding-left: 25px;
+    }
+    @media #{$xs} {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+.tp-news-sub-wrapper {
+    @media #{$xs} {
+        padding-right: 0px;
+    }
+}
+
+.tp-news-shape-img {
+    position: absolute;
+    bottom: -22px;
+    left: -60px;
+
+    @media #{$xl} {
+        left: -35px;
+    }
+
+    @media #{$lg} {
+        left: -25px;
+    }
+    @media #{$md} {
+        bottom: -55px;
+        left: -33px;
+    }
+    @media #{$xs} {
+        left: -16px;
+    }
+}
+
+.tp-news-letter-img {
+    @media #{$xs} {
+        padding-top: 30px;
+    }
+    & img {
+        @media #{$lg,$md} {
+            max-width: 100%;
+        }
+        @media #{$xs} {
+            max-width: 100%;
+            padding-top: 25px;
+        }
+    }
+}
+.tp-newsletter-left-img {
+    max-width: inherit;
+    margin-left: -100px;
+
+    @media #{$xl} {
+        margin-left: -30px;
+    }
+    @media #{$lg} {
+        margin-left: -30px;
+    }
+    @media #{$md} {
+        margin-left: -30px;
+    }
+    @media #{$xs} {
+        margin-left: 0px;
+        padding-top: 0;
+    }
+    & img{
+        @media #{$xl} {
+            max-width: 100%;
+        }
+        @media #{$lg} {
+            max-width: 100%;
+        }
+        @media #{$md} {
+            max-width: 110%;
+        }
+        @media #{$xs} {
+            max-width: 100%;
+        }
+    }
+}
+.tp-news-letter-section-box-two{
+    @media #{$xs} {
+        padding-bottom: 100px;
+     }
+
+}
+.tp-news-letter-section-box {
+    .tp-title {
+        @media #{$md} {
+            font-size: 45px;
+        }
+        @media #{$xs} {
+            font-size: 30px;
+        }
+    }
+}
+
+.news-shape-img {
+    position: absolute;
+    top: -50px;
+    left: 57px;
+    animation: zoom2 5s infinite;
+    @media #{$lg} {
+        left: 0px;
+    }
+    @media #{$md} {
+        left: -33px;
+    }
+    @media #{$xs} {
+        left: -61px;
+    }
+}
+.tp-news-button{
+    & .tp-btn-lg-yellow{
+        @media #{$xs} {
+            margin-bottom: 20px;
+        } 
+    }
+}
