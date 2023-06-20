@@ -9,7 +9,7 @@ interface BreadcrumbProps {
 const Breadcrumb: React.FC<BreadcrumbProps> = ({ title, back_home = false }) => {
 
           return (
-                    <section className="breadcrumb__area  breadcrumb__pt-310 include-bg p-relative"
+                    <section className="breadcrumb__area  breadcrumb__pt-310 include-bg p-relative "
                               style={{ backgroundImage: 'url(/assets/img/breadcrum/ab-1.1.jpg)' }}>
                               <div className="ac-about-shape-img z-index-1">
                                         <img src="/assets/img/breadcrum/ab-shape-1.1.jpg" alt="" />
