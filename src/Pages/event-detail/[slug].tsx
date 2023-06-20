@@ -70,7 +70,7 @@ const EventDetailPage: React.FC = () => {
                <div className=' mx-auto   '>
                     <div className='flex text-2xl text-left mx-auto p-5 '>
                          <div className=' flex-1'>
-                              <h1 className="text-3xl font-bold mb-3">{eventData[0]?.name}</h1>
+                              <h1 className="text-3xl font-bold mb-3 text-black mx-5">{eventData[0]?.name}</h1>
                          </div>
                     </div>
                     <div className={`shadow-lg justify-center grid grid-cols-1 lg:grid-cols-2 lg:flex ${themeData.theme === 'light' ? 'bg-gray-100 text-black' : 'bg-gray-800 text-white'}`}>
