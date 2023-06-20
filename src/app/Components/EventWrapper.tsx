@@ -67,16 +67,19 @@ function EventWrapper() {
 
     return (
         <>
-            <div className={`' py-3 ${data.theme === 'light' ? ' bg-gray-100' : 'bg-[#151515]'}`}>
+            <div className={`' py-3 ${data.theme === 'light' ? ' bg-[#F6F8FD]' : 'bg-[#151515]'}`}>
                 <div className='flex py-3 max-w-6xl mx-auto'>
                     <div className='items-start text-start'>
-                        <div className='py-2'> To be informed about related events immediately:
+                        <div className='py-2'> Etkinlikler Hakkında Detaylı Bilgi İçin :
                             <span className='text-blue-700 mx-3'>
-                                info@hdgplus.com
+                                hsdturkiye@gmail.com
                             </span>
                         </div>
-                        <div className='py-2'>
-                            Upcoming Events
+                        <div className=' py-2'>
+                            <h2 className='font-bold text-2xl text-black'>
+                                Yaklaşan Etkinlikler
+                            </h2>
+
                         </div>
                         <div className='flex'>
                             <EventCard events={events} />
@@ -86,28 +89,19 @@ function EventWrapper() {
             </div>
             <div className='flex mt-10 justify-between pt-8 max-w-6xl mx-auto text-left'>
                 <div className=''>
-                    <span className='text-3xl'>Directory of past events<br /></span>
-                    Events are listed in reverse chronological order by date.
+                    <span className='text-3xl text-black font-bold'>Etkinliklerimiz<br /></span>
                 </div>
-                <form className="form-login" action="#">
-                    <div className="single-fild">
-                        <input
-                            className="px-6 h-10 mb-6 border-secondary-90 bg-secondary-100 hover:border-primary transition-all border-2 border-solid block rounded-md w-full focus:outline-none"
-                            type="email"
-                            placeholder="Events"
-                        />
-                    </div>
-                </form>
+
             </div>
             <div className='flex mt-10 justify-between pt-8 max-w-7xl mx-auto text-left'>
                 {loading ? "Loading" :
-                    <table className="table-auto w-full  " >
-                        <thead>
-                            <tr>
-                                <th>Image</th>
+                    <table className="table-auto w-full   shadow-2xl " >
+                        <thead >
+                            <tr >
+                                <th className='p-5 ' >Image</th>
                                 <th className='w-[50%]'>Event Name</th>
                                 <th>Date</th>
-                                <th>Details</th>
+                                <th >Details</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -116,10 +110,14 @@ function EventWrapper() {
                                     return (
                                         <tr key={key} className={`border-b-2 p-2 transition-colors rounded ${data.theme === 'light' ? 'hover:bg-gray-200' : 'hover:bg-gray-800'}`}>
 
-                                            <td><img className='p-3' src={require('../assets/Images/emplo.jpg').default.src} width="100px" height="" alt="" /></td>
-                                            <td>{event.name.length > 15 ? `${event.name.substring(0, 20)}...` : event.name}</td>
-                                            <td>2022-12-11</td>
-                                            <td> <a href={`/event-detail/${event.slug_name}`} className='text-blue-500'>see more...</a> </td>
+                                            <td><img className='p-3' src={require('../assets/Images/emplo.jpg').default.src} width="250px" height="" alt="" /></td>
+                                            <td className='text-black font-medium'>{event.name.length > 15 ? `${event.name.substring(0, 20)}...` : event.name}</td>
+                                            <td className='text-black font-medium'>2022-12-11</td>
+                                            <td>
+                                                <button className='bg-blue-800 rounded-full p-2 shadow shadow-lg'>
+                                                    <a href={`/event-detail/${event.slug_name}`} className='text-white p-2'>Daha Fazlası</a>
+                                                </button>
+                                            </td>
                                         </tr>
                                     );
                                 }
@@ -130,11 +128,11 @@ function EventWrapper() {
                 }
             </div>
             {/* <div className="max-w-7xl mx-auto mt-3 text-right flex align-right"> */}
-            <div className={`max-w-7xl mx-auto mt-3 text-right border-[0.5px] rounded-lg ${data.theme === 'light' ? 'border-gray-300' : ' border-gray-700'}`}>
+            {/* <div className={`max-w-7xl mx-auto mt-3 text-right border-[0.5px] rounded-lg ${data.theme === 'light' ? 'border-gray-300' : ' border-gray-700'}`}>
                 {totalPages > 1 &&
                     <Pagination pageName={location.pathname} currentPage={currentPage} totalPages={totalPages} _setCurrentPage={_setCurrentPage} />
                 }
-            </div>
+            </div> */}
             {/* </div> */}
         </>
     )

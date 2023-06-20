@@ -27,7 +27,7 @@ export const EventCard = ({ events }: Props) => {
                 </div>
                 <div className='p-4'>
                     <Link href={`/event-detail/${EventClassic[0].slug_name}`}>
-                        <h3 className='text-sm p-3 border border-gray-100 hover:bg-gray-400 rounded transition-all'> SEE MORE ...</h3>
+                        <h3 className=' text-md text-white font-medium p-3  bg-blue-800 hover:bg-gray-400 rounded-full text-center transition-all'> SEE MORE ...</h3>
                     </Link>
                 </div>
             </div>

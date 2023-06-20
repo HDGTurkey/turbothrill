@@ -8,6 +8,7 @@ import { blogs as blogsModel } from "../model/blogs.js";
 //state 
 import { useSite } from '../Context/Context';
 import { useRouter } from 'next/router';
+import BlogOneCard from './Blogs/BlogOneCard';
 
 interface Blogs {
   id : string;
@@ -90,11 +91,13 @@ export const BlogWrapper = () => {
   return (
     loading ? "Loading" :
       <>
-        <div className="max-w-7xl mx-auto grid gap-3 grid-cols-1 lg:grid-cols-3">
+        <div className="max-w-7xl mx-auto grid gap-3 grid-cols-1 lg:grid-cols-3 mt-[200px]">
           {finalData.map((single, key) => {
               if (totalPages >= 1 && key >= ((currentPage - 1) * blogsPerPage) && key < (currentPage * blogsPerPage)) {
                 return (
-                  <div key={key} className="flex" data-aos="fade-up">
+                  
+                  <div key={key} className="flex " data-aos="fade-up">
+                    
                     <BlogThreeCard blogData={single} key={key} />
                   </div>
                 );

@@ -281,6 +281,166 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
+"@hw-agconnect/api-types@1.5.0", "@hw-agconnect/api-types@^1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@hw-agconnect/api-types/-/api-types-1.5.0.tgz#c25fc5967395934e2860ab4b6fed9cad338df8ec"
+  integrity sha512-sub2x/D+Y96M2jgdMcSZtO0p4KJuch7mH2m3yYbh2F8V3qmc3rj1rXLPV5jG6/7qjAd2nSjLXV1oQ8KAUB53mA==
+
+"@hw-agconnect/api@1.5.0", "@hw-agconnect/api@^1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@hw-agconnect/api/-/api-1.5.0.tgz#72f1f806fedcefea3fd091848c4c872beda55386"
+  integrity sha512-8Gg19uBZuWxfkU5mBVhlF5ih23BpffC3a4ZrPZQrpM3B8qX0gBIa0vlHkXDOzNAN3pK033LSh4blQcqvgDZuiw==
+  dependencies:
+    "@hw-agconnect/api-types" "1.5.0"
+
+"@hw-agconnect/auth-types@1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@hw-agconnect/auth-types/-/auth-types-1.5.0.tgz#e48e2dffd3a737cb5cddaa2aaf6440c62194f202"
+  integrity sha512-Y1U4tWnLE0NCbPSWPMAulj/51QCXHmM+lfa1SUuWA6Xsfw6jYZU5W/YO4EC5rFaMsQ5aD54oONE9bZefrqEEXA==
+
+"@hw-agconnect/auth@1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@hw-agconnect/auth/-/auth-1.5.0.tgz#1c8ff66d4f3a4c93fbc81ceb46fb39c5f2f17174"
+  integrity sha512-PFRlgOXE9d4wRwFWVYRYZV0QBPIL+BlguR4xLYruny1PtCzHvvubUUzmfafv+B4m+4L5FJOVQv6NKRUJNdNj7g==
+  dependencies:
+    "@hw-agconnect/api" "^1.5.0"
+    "@hw-agconnect/api-types" "^1.5.0"
+    "@hw-agconnect/auth-types" "1.5.0"
+    "@hw-agconnect/baseservice" "1.5.0"
+    "@hw-agconnect/baseservice-types" "1.5.0"
+    "@hw-agconnect/core" "^1.5.0"
+    "@hw-agconnect/instance" "^1.5.0"
+    "@hw-agconnect/instance-types" "^1.5.0"
+    "@hw-agconnect/log" "^1.5.0"
+    "@hw-agconnect/network" "1.5.0"
+    "@hw-agconnect/network-types" "1.5.0"
+    "@hw-agconnect/storage" "1.5.0"
+    "@hw-agconnect/storage-types" "1.5.0"
+    "@hw-agconnect/util" "1.5.0"
+
+"@hw-agconnect/baseservice-types@1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@hw-agconnect/baseservice-types/-/baseservice-types-1.5.0.tgz#87f6bb4e2d8c54ae85e99018c57ba703bfa7822c"
+  integrity sha512-IJKZsO2mP+UVN3NLer90f4yAPF3YiAS1iLGdkckJTPToY4OOeghHyJYccz+OBMdqv1nR0wwJKsxjMLJf7ylA3A==
+
+"@hw-agconnect/baseservice@1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@hw-agconnect/baseservice/-/baseservice-1.5.0.tgz#64e6cb337e8266f48b47c02031c3527a678ef0cc"
+  integrity sha512-AqDkscXf5cApSef3RkINDlhZaEijKsy2fw61r6OcKMYFx3Df/3412Di24yRWzugF/6Y05SPpNsEip77293rt/g==
+  dependencies:
+    "@hw-agconnect/api" "^1.5.0"
+    "@hw-agconnect/api-types" "^1.5.0"
+    "@hw-agconnect/baseservice-types" "1.5.0"
+    "@hw-agconnect/core" "^1.5.0"
+    "@hw-agconnect/instance" "^1.5.0"
+    "@hw-agconnect/instance-types" "^1.5.0"
+    "@hw-agconnect/log" "^1.5.0"
+    "@hw-agconnect/network" "1.5.0"
+    "@hw-agconnect/network-types" "1.5.0"
+    "@hw-agconnect/storage" "1.5.0"
+    "@hw-agconnect/storage-types" "1.5.0"
+
+"@hw-agconnect/core@1.5.0", "@hw-agconnect/core@^1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@hw-agconnect/core/-/core-1.5.0.tgz#c184c9f1359343a665c5bd1d1f3339d03fd6db8a"
+  integrity sha512-+sa51TF6HVV1aNYw60Tdi2axrCDwsVNw8xQBR89c7MjQ33V2/qDtbyrTUGISIhpU94xtG7ckp47f8LxDU/OFuA==
+
+"@hw-agconnect/database@^1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@hw-agconnect/database/-/database-1.5.0.tgz#24e1a7afc588e9e0f61eeb1d8d80ef5fe24b181a"
+  integrity sha512-hJXcSbhJqw3ltQv9WLXTEGB0GZvT0qo/EYVVkX4KG7yF8hjbUZXEIiuvWLXjaa5BKyDMXxVnvu+rfWEG7WC/zQ==
+  dependencies:
+    "@hw-agconnect/api" "^1.5.0"
+    "@hw-agconnect/api-types" "^1.5.0"
+    "@hw-agconnect/auth" "1.5.0"
+    "@hw-agconnect/auth-types" "1.5.0"
+    "@hw-agconnect/baseservice-types" "1.5.0"
+    "@hw-agconnect/instance" "^1.5.0"
+    "@hw-agconnect/instance-types" "^1.5.0"
+    "@hw-agconnect/log" "^1.5.0"
+    "@hw-agconnect/network" "1.5.0"
+    "@hw-agconnect/network-types" "1.5.0"
+    bignumber.js "9.0.1"
+    crypto-js "4.1.1"
+    js-crypto-aes "1.0.2"
+    protobufjs "6.11.3"
+
+"@hw-agconnect/instance-types@1.5.0", "@hw-agconnect/instance-types@^1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@hw-agconnect/instance-types/-/instance-types-1.5.0.tgz#e8878912b89115d0be26093dfac8b9d9ba42d6d4"
+  integrity sha512-LLMK1p6uxovSmkxMa97s8i8D532L1DaUY0SRjC0sQ4gwipkaI8WlAEXtqg6GU6+pLLRATeRPgbRlcxzQJ885JA==
+
+"@hw-agconnect/instance@^1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@hw-agconnect/instance/-/instance-1.5.0.tgz#e4f6886532cead2682b6e6995c80a1530561cead"
+  integrity sha512-GvvngWD0gfe6o7R+7b7EjYgVhR2XziYUSbCthq2ToHiWGuZIvgTE43QHoWblK0Xpx8FQYUqr/SV9SJIjxmn0IQ==
+  dependencies:
+    "@hw-agconnect/api" "1.5.0"
+    "@hw-agconnect/api-types" "1.5.0"
+    "@hw-agconnect/core" "1.5.0"
+    "@hw-agconnect/instance-types" "1.5.0"
+    "@hw-agconnect/log" "1.5.0"
+
+"@hw-agconnect/log@1.5.0", "@hw-agconnect/log@^1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@hw-agconnect/log/-/log-1.5.0.tgz#cb6154e0d677f9c18059bbc2b78b5abf354c034d"
+  integrity sha512-Ry5deEOPakLD4nm6VVf30q660wmkYzsuPJo+Or44frC/hXQEw00EanyrBT8gFB40lhUNaXAb0ZieqBeSAzu8/g==
+  dependencies:
+    "@hw-agconnect/api" "1.5.0"
+    "@hw-agconnect/api-types" "1.5.0"
+    "@hw-agconnect/instance-types" "1.5.0"
+
+"@hw-agconnect/network-types@1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@hw-agconnect/network-types/-/network-types-1.5.0.tgz#7a689f6ab2a39c1df56961a27ff7baabf45ca174"
+  integrity sha512-0V+ijlXuZs7LVZZIbvMT0dfb2kC5sjVcUIHVnPPgajHTaAvE5pJjCUnz/ilIHKPdCA/ITD9JE3lHMOwE7VVxmg==
+
+"@hw-agconnect/network@1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@hw-agconnect/network/-/network-1.5.0.tgz#aec467902848f94a44a0886aeb3ef1740fdc3e89"
+  integrity sha512-2F+Vk09g435mIEejqUh9wo6dvXveFBmxfEXcDHmdDQEVoV5Dibm7gHcscP6syKSZjRoFKuuzLQqxg09NIeOX1g==
+  dependencies:
+    "@hw-agconnect/api" "^1.5.0"
+    "@hw-agconnect/api-types" "^1.5.0"
+    "@hw-agconnect/instance" "^1.5.0"
+    "@hw-agconnect/instance-types" "^1.5.0"
+    "@hw-agconnect/log" "^1.5.0"
+    "@hw-agconnect/network-types" "1.5.0"
+    axios "0.27.2"
+    ua-parser-js "1.0.2"
+
+"@hw-agconnect/storage-types@1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@hw-agconnect/storage-types/-/storage-types-1.5.0.tgz#b638abaa73e4fd28bc58605c0c2238065f00b412"
+  integrity sha512-zS+yEn2uJTBRzNv/UOYqb6q9YPQkHbTa5hyzxL6o7eeLLGJO52tOjUelaRPiipfqulRICTl6Dv/BYR3Zo/D8Kw==
+
+"@hw-agconnect/storage@1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@hw-agconnect/storage/-/storage-1.5.0.tgz#cd786d9004bab63c11db6a9bc4ab115a7e892183"
+  integrity sha512-nNpa0XIX3yFSutjjC2+RJujaQcEkTjU/t68sn2TVx/ucIlRJrw5EKgORF4J8n8HFc0T09o+btm6U2EI2sbJO+A==
+  dependencies:
+    "@hw-agconnect/api" "^1.5.0"
+    "@hw-agconnect/api-types" "^1.5.0"
+    "@hw-agconnect/core" "^1.5.0"
+    "@hw-agconnect/instance" "^1.5.0"
+    "@hw-agconnect/instance-types" "^1.5.0"
+    "@hw-agconnect/log" "^1.5.0"
+    "@hw-agconnect/storage-types" "1.5.0"
+
+"@hw-agconnect/util@1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@hw-agconnect/util/-/util-1.5.0.tgz#25b2959f16e3253f34d9fd801d4c763d8c1be867"
+  integrity sha512-kDlh2mD9fwO1QSpH5To38ovYSIr5b2P1E6wflH4h76jE+NVLI1/MvARME1ftiYC4MnUj0kri8cGS8hem1xVJfg==
+  dependencies:
+    "@hw-agconnect/api" "^1.5.0"
+    "@hw-agconnect/api-types" "^1.5.0"
+    "@hw-agconnect/core" "^1.5.0"
+    "@hw-agconnect/instance" "^1.5.0"
+    "@hw-agconnect/instance-types" "^1.5.0"
+    "@hw-agconnect/log" "^1.5.0"
+    "@hw-agconnect/storage" "1.5.0"
+    "@hw-agconnect/storage-types" "1.5.0"
+
 "@jridgewell/gen-mapping@^0.3.2":
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/@jridgewell/gen-mapping/-/gen-mapping-0.3.3.tgz#7e02e6eb5df901aaedb08514203b096614024098"
@@ -575,6 +735,59 @@
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.8.tgz#6b79032e760a0899cd4204710beede972a3a185f"
   integrity sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==
 
+"@protobufjs/aspromise@^1.1.1", "@protobufjs/aspromise@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@protobufjs/aspromise/-/aspromise-1.1.2.tgz#9b8b0cc663d669a7d8f6f5d0893a14d348f30fbf"
+  integrity sha512-j+gKExEuLmKwvz3OgROXtrJ2UG2x8Ch2YZUxahh+s1F2HZ+wAceUNLkvy6zKCPVRkU++ZWQrdxsUeQXmcg4uoQ==
+
+"@protobufjs/base64@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@protobufjs/base64/-/base64-1.1.2.tgz#4c85730e59b9a1f1f349047dbf24296034bb2735"
+  integrity sha512-AZkcAA5vnN/v4PDqKyMR5lx7hZttPDgClv83E//FMNhR2TMcLUhfRUBHCmSl0oi9zMgDDqRUJkSxO3wm85+XLg==
+
+"@protobufjs/codegen@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@protobufjs/codegen/-/codegen-2.0.4.tgz#7ef37f0d010fb028ad1ad59722e506d9262815cb"
+  integrity sha512-YyFaikqM5sH0ziFZCN3xDC7zeGaB/d0IUb9CATugHWbd1FRFwWwt4ld4OYMPWu5a3Xe01mGAULCdqhMlPl29Jg==
+
+"@protobufjs/eventemitter@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@protobufjs/eventemitter/-/eventemitter-1.1.0.tgz#355cbc98bafad5978f9ed095f397621f1d066b70"
+  integrity sha512-j9ednRT81vYJ9OfVuXG6ERSTdEL1xVsNgqpkxMsbIabzSo3goCjDIveeGv5d03om39ML71RdmrGNjG5SReBP/Q==
+
+"@protobufjs/fetch@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@protobufjs/fetch/-/fetch-1.1.0.tgz#ba99fb598614af65700c1619ff06d454b0d84c45"
+  integrity sha512-lljVXpqXebpsijW71PZaCYeIcE5on1w5DlQy5WH6GLbFryLUrBD4932W/E2BSpfRJWseIL4v/KPgBFxDOIdKpQ==
+  dependencies:
+    "@protobufjs/aspromise" "^1.1.1"
+    "@protobufjs/inquire" "^1.1.0"
+
+"@protobufjs/float@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@protobufjs/float/-/float-1.0.2.tgz#5e9e1abdcb73fc0a7cb8b291df78c8cbd97b87d1"
+  integrity sha512-Ddb+kVXlXst9d+R9PfTIxh1EdNkgoRe5tOX6t01f1lYWOvJnSPDBlG241QLzcyPdoNTsblLUdujGSE4RzrTZGQ==
+
+"@protobufjs/inquire@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@protobufjs/inquire/-/inquire-1.1.0.tgz#ff200e3e7cf2429e2dcafc1140828e8cc638f089"
+  integrity sha512-kdSefcPdruJiFMVSbn801t4vFK7KB/5gd2fYvrxhuJYg8ILrmn9SKSX2tZdV6V+ksulWqS7aXjBcRXl3wHoD9Q==
+
+"@protobufjs/path@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@protobufjs/path/-/path-1.1.2.tgz#6cc2b20c5c9ad6ad0dccfd21ca7673d8d7fbf68d"
+  integrity sha512-6JOcJ5Tm08dOHAbdR3GrvP+yUUfkjG5ePsHYczMFLq3ZmMkAD98cDgcT2iA1lJ9NVwFd4tH/iSSoe44YWkltEA==
+
+"@protobufjs/pool@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@protobufjs/pool/-/pool-1.1.0.tgz#09fd15f2d6d3abfa9b65bc366506d6ad7846ff54"
+  integrity sha512-0kELaGSIDBKvcgS4zkjz1PeddatrjYcmMWOlAuAPwAeccUrPHdUqo/J6LiymHHEiJT5NrF1UVwxY14f+fy4WQw==
+
+"@protobufjs/utf8@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@protobufjs/utf8/-/utf8-1.1.0.tgz#a777360b5b39a1a2e5106f8e858f2fd2d060c570"
+  integrity sha512-Vvn3zZrhQZkkBE8LSuW3em98c0FwgO4nxzv6OdSxPKJIEKY2bGbHn+mhGIPerzI4twdxaP8/0+06HBpwf345Lw==
+
 "@react-spring/animated@~9.7.2":
   version "9.7.2"
   resolved "https://registry.yarnpkg.com/@react-spring/animated/-/animated-9.7.2.tgz#0119db8075e91d693ec45c42575541e01b104a70"
@@ -758,12 +971,17 @@
   dependencies:
     "@types/node" "*"
 
+"@types/long@^4.0.1":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@types/long/-/long-4.0.2.tgz#b74129719fc8d11c01868010082d483b7545591a"
+  integrity sha512-MqTGEo5bj5t157U6fA/BiDynNkn0YknVdh48CMPkTSpFTVmvao5UQmm7uEF6xBEo7qIMAlY/JSleYaE6VOdpaA==
+
 "@types/minimist@^1.2.0":
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/@types/minimist/-/minimist-1.2.2.tgz#ee771e2ba4b3dc5b372935d549fd9617bf345b8c"
   integrity sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==
 
-"@types/node@*", "@types/node@>=10.0.0":
+"@types/node@*", "@types/node@>=10.0.0", "@types/node@>=13.7.0":
   version "20.3.1"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-20.3.1.tgz#e8a83f1aa8b649377bb1fb5d7bac5cb90e784dfe"
   integrity sha512-EhcH/wvidPy1WeML3TtYFGR83UzjxeWRen9V402T8aUGYsCHOmfoisV3ZSg03gAFIbLq8TnWOJ0f4cALtnSEUg==
@@ -1210,6 +1428,14 @@ axios@0.21.4:
   dependencies:
     follow-redirects "^1.14.0"
 
+axios@0.27.2:
+  version "0.27.2"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.27.2.tgz#207658cc8621606e586c85db4b41a750e756d972"
+  integrity sha512-t+yRIyySRTp/wua5xEr+z1q60QmLq8ABsS5O9Me1AsE5dfKqgnCFzwiCZZ/cGNd1lq4/7akDWMxdhVlucjmnOQ==
+  dependencies:
+    follow-redirects "^1.14.9"
+    form-data "^4.0.0"
+
 axios@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/axios/-/axios-1.4.0.tgz#38a7bf1224cd308de271146038b551d725f0be1f"
@@ -1360,6 +1586,11 @@ big-integer@^1.6.44:
   version "1.6.51"
   resolved "https://registry.yarnpkg.com/big-integer/-/big-integer-1.6.51.tgz#0df92a5d9880560d3ff2d5fd20245c889d130686"
   integrity sha512-GPEid2Y9QU1Exl1rpO9B2IPJGHPSupF5GnVIP0blYvNOMer2bTvSWs1jGOUg04hTmu67nmLsQ9TBo1puaotBHg==
+
+bignumber.js@9.0.1:
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/bignumber.js/-/bignumber.js-9.0.1.tgz#8d7ba124c882bfd8e43260c67475518d0689e4e5"
+  integrity sha512-IdZR9mh6ahOBv/hYGiXyVuyCetmGJhtYkqLBpTStdhEGjegpPlUawydyaF3pbIOFynJTpllEs+NP+CS9jKFLjA==
 
 binary-extensions@^2.0.0:
   version "2.2.0"
@@ -2175,6 +2406,11 @@ crypto-browserify@^3.0.0:
     public-encrypt "^4.0.0"
     randombytes "^2.0.0"
     randomfill "^1.0.3"
+
+crypto-js@4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/crypto-js/-/crypto-js-4.1.1.tgz#9e485bcf03521041bd85844786b83fb7619736cf"
+  integrity sha512-o2JlM7ydqd3Qk9CA0L4NL6mTzU2sdx96a+oOfPu8Mkl/PK51vSyoi8/rQ8NknZtk44vq15lmhAj9CIAGwgeWKw==
 
 crypto-random-string@^2.0.0:
   version "2.0.0"
@@ -3196,7 +3432,7 @@ flatted@^3.1.0:
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.2.7.tgz#609f39207cb614b89d0765b477cb2d437fbf9787"
   integrity sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==
 
-follow-redirects@^1.0.0, follow-redirects@^1.14.0, follow-redirects@^1.15.0:
+follow-redirects@^1.0.0, follow-redirects@^1.14.0, follow-redirects@^1.14.9, follow-redirects@^1.15.0:
   version "1.15.2"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.2.tgz#b460864144ba63f2681096f274c4e57026da2c13"
   integrity sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA==
@@ -4251,6 +4487,18 @@ jiti@^1.18.2:
   resolved "https://registry.yarnpkg.com/jiti/-/jiti-1.18.2.tgz#80c3ef3d486ebf2450d9335122b32d121f2a83cd"
   integrity sha512-QAdOptna2NYiSSpv0O/BwoHBSmz4YhpzJHyi+fnMRTXFjp7B8i/YG5Z8IfusxB1ufjcD2Sre1F3R+nX3fvy7gg==
 
+js-crypto-aes@1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/js-crypto-aes/-/js-crypto-aes-1.0.2.tgz#e6ee81f06808e6bda9ff506f23950204c0a9589a"
+  integrity sha512-pQrvnaZXIuLCeD98/NSEIE0EKEXGgaOwMtI+X1Vz5EwCw7tbxqYww5CT4GMEAUw+0pG5LJUbJU0p8Tjj9dOlUQ==
+  dependencies:
+    js-crypto-env "^1.0.2"
+
+js-crypto-env@^1.0.2:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/js-crypto-env/-/js-crypto-env-1.0.4.tgz#2be3b0987124bfaf094aadd3c9d91a56aedb0f2a"
+  integrity sha512-b7WdjaX4csatMPfZ/mQ94yb/XTKe3o6qt0jPBVbKmaiOH97e+FlmIANoFEMrhxQM1xxKfA2QYLjgqL/YtdMm9g==
+
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
@@ -4530,6 +4778,11 @@ log-update@^2.3.0:
     ansi-escapes "^3.0.0"
     cli-cursor "^2.0.0"
     wrap-ansi "^3.0.1"
+
+long@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/long/-/long-4.0.0.tgz#9a7b71cfb7d361a194ea555241c92f7468d5bf28"
+  integrity sha512-XsP+KhQif4bjX1kbuSiySJFNAehNxgLb6hPRGJ9QsUr8ajHkuXGdrHmFUTUUXhDwVX2R5bY4JNZEwbUiMhV+MA==
 
 loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.4.0:
   version "1.4.0"
@@ -5722,6 +5975,25 @@ prop-types@^15.6.2, prop-types@^15.7.2, prop-types@^15.8.1:
     loose-envify "^1.4.0"
     object-assign "^4.1.1"
     react-is "^16.13.1"
+
+protobufjs@6.11.3:
+  version "6.11.3"
+  resolved "https://registry.yarnpkg.com/protobufjs/-/protobufjs-6.11.3.tgz#637a527205a35caa4f3e2a9a4a13ddffe0e7af74"
+  integrity sha512-xL96WDdCZYdU7Slin569tFX712BxsxslWwAfAhCYjQKGTq7dAU91Lomy6nLLhh/dyGhk/YH4TwTSRxTzhuHyZg==
+  dependencies:
+    "@protobufjs/aspromise" "^1.1.2"
+    "@protobufjs/base64" "^1.1.2"
+    "@protobufjs/codegen" "^2.0.4"
+    "@protobufjs/eventemitter" "^1.1.0"
+    "@protobufjs/fetch" "^1.1.0"
+    "@protobufjs/float" "^1.0.2"
+    "@protobufjs/inquire" "^1.1.0"
+    "@protobufjs/path" "^1.1.2"
+    "@protobufjs/pool" "^1.1.0"
+    "@protobufjs/utf8" "^1.1.0"
+    "@types/long" "^4.0.1"
+    "@types/node" ">=13.7.0"
+    long "^4.0.0"
 
 proxy-from-env@^1.1.0:
   version "1.1.0"
@@ -7114,6 +7386,11 @@ typescript@5.0.4:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.0.4.tgz#b217fd20119bd61a94d4011274e0ab369058da3b"
   integrity sha512-cW9T5W9xY37cc+jfEnaUvX91foxtHkza3Nw3wkoF4sSlKn0MONdkdEndig/qPBWXNkmplh3NzayQzCiHM4/hqw==
 
+ua-parser-js@1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-1.0.2.tgz#e2976c34dbfb30b15d2c300b2a53eac87c57a775"
+  integrity sha512-00y/AXhx0/SsnI51fTc0rLRmafiGOM4/O+ny10Ps7f+j/b8p/ZY11ytMgznXkOVo4GQ+KwQG5UQLkLGirsACRg==
+
 ua-parser-js@^1.0.33:
   version "1.0.35"
   resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-1.0.35.tgz#c4ef44343bc3db0a3cbefdf21822f1b1fc1ab011"
@@ -7380,6 +7657,11 @@ workerpool@6.2.1:
   version "6.2.1"
   resolved "https://registry.yarnpkg.com/workerpool/-/workerpool-6.2.1.tgz#46fc150c17d826b86a008e5a4508656777e9c343"
   integrity sha512-ILEIE97kDZvF9Wb9f6h5aXK4swSlKGUcOEGiIYb2OOu/IrDU9iwj0fD//SsA6E5ibwJxpEvhullJY4Sl4GcpAw==
+
+wow.js@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/wow.js/-/wow.js-1.2.2.tgz#247519b0a342319b1a63e22aea9acec1a9ea57f5"
+  integrity sha512-YTW9eiZimHCJDWofsiz2507txaPteUiQD461I/D8533AiRAn3+Y68/1LDuQ3OTgPjagGZLPYKrpoSgjzeQrO6A==
 
 wrap-ansi@^3.0.1:
   version "3.0.1"
