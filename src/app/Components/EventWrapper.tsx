@@ -25,7 +25,6 @@ function EventWrapper() {
     const agcContext = useContext(AGCContext)
     //event states
     const [events, setEvents] = useState<Array<Events>>([])
-    const [activeEvents, setActiveEvents] = useState<Array<Events>>([])
     const [loading, setLoading] = useState(false)
 
 
@@ -39,11 +38,6 @@ function EventWrapper() {
         setLoading(true);
         setEvents(await agcContext.executeQuery(eventsModel));
         console.log(await events);
-
-
-        setActiveEvents(await events.filter((event: Events) => { event.name == "name1" }))
-        console.log(await activeEvents);
-
         setLoading(false);
     }
 
