@@ -11,6 +11,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 import { AGCContext } from '../../app/Context/AGCProvider';
 import { events as eventsModel } from "../../app/model/events.js";
+import Breadcrumb from '@/app/Components/breadcrumb';
 
 
 
@@ -60,18 +61,22 @@ const EventDetailPage: React.FC = () => {
 
      return (
           loading ? <div>Loading</div> :
-          
-          <div className='container mx-auto'>
-               <div className='max-w-6xl mx-8 '>
-                    <div className='flex text-2xl text-left max-w-6xl mx-auto p-5 '>
+         
+          <div className=' '>
+                <Breadcrumb title={eventData[0]?.name} />
+                
+
+                
+               <div className=' mx-auto   '>
+                    <div className='flex text-2xl text-left mx-auto p-5 '>
                          <div className=' flex-1'>
                               <h1 className="text-3xl font-bold mb-3">{eventData[0]?.name}</h1>
                          </div>
                     </div>
-                    <div className={`shadow-lg grid grid-cols-1 lg:grid-cols-2 lg:flex ${themeData.theme === 'light' ? 'bg-gray-100 text-black' : 'bg-gray-800 text-white'}`}>
+                    <div className={`shadow-lg justify-center grid grid-cols-1 lg:grid-cols-2 lg:flex ${themeData.theme === 'light' ? 'bg-gray-100 text-black' : 'bg-gray-800 text-white'}`}>
                          <div className={`w-auto ${themeData.theme === 'light' ? 'bg-white text-black' : 'bg-black text-white'}`}>
                               <div className="px-5 ">
-                                   <img alt="img" className='m-5 shadow-md' src='https://www.meetup.com/_next/image/?url=https%3A%2F%2Fsecure-content.meetupstatic.com%2Fimages%2Fclassic-events%2F508957542%2F676x380.webp&w=3840&q=75'></img>
+                                   <img alt="img" className='mt-3 ' src='https://www.meetup.com/_next/image/?url=https%3A%2F%2Fsecure-content.meetupstatic.com%2Fimages%2Fclassic-events%2F508957542%2F676x380.webp&w=3840&q=75'></img>
                                    <p className="text-left m-5 ">{eventData[0]?.description}
                                    </p>
                               </div>
@@ -123,6 +128,8 @@ const EventDetailPage: React.FC = () => {
                          </div>
                     </div>
                </div>
+               
+               
           </div>
          
      )

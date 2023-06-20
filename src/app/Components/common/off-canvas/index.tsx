@@ -64,7 +64,7 @@ const menu_data: MenuData[] = [
 const sidebar_contents: SidebarContents = {
           title: (
                     <>
-                              Lorem ipsum <br /> lorem ipsum.
+                            
                     </>
           ),
           inst_imgs: [
@@ -94,7 +94,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen }) => {
                           <div className="tpoffcanvas__logo">
                             <Link href="/">
                               
-                                <img src="/assets/img/logo/logo-white.png" alt="" />
+                                <img src="/assets/img/logo/logo-white.png" alt=""  />
                              
                             </Link>
                           </div>
@@ -110,9 +110,10 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen }) => {
                             <div className="mm-menu">
                               <ul>
                                 {menu_data.map((menu, i) => (
-                                  <li
+                                  <li 
                                     key={i}
                                     className={
+                                      
                                       !menu.has_dropdown
                                         ? ''
                                         : navTitle === menu.title

@@ -10,13 +10,13 @@ const MobileMenu = ({ logo, bg, transparent = true }: { logo: string, bg: string
   const [sidebarOpen, setSidebarOpen] = useState(false);
   return (
     <React.Fragment>
-      <div id="header-sticky-mobile" className={`tp-md-menu ${transparent ? 'header-transparent' : ''} d-lg-none pt-40 pb-40 
+      <div id="header-sticky-mobile" className={`tp-md-menu ${transparent ? 'header-transparent' : ''} d-lg-none  
     ${bg ? bg : ''} ${headerSticky ? 'header-sticky' : ''}`}>
         <div className="container-fluid">
           <div className="row align-items-center">
             <div className="col-6">
               <div className="tp-logo">
-                <a href="#"><img src={`/assets/img/logo/${logo}`} alt="" /></a>
+                <a href="#"><img src="/assets/img/logo/logo-blue.png" alt="" /></a>
               </div>
             </div>
             <div className="col-6">
