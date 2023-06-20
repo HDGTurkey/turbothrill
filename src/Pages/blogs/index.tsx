@@ -6,6 +6,7 @@ import BlogContentListOneCard from '../../app/Components/Blogs/BlogOneCard';
 import BlogContentListTwoCard from '../../app/Components/Blogs/BlogTwoCard';
 import BlogWrapper from '../../app/Components/BlogWrapper';
 import PageTitle from '../../app/Components/PageTitle';
+import Breadcrumb from '@/app/Components/breadcrumb';
 
 
 export const BlogsList = () => {
@@ -16,7 +17,8 @@ export const BlogsList = () => {
   return (
     <div className=''>
 
-      <PageTitle title='Blogs List' img='/medium.svg' />
+      
+      <Breadcrumb title={'Medium Yazılarımız'} />
       <div>
 
 
