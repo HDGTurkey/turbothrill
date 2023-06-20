@@ -12,9 +12,9 @@ const footer_contents = {
   copy_right_text: <>© {new Date().getFullYear()} HSD </>,
   social_links: ['fab fa-linkedin-in', 'fab fa-instagram', 'fab fa-youtube'],
   social_links: [
-    {icon: 'fab fa-linkedin-in',link: 'https://www.linkedin.com/' },
-    {icon: 'fab fa-instagram',link: 'https://www.instagram.com/' },
-    {icon: 'fab fa-youtube',link: 'https://www.youtube.com/' },
+    {icon: 'fab fa-linkedin-in',link: 'https://www.linkedin.com/company/hsdturkiye/' },
+    {icon: 'fab fa-instagram',link: 'https://www.instagram.com/hsdturkiye/' },
+    {icon: 'fab fa-youtube',link: 'https://www.youtube.com/@HuaweiDeveloperGroupsTurkiye' },
   ],
 }
 const { shapes, btn_text, copy_right_text, social_links, text, title } = footer_contents;

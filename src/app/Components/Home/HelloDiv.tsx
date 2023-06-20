@@ -6,10 +6,10 @@ const hero_contents = {
     btn_text: 'Visit Case Studies',
     btn_text_2: 'About Collax',
     social_links: [
-      { id: 1, icon: 'fab fa-instagram social-icon-1', title: 'Instagram',link: 'http://facebook.com' },
-      { id: 3, icon: 'fab fa-youtube social-icon-3', title: 'Youtube',link: 'https://www.youtube.com/' },
-      { id: 2, icon: 'fab fa-twitter social-icon-2', title: 'Twitter',link: 'http://twitter.com' },
-      { id: 2, icon: 'fab fa-medium social-icon-2', title: 'Medium',link: 'http://twitter.com' },
+      { id: 1, icon: 'fab fa-instagram social-icon-1', title: 'Instagram',link: 'https://www.instagram.com/hsdturkiye/' },
+      { id: 3, icon: 'fab fa-youtube social-icon-3', title: 'Youtube',link: 'https://www.youtube.com/@HuaweiDeveloperGroupsTurkiye '},
+      { id: 2, icon: 'fab fa-linkedin social-icon-2', title: 'Linkedin',link: 'https://www.linkedin.com/company/hsdturkiye/' },
+      { id: 2, icon: 'fab fa-medium social-icon-2', title: 'Medium',link: 'https://medium.com/huawei-developers-tr' },
     ],
     hero_img: '/assets/img/hero/hero-4.png',
   }
