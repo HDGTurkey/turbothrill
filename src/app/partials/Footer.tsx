@@ -35,12 +35,12 @@ const Footer: React.FC = () => {
                 <Link href="/contact">
                   
                 </Link>
-                <p className="right-receved">{copy_right_text}</p>
               </div>
             </div>
           </div>
           <div className="tp-copyright-bottom wow tpfadeUp" data-wow-duration=".5s" data-wow-delay=".7s">
             <div className="row align-items-center">
+
               <div className="col-xl-4 col-lg-4 col-md-12 col-12">
                 <div className="tp-copyright-logo-box text-md-center text-center text-lg-start mb-30">
                   <div className="tp-copyright-logo">
@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
                 </div>
               </div>
               <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6">
-                
+              <p className="right-receved">{copy_right_text}</p>
               </div>
               <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6">
                 <div className="tp-copyright-social tp-copyright-social-two text-center text-lg-end mb-30">
@@ -60,6 +60,7 @@ const Footer: React.FC = () => {
                   ))}
                 </div>
               </div>
+
             </div>
           </div>
         </div>
