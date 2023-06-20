@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useState, useEffect, useContext } from 'react'
 // import BlogClassicData from '../data/blog/BlogClassic.json';
 import BlogThreeCard from '../Components/Blogs/BlogThreeCard';
@@ -47,7 +48,7 @@ export const BlogWrapper = () => {
   useEffect(() => {
     setBlogsLength(blogs.length)
     console.log(blogsLength);
-  }, [blogs])
+  }, [blogs, blogsLength])
 
   useEffect(() => {
     getBlogs();
@@ -65,7 +66,7 @@ export const BlogWrapper = () => {
     } else if ((blogsLength % blogsPerPage) != 0) {
       setTotalPage((Math.floor(blogsLength / blogsPerPage)) + 1)
     }
-  }, [blogsLength])
+  }, [blogsLength, blogsPerPage, getBlogs, location.query.page])
 
   //backward "currentPage set" function
   const _setCurrentPage = (currentPage: number) => {

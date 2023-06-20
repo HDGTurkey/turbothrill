@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useContext, useState, useEffect } from 'react'
 import EventClassic from '../../app/data/event/EventClassic.json'
 import GuestListClassic from '../../app/data/event/GuestListClassic.json';
@@ -18,45 +19,44 @@ import Breadcrumb from '@/app/Components/breadcrumb';
 
 
 const EventDetailPage: React.FC = () => {
-     const themeData = useSite();
-
-     const agcContext = useContext(AGCContext)
-     const [loading, setLoading] = useState(false);
-     // const eventData = agcContext.executeQuery(eventsModel);
-     interface Events {
-          name: string;
-          slug_name: string;
-          description: string;
-          date: Date;
-          state: string;
-          locName: string;
-          locAddress: string;
-      }
-     const [eventData, setEventData] = useState<Array<Events>>([])
-
-     // slugname set 
-     const router = useRouter();
-     const [slugName] = useState(location.pathname.split("/")[location.pathname.split("/").length  - 1])
-     //const {slug} = router.query;
-     //const [slugName , setSlugName] = useState(router.query.slug?.toString().toLowerCase());
-     // const data = eventData.filter((event: Event) => event.slug_name === lowercaseTitle);
-
-
-     async function getEvent() {
-          setLoading(true)
-          const data = await agcContext.executeQueryWhere(eventsModel , 'slug_name' , slugName)
-          setEventData(data); 
-     }
-
-     useEffect(() => {
-          const {slug} = router.query;
-          getEvent();
-     }, [])
-
-     useEffect(()=>{
-          setLoading(false)
-          console.log(eventData);
-     },[eventData])
+     
+          const themeData = useSite();
+        
+          const agcContext = useContext(AGCContext);
+          const [loading, setLoading] = useState(false);
+          const [eventData, setEventData] = useState<Events[]>([]);
+        
+          // slugname set
+          const router = useRouter();
+        
+          interface Events {
+            name: string;
+            slug_name: string;
+            description: string;
+            date: Date;
+            state: string;
+            locName: string;
+            locAddress: string;
+          }
+        
+          async function getEvent(slugName: string) {
+            setLoading(true);
+            const data = await agcContext.executeQueryWhere(eventsModel, 'slug_name', slugName);
+            setEventData(data);
+          }
+        
+          useEffect(() => {
+            const { slug } = router.query;
+            if (slug) {
+              const slugName = slug.toString().toLowerCase();
+              getEvent(slugName);
+            }
+          }, [getEvent, router.query]);
+        
+          useEffect(() => {
+            setLoading(false);
+            console.log(eventData);
+          }, [eventData]);
 
 
      return (
