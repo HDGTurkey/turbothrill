@@ -54,10 +54,10 @@ const ProjectArea = () => {
               </div>
             </div>
           </div>
-          <div className="row grid">
+          <div className="row flex">
             {items.map((item) => {
               const { id, img, title, big, subtitle } = item;
-              return <div key={id} className={`${big ? 'col-xl-8 col-lg-8 col-md-12' : 'col-xl-4 col-lg-4 col-md-6'}`}>
+              return <div key={id} className={`${big ? 'col-xl-4 col-lg-4 col-md-6' : 'col-xl-4 col-lg-4 col-md-6'}`}>
                 <div className="tp-project-item-four mb-30">
                   <div className="tp-project-item-four__img fix">
                     <a href="#"><img className="w-100" src={img} alt="" /></a>
