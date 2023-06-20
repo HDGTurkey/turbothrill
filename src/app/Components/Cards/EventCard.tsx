@@ -1,10 +1,17 @@
 import Link from "next/link";
-import EventClassic from "../../data/event/EventClassic.json";
+// import EventClassic from "../../data/event/EventClassic.json";
 
-interface Props {
-    events: any;
+interface Events {
+    id: string;
+    slug_name: string;
+    state: string;
+    locName: string;
+    locAddress: string;
+    name: string;
+    date: string;
+    description: Text;
 }
-export const EventCard = ({ events }: Props) => {
+export const EventCard = ( events : Events) => {
     return (
         <>
             <div className='card shadow-xl  min-w-[200px] max-w-[400px] rounded border border-gray-100'>
@@ -26,7 +33,7 @@ export const EventCard = ({ events }: Props) => {
                     <img src={`https://picsum.photos/400/200`} width="250px" alt='i' />
                 </div>
                 <div className='p-4'>
-                    <Link href={`/event-detail/${EventClassic[0].slug_name}`}>
+                    <Link href={`/event-detail/${events.slug_name}`}>
                         <h3 className='text-sm p-3 border border-gray-100 hover:bg-gray-400 rounded transition-all'> SEE MORE ...</h3>
                     </Link>
                 </div>

@@ -9,8 +9,14 @@ import { events as eventsModel } from "../model/events.js";
 
 
 interface Events {
-    name: string;
+    id: string;
     slug_name: string;
+    state: string;
+    locName: string;
+    locAddress: string;
+    name: string;
+    date: string;
+    description: Text;
 }
 function EventWrapper() {
     const data = useSite()
@@ -31,7 +37,18 @@ function EventWrapper() {
     async function getEvents() {
         setLoading(true);
         setEvents(await agcContext.executeQuery(eventsModel));
+        console.log(await events);
         setLoading(false);
+    }
+
+    function isEventActiveAsDate(currentDate: Date, eventDate: Date) {
+        let currentDateAsDate = new Date(currentDate)
+        let eventDateAsDate = new Date(eventDate)
+        if (currentDateAsDate < eventDateAsDate) {
+            return true
+        } else {
+            return false
+        }
     }
 
     useEffect(() => {
@@ -58,6 +75,9 @@ function EventWrapper() {
         } else if ((eventsLength % eventsPerPage) != 0) {
             setTotalPage((Math.floor(eventsLength / eventsPerPage)) + 1)
         }
+        return () => {
+
+        }
     }, [eventsLength])
 
     //backward currentPage set fonksiyonu
@@ -78,9 +98,26 @@ function EventWrapper() {
                         <div className='py-2'>
                             Upcoming Events
                         </div>
-                        <div className='flex'>
-                            <EventCard events={events} />
+
+                        {/* max-w-7xl mx-auto flex space-x-4 */}
+                        <div className="max-w-7xl mx-auto grid gap-3 grid-cols-1 lg:grid-cols-4">
+                            {events.map((event, key) => {
+                                if (isEventActiveAsDate(new Date(), new Date(event.date))) {
+                                    return (
+                                        <div key={key} className='flex'>
+                                            <EventCard events={event} />
+                                        </div>
+                                    );
+                                }
+                            }
+                            )}
                         </div>
+
+                        {/* <div  className='flex'>
+                            <EventCard events={event} />
+                        </div> */}
+
+
                     </div>
                 </div>
             </div>
@@ -115,7 +152,6 @@ function EventWrapper() {
                                 if (totalPages >= 1 && key >= ((currentPage - 1) * eventsPerPage) && key < (currentPage * eventsPerPage)) {
                                     return (
                                         <tr key={key} className={`border-b-2 p-2 transition-colors rounded ${data.theme === 'light' ? 'hover:bg-gray-200' : 'hover:bg-gray-800'}`}>
-
                                             <td><img className='p-3' src={require('../assets/Images/emplo.jpg').default.src} width="100px" height="" alt="" /></td>
                                             <td>{event.name.length > 15 ? `${event.name.substring(0, 20)}...` : event.name}</td>
                                             <td>2022-12-11</td>
