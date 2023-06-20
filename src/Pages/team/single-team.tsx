@@ -28,8 +28,8 @@ interface SingleTeamProps {
         <div className="tpteam__shape-2">
           <img src="assets/img/team/team-shape-5.2.png" alt="" />
         </div>
-        <div className="tpteam__thumb">
-          <img className="w-100" src={img} alt="" />
+        <div className="tpteam__thumb w-full h-[300px] overflow-hidden">
+          <img className="w-full h-auto object-cover" src={img} alt="" />
         </div>
         <div className="tpteam__content">
           <h4 className="tp-team-sm-title">
