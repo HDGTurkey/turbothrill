@@ -1,5 +1,5 @@
 import { useState, useEffect, useContext } from 'react'
-import BlogClassicData from '../data/blog/BlogClassic.json';
+// import BlogClassicData from '../data/blog/BlogClassic.json';
 import BlogThreeCard from '../Components/Blogs/BlogThreeCard';
 import { Pagination } from '../utils/Pagination';
 import { AGCContext } from '../Context/AGCProvider';

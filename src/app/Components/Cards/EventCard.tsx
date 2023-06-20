@@ -1,10 +1,17 @@
 import Link from "next/link";
 import EventClassic from "../../data/event/EventClassic.json";
 
-interface Props {
-    events: any;
+interface Events {
+    id: string;
+    slug_name: string;
+    state: string;
+    locName: string;
+    locAddress: string;
+    name: string;
+    date: string;
+    description: Text;
 }
-export const EventCard = ({ events }: Props) => {
+export const EventCard = (events: Events) => {
     return (
         <>
             <div className='card shadow-xl  min-w-[200px] max-w-[400px] rounded border border-gray-100'>

@@ -9,8 +9,14 @@ import { events as eventsModel } from "../model/events.js";
 
 
 interface Events {
-    name: string;
+    id: string;
     slug_name: string;
+    state: string;
+    locName: string;
+    locAddress: string;
+    name: string;
+    date: string;
+    description: Text;
 }
 function EventWrapper() {
     const data = useSite()
@@ -32,6 +38,16 @@ function EventWrapper() {
         setLoading(true);
         setEvents(await agcContext.executeQuery(eventsModel));
         setLoading(false);
+    }
+
+    function isEventActiveAsDate(currentDate: Date, eventDate: Date) {
+        let currentDateAsDate = new Date(currentDate)
+        let eventDateAsDate = new Date(eventDate)
+        if (currentDateAsDate < eventDateAsDate) {
+            return true
+        } else {
+            return false
+        }
     }
 
     useEffect(() => {
@@ -81,9 +97,23 @@ function EventWrapper() {
                             </h2>
 
                         </div>
-                        <div className='flex'>
-                            <EventCard events={events} />
+
+                        <div className="max-w-7xl mx-auto grid gap-3 grid-cols-1 lg:grid-cols-4">
+                            {events.map((event, key) => {
+                                if (isEventActiveAsDate(new Date(), new Date(event.date))) {
+                                    return (
+                                        <div key={key} className='flex'>
+                                            <EventCard events={event} />
+                                        </div>
+                                    );
+                                }
+                            }
+                            )}
                         </div>
+
+                        {/* <div className='flex'>
+                            <EventCard events={events} />
+                        </div> */}
                     </div>
                 </div>
             </div>
