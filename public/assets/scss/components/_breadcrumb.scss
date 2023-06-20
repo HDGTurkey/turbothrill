@@ -20,11 +20,20 @@
     }
 }
 .ac-about-shape-img {
-	position: absolute;
-	bottom: -17px;
-	left: 34px;
+    position: absolute;
+    bottom: -17px;
+    left: 34px;
     z-index: 999;
-}
+  
+    @media (max-width: 768px) { // Tablet boyutu için
+      display: none;
+    }
+  
+    @media (max-width: 480px) { // Mobil boyutu için
+      display: none;
+    }
+  }
+  
 .ac-testimonial-space{
     padding-top: 115px;
     padding-bottom: 130px;
