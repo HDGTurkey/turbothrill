@@ -11,7 +11,8 @@ const Header = () => {
   return (
     <React.Fragment>
       <header className="d-none d-lg-block">
-        <div id="header-sticky">
+      <div id="header-sticky" className={`tp-header-area header-transparent pl-165 pr-165 pt-15 
+        ${headerSticky ? 'header-sticky' : ''}`}>
           <div className="container-fluid">
             <div className="row align-items-center">
               <div className="col-xl-3 col-lg-3">
