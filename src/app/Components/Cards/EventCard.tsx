@@ -34,7 +34,7 @@ export const EventCard = (events: Events) => {
                 </div>
                 <div className='p-4'>
                     <Link href={`/event-detail/${EventClassic[0].slug_name}`}>
-                        <h3 className=' text-md text-white font-medium p-3  bg-blue-800 hover:bg-gray-400 rounded-full text-center transition-all'> SEE MORE ...</h3>
+                        <h3 className=' text-md  text-white font-medium p-2  bg-blue-800 hover:bg-gray-400 rounded-full text-center transition-all'> Daha Fazlası</h3>
                     </Link>
                 </div>
             </div>

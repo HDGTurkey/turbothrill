@@ -38,11 +38,11 @@ const BlogArea = () => {
     <>
     <Breadcrumb title={'Yazılarımız'} />
       <div className="postbox__area w-full pt-120 pb-120">
-        <div className="mx-32 ">
+        <div className="md:mx-32">
           <div className="row">
             <div className="">
             
-              <div className="postbox__wrapper  grid grid-cols-3  ">
+              <div className="postbox__wrapper  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3    ">
 
                 {finalData.map((single, key) => (
                   <div key={key} className="flex bg-gray-100  shadow-sm p-3 m-3 rounded-md" data-aos="fade-up">

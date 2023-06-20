@@ -26,9 +26,9 @@ const FeatureItem: React.FC<FeatureItemProps> = ({ title, subtitle, color }) => 
 }
 
 const contents = {
-          title: 'Creating world class experiences',
-          sm_desc_1: "Collax builds digital products that let people do things differently. Share your challenge with our team, and we’ll work with you to deliver a revolutionary digital product. Our clients have changed the way people do banking, listen to music.",
-          sm_desc_2: "learn languages, and rent bikes. Their products have been featured in TechCrunch, Business Insider, and Product Hunt"
+          title: 'Elçi Olma Süreci',
+          sm_desc_1: "Huawei Student Ambassador program is a global program that aims to form a group of student leaders who are enthusiastic about technology and innovation and are willing to share their experiences with their peers. The program is designed to help students improve their professional and personal skills, learn about cutting-edge technology, and build a better community.",
+          sm_desc_2: ""
 }
 const { title, sm_desc_1, sm_desc_2 } = contents;
 
@@ -52,14 +52,14 @@ const FeatureArea = () => {
                                                   </div>
                                                   <div className="ac-feature-border-top">
                                                             <div className="row">
-                                                                      <FeatureItem title={'Project kikoff'}
-                                                                                subtitle={'At collax we specialize designing building, shipping...'} />
-                                                                      <FeatureItem title={'PIdeation'} color={'2'}
-                                                                                subtitle={'At collax we specialize designing building, shipping...'} />
-                                                                      <FeatureItem title={'Design Process'} color={'3'}
-                                                                                subtitle={'At collax we specialize designing building, shipping...'} />
-                                                                      <FeatureItem title={'Development'} color={'4'}
-                                                                                subtitle={'At collax we specialize designing building, shipping...'} />
+                                                                      <FeatureItem title={'Etkinlikler'}
+                                                                                subtitle={'Lorem Ipsum'} />
+                                                                      <FeatureItem title={'Yarışmalar'} color={'2'}
+                                                                                subtitle={'Lorem Ipsum'} />
+                                                                      <FeatureItem title={'Toplantılar'} color={'3'}
+                                                                                subtitle={'Lorem Ipsum'} />
+                                                                      <FeatureItem title={'Öğrenci Topluluğu'} color={'4'}
+                                                                                subtitle={'Lorem Ipsum'} />
                                                             </div>
                                                   </div>
                                         </div>
