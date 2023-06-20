@@ -11,8 +11,7 @@ const Header = () => {
   return (
     <React.Fragment>
       <header className="d-none d-lg-block">
-        <div id="header-sticky" className={`tp-header-area header-transparent pl-165 pr-165 pt-35 
-        ${headerSticky ? 'header-sticky' : ''}`}>
+        <div id="header-sticky">
           <div className="container-fluid">
             <div className="row align-items-center">
               <div className="col-xl-3 col-lg-3">
@@ -32,7 +31,7 @@ const Header = () => {
                 </div>
               </div>
               <div className="col-xl-2 col-lg-2">
-                <div className="tp-menu-bar text-end" onClick={() => setSidebarOpen(true)}>
+                <div className="tp-menu-bar text-end block md:hidden" onClick={() => setSidebarOpen(true)}>
                   <button><i className="fal fa-bars"></i></button>
                 </div>
               </div>
@@ -42,7 +41,7 @@ const Header = () => {
       </header>
 
       {/* <!-- mobile-menu-area --> */}
-      <MobileMenu logo={"logo.png"} bg={''} />
+      <MobileMenu logo={"logo-blue.png"} bg={''} />
       {/* <!-- mobile-menu-area-end --> */}
 
       {/* off canvas start */}
