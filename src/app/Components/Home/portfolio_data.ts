@@ -21,7 +21,7 @@ const portfolio_data: {
 
     {
       id: 1,
-      img: '/assets/img/project/brand-1.jpg',
+      img: '/assets/img/project/etkinlik.jpg',
       title: 'Huawei Ofis Gezisi',
       subtitle: 'Ar-Ge Merkezi',
       category: 'Website',
@@ -31,7 +31,7 @@ const portfolio_data: {
     },
     {
       id: 2,
-      img: '/assets/img/project/brand-1.jpg',
+      img: '/assets/img/project/etkinlik-2.jpeg',
       title: 'Huawei Ofis Gezisi',
       subtitle: 'Ar-Ge Merkezi',
       category: 'Website',
@@ -41,7 +41,7 @@ const portfolio_data: {
     },
     {
       id: 3,
-      img: '/assets/img/project/brand-1.jpg',
+      img: '/assets/img/project/etkinlik-3.jpg',
       title: 'Huawei Ofis Gezisi',
       subtitle: 'Ar-Ge Merkezi',
       category: 'Website',
@@ -51,7 +51,7 @@ const portfolio_data: {
     },
     {
       id: 4,
-      img: '/assets/img/project/brand-1.jpg',
+      img: '/assets/img/project/etkinlik-4.jpeg',
       title: 'Huawei Ofis Gezisi',
       subtitle: 'Ar-Ge Merkezi',
       category: 'Website',
@@ -61,7 +61,7 @@ const portfolio_data: {
     },
     {
       id: 5,
-      img: '/assets/img/project/brand-1.jpg',
+      img: '/assets/img/project/etkinlik-5.jpeg',
       title: 'Huawei Ofis Gezisi',
       subtitle: 'Ar-Ge Merkezi',
       category: 'Website',
@@ -73,7 +73,7 @@ const portfolio_data: {
 
     {
       id: 6,
-      img: '/assets/img/project/brand-1.jpg',
+      img: '/assets/img/project/etkinlik-6.jpg',
       title: 'Huawei Ofis Gezisi',
       subtitle: 'Ar-Ge Merkezi',
       category: 'Website',
