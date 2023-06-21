@@ -14,9 +14,9 @@ const FeatureItem: React.FC<FeatureItemProps> = ({ title, subtitle, color }) => 
                                         <div className={`ac-circle ${color ? `ac-cirle-color-${color}` : ''}`}></div>
                                         <div className="acfeature__item">
                                                   <h3 className="ac-feature-sm-title">
-                                                            <Link href="/about-me">
+                                                            <div className='mx-2'>
                                                                       {title}
-                                                            </Link>
+                                                            </div>
                                                   </h3>
                                                   <p>{subtitle}</p>
                                         </div>
@@ -27,7 +27,7 @@ const FeatureItem: React.FC<FeatureItemProps> = ({ title, subtitle, color }) => 
 
 const contents = {
           title: 'Elçi Olma Süreci',
-          sm_desc_1: "Huawei Student Ambassador program is a global program that aims to form a group of student leaders who are enthusiastic about technology and innovation and are willing to share their experiences with their peers. The program is designed to help students improve their professional and personal skills, learn about cutting-edge technology, and build a better community.",
+          sm_desc_1: "Huawei Öğrenci Elçisi programı, teknoloji ve yenilik konusunda hevesli ve deneyimlerini akranlarıyla paylaşmaya istekli bir grup öğrenci lideri oluşturmayı amaçlayan küresel bir programdır. Program, öğrencilerin mesleki ve kişisel becerilerini geliştirmelerine, en son teknolojiler hakkında bilgi edinmelerine ve daha iyi bir topluluk oluşturmalarına yardımcı olmak için tasarlanmıştır.",
           sm_desc_2: ""
 }
 const { title, sm_desc_1, sm_desc_2 } = contents;
@@ -51,15 +51,15 @@ const FeatureArea = () => {
                                                             </div>
                                                   </div>
                                                   <div className="ac-feature-border-top">
-                                                            <div className="row">
-                                                                      <FeatureItem title={'Etkinlikler'}
-                                                                                subtitle={'Lorem Ipsum'} />
-                                                                      <FeatureItem title={'Yarışmalar'}
-                                                                                subtitle={'Lorem Ipsum'} />
-                                                                      <FeatureItem title={'Toplantılar'} 
-                                                                                subtitle={'Lorem Ipsum'} />
-                                                                      <FeatureItem title={'Öğrenci Topluluğu'} 
-                                                                                subtitle={'Lorem Ipsum'} />
+                                                            <div className="row ">
+                                                                      <FeatureItem title={'Başvuru'} 
+                                                                                subtitle={''}  />
+                                                                      <FeatureItem title={'Ulusal Proje Yöneticileri İle Mülakat'}
+                                                                                subtitle={''} />
+                                                                      <FeatureItem  title={'Küresel Proje Yöneticileri İle Mülakat'} 
+                                                                                subtitle={''} />
+                                                                      <FeatureItem title={'Sertifika'} 
+                                                                                subtitle={''} />
                                                             </div>
                                                   </div>
                                         </div>

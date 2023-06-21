@@ -8,8 +8,8 @@ const services_data = [
     duration:'.5s',
     delay:'.8s',
     img:'/assets/img/service/service-1.png',
-    title:'Talks',
-    text_1:'Get updated with the latest news and announcements',
+    title:'Bağlantı Kurun',
+    text_1:'Benzer Bir Teknoloji Tutkusuna Sahip Öğrenci Geliştiricilerle Tanışın, Fikir Alışverişinde Bulunun',
     text_2:'',
     home:true,
     service_p_2:true,
@@ -19,8 +19,8 @@ const services_data = [
     duration:'.5s',
     delay:'.8s',
     img:'/assets/img/service/service-7.png',
-    title:'Codelabs',
-    text_1:'Start working together by contacting our university ambassadors',
+    title:'Öğrenin',
+    text_1:'Topluluğumuzun Sunduğu Eğlenceli ve Bilgilendirici Etkinliklerle Kendinizi Geliştirin.',
     home:true,
     service_p_2:true,
   },
@@ -29,8 +29,8 @@ const services_data = [
     duration:'.5s',
     delay:'.8s',
     img:'/assets/img/service/service-3.png',
-    title:'Campus Roadshows',
-    text_1:'Share knowledge in different Companies, colleges and universities',
+    title:'Gelişin',
+    text_1:'Topluluk İçindeki Deneyim Paylaşımları ile Yeni Perspektifler Kazanın.',
     home:true,
     service_p_2:true,
   },
@@ -40,8 +40,8 @@ const services_data = [
 
 const services_contents = {
   shape_img: '/assets/img/service/service-shape.png',
-  subtitle: 'What We Do?',
-  title: 'Huawei Student Developers ',
+  subtitle: '',
+  title: 'Sizleri Neler Bekliyor?',
   
 }
 

@@ -16,7 +16,7 @@ const AboutArea = () => {
     <>
       <div className="ac-about-content-area pt-130">
         <div className="container">
-          <div className="ac-border-bottom ac-bottom-space">
+          <div className=" ">
             <div className="row">
               <div className="col-xl-6 col-lg-6 wow tpfadeLeft" data-wow-duration=".3s" data-wow-delay=".5s">
                 <div className="ac-about-left">
