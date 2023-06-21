@@ -16,7 +16,7 @@ interface Events {
     locName: string;
     locAddress: string;
     name: string;
-    date: string;
+    date: Date;
     description: Text;
 }
 function EventWrapper() {
@@ -126,28 +126,24 @@ function EventWrapper() {
 
             </div>
             <div className='flex mt-10 justify-between pt-8 max-w-7xl mx-auto text-left'>
-                {loading ? <MyLoader/> :
+                {loading ? <MyLoader /> :
                     <table className="table-auto w-full shadow-2xl " >
                         <thead >
                             <tr >
                                 <th className='p-5 ' >Image</th>
                                 <th className='w-[50%]'>Event Name</th>
                                 <th>Date</th>
-                                
+
                             </tr>
                         </thead>
                         <tbody className=''>
                             {events.map((event, key) => {
                                 if (
-                                    totalPages >= 1 &&
-                                    key >= (currentPage - 1) * eventsPerPage &&
-                                    key < currentPage * eventsPerPage
-                                ) {
+                                    totalPages >= 1 && key >= (currentPage - 1) * eventsPerPage && key < currentPage * eventsPerPage) {
                                     const handleClick = () => {
                                         window.location.href = `/event-detail/${event.slug_name}`;
                                     };
                                     return (
-
                                         <tr
                                             key={key}
                                             className={`border-b-2 p-2 transition-colors rounded ${data.theme === 'light' ? 'hover:bg-gray-200' : 'hover:bg-gray-800'
@@ -166,8 +162,8 @@ function EventWrapper() {
                                             <td className='text-black font-medium'>
                                                 {event.name.length > 15 ? `${event.name.substring(0, 20)}...` : event.name}
                                             </td>
-                                            <td className='text-black font-medium'>2022-12-11</td>
-                                            
+                                            <td className='text-black font-medium'>{event.date.toDateString()}</td>
+
                                         </tr>
                                     );
                                 }
