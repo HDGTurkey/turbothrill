@@ -8,14 +8,15 @@ import { events as eventsModel } from '../model/events.js'
 import MyLoader from '../utils/MyLoader'
 
 interface Events {
-  id: string
-  slug_name: string
-  state: string
-  locName: string
-  locAddress: string
-  name: string
-  date: string
-  description: Text
+    id: string;
+    slug_name: string;
+    state: string;
+    locName: string;
+    locAddress: string;
+    name: string;
+    date: Date;
+    description: Text;
+
 }
 function EventWrapper() {
   const data = useSite()
@@ -165,15 +166,37 @@ function EventWrapper() {
                           height=""
                           alt=""
                         />
-                      </td>
-                      <td className="text-black text-md">
-                        {event.name.length > 15
-                          ? `${event.name.substring(0, 20)}...`
-                          : event.name}
-                      </td>
-                      <td className="text-black ml-5 ">2022-12-11</td>
-                    </tr>
-                  )
+                    </div>
+                </form>
+            </div>
+            <div className='flex mt-10 justify-between pt-8 max-w-7xl mx-auto text-left'>
+                {loading ? "Loading" :
+                    <table className="table-auto w-full  " >
+                        <thead>
+                            <tr>
+                                <th>Image</th>
+                                <th className='w-[50%]'>Event Name</th>
+                                <th>Date</th>
+                                <th>Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {events.map((event, key) => {
+                                if (totalPages >= 1 && key >= ((currentPage - 1) * eventsPerPage) && key < (currentPage * eventsPerPage)) {
+                                    return (
+                                        <tr key={key} className={`border-b-2 p-2 transition-colors rounded ${data.theme === 'light' ? 'hover:bg-gray-200' : 'hover:bg-gray-800'}`}>
+                                            <td><img className='p-3' src={require('../assets/Images/emplo.jpg').default.src} width="100px" height="" alt="" /></td>
+                                            <td>{event.name.length > 15 ? `${event.name.substring(0, 20)}...` : event.name}</td>
+                                            <td>{event.date.toLocaleDateString()}</td>
+                                            <td> <a href={`/event-detail/${event.slug_name}`} className='text-blue-500'>see more...</a> </td>
+                                        </tr>
+                                    );
+                                }
+                            }
+                            )}
+                        </tbody>
+                    </table>
+
                 }
               })}
             </tbody>
