@@ -19,7 +19,7 @@ const TeamArea: React.FC = () => {
             </div>
           </div>
           <div className="row">
-            {teams.map((team) => <SingleTeam key={team.id} team={team} />)}
+          Team
           </div>
         </div>
       </div>

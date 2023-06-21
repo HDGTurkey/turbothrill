@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 
-const SingleServiceTwo = ({ service, border }) => {
+const SingleServiceTwo = ({ service , border } : any) => {
   return (
     <div className="col-lg-6 col-md-12 col-12">
       <div className="tp-sv-box wow tpfadeUp" data-wow-duration={service.duration}

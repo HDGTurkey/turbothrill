@@ -8,18 +8,13 @@ import portfolio_data from './portfolio_data';
 
 
 const project_items = portfolio_data.filter(item => item.home_4);
-const categories = [...new Set(project_items.map(item => item.category))]
 
 const ProjectArea = () => {
   const [category, setCategory] = useState('Website');
   const categoryItems = project_items.filter(item => item.category === category);
   const [items, setItems] = useState(categoryItems);
 
-  const handleCategoryItems = (category) => {
-    setCategory(category);
-    const filtering_category_items = project_items.filter(item => item.category === category);
-    setItems(filtering_category_items)
-  }
+
 
   const project_contents = {
     subtitle: '',

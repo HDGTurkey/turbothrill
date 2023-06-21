@@ -7,6 +7,7 @@ import { useRouter } from 'next/router';
 import { AGCContext } from '../Context/AGCProvider';
 import { events as eventsModel } from "../model/events.js";
 
+import MyLoader from '../utils/MyLoader';
 
 interface Events {
     id: string;
@@ -37,6 +38,7 @@ function EventWrapper() {
     async function getEvents() {
         setLoading(true);
         setEvents(await agcContext.executeQuery(eventsModel));
+        console.log(await events);
         setLoading(false);
     }
 
@@ -74,6 +76,9 @@ function EventWrapper() {
         } else if ((eventsLength % eventsPerPage) != 0) {
             setTotalPage((Math.floor(eventsLength / eventsPerPage)) + 1)
         }
+        return () => {
+
+        }
     }, [eventsLength])
 
     //backward currentPage set fonksiyonu
@@ -100,6 +105,7 @@ function EventWrapper() {
                         </div>
 
                         <div className=" mx-auto grid gap-3 grid-cols-1 lg:grid-cols-4">
+
                             {events.map((event, key) => {
                                 if (isEventActiveAsDate(new Date(), new Date(event.date))) {
                                     return (
@@ -115,6 +121,7 @@ function EventWrapper() {
                         {/* <div className='flex'>
                             <EventCard events={events} />
                         </div> */}
+
                     </div>
                 </div>
             </div>
@@ -125,7 +132,7 @@ function EventWrapper() {
 
             </div>
             <div className='flex mt-10 justify-between pt-8 max-w-7xl mx-auto text-left'>
-                {loading ? "Loading" :
+                {loading ? <MyLoader/> :
                     <table className="table-auto w-full shadow-2xl " >
                         <thead >
                             <tr >
@@ -145,7 +152,7 @@ function EventWrapper() {
                                     const handleClick = () => {
                                         window.location.href = `/event-detail/${event.slug_name}`;
                                     };
-                                    return (
+                                    return (<<<<<<< 33-build
 
                                         <tr
                                             key={key}
@@ -167,6 +174,7 @@ function EventWrapper() {
                                             </td>
                                             <td className='text-black font-medium'>2022-12-11</td>
                                             
+
                                         </tr>
                                     );
                                 }

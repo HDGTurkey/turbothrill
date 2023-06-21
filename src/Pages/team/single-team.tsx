@@ -16,7 +16,7 @@ interface SingleTeamProps {
           };
         }
 
-        const SingleTeam: React.FC<SingleTeamProps> = ({ team }) => {
+        const SingleTeam: React.FC<SingleTeamProps> = ({ team } :any) => {
           const { id, img, name, title, delay, duration, social_links } = team;
   return (
     <div className="col-xl-3 col-lg-3 col-md-6  wow tpfadeUp"
@@ -38,8 +38,7 @@ interface SingleTeamProps {
             </Link>
           </h4>
           <h5 className="tp-team-sm-subtitle"><a href="#">{title}</a></h5>
-          {social_links.map((l, i) => <a key={i} href={l.link}
-            target={l.target}><i className={l.icon}></i></a>)}
+          
         </div>
       </div>
     </div>

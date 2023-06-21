@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
 import SingleServiceTwo from './single-service-2';
-import { Bulb, Code, Managed } from "../assets/img/svg";
 
 const services_data = [
   {
@@ -46,7 +45,7 @@ const services_contents = {
   
 }
 
-const { shape_img, title, subtitle, btn_text } = services_contents;
+const { shape_img, title, subtitle } = services_contents;
 const services_items = services_data.filter(ser => ser.home);
 
 const ServicesArea = () => {
@@ -69,7 +68,6 @@ const ServicesArea = () => {
               <h5 className="tp-subtitle pb-10">{subtitle}</h5>
               <h2 className="tp-title">{title}</h2>
               <Link href="/service-1">
-                {btn_text}
               </Link>
             </div>
           </div>
