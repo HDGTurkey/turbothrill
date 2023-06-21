@@ -118,7 +118,7 @@ function EventWrapper() {
       </div>
       <div className="flex mt-10 justify-between pt-8 max-w-6xl mx-auto text-left">
         <div className="">
-          <span className="text-3xl text-black font-bold md:ml-5">
+          <span className="text-3xl mx-5 text-black font-bold md:ml-5">
             Etkinliklerimiz
             <br />
           </span>
@@ -128,12 +128,12 @@ function EventWrapper() {
         {loading ? (
           <MyLoader />
         ) : (
-          <table className="table-auto w-full shadow-2xl ">
+          <table className="table-auto w-full shadow-2xl mx-5 ">
             <thead>
               <tr>
-                <th className="p-5 ">Image</th>
-                <th className="w-[50%]">Event Name</th>
-                <th>Date</th>
+                <th className="p-5 text-lg ">Resim</th>
+                <th className="w-[50%] text-lg">Etkinlik İsmi</th>
+                <th className="text-lg">Tarih</th>
               </tr>
             </thead>
             <tbody className="">
@@ -149,7 +149,7 @@ function EventWrapper() {
                   return (
                     <tr
                       key={key}
-                      className={`border-b-2 p-2 transition-colors rounded ${
+                      className={`border-b-2 p-2 border-2 border-gray-50 bg-gray-100 my-3 transition-colors rounded ${
                         data.theme === 'light'
                           ? 'hover:bg-gray-200'
                           : 'hover:bg-gray-800'
@@ -158,21 +158,20 @@ function EventWrapper() {
                     >
                       <td>
                         <img
-                          className="p-3"
+                          className="p-3 w-[100px] md:w-[200px]"
                           src={
                             require('../assets/Images/emplo.jpg').default.src
                           }
-                          width="250px"
                           height=""
                           alt=""
                         />
                       </td>
-                      <td className="text-black font-medium">
+                      <td className="text-black text-md">
                         {event.name.length > 15
                           ? `${event.name.substring(0, 20)}...`
                           : event.name}
                       </td>
-                      <td className="text-black font-medium">2022-12-11</td>
+                      <td className="text-black ml-5 ">2022-12-11</td>
                     </tr>
                   )
                 }
