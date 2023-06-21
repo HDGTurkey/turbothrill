@@ -8,15 +8,14 @@ import { events as eventsModel } from '../model/events.js'
 import MyLoader from '../utils/MyLoader'
 
 interface Events {
-    id: string;
-    slug_name: string;
-    state: string;
-    locName: string;
-    locAddress: string;
-    name: string;
-    date: Date;
-    description: Text;
-
+  id: string
+  slug_name: string
+  state: string
+  locName: string
+  locAddress: string
+  name: string
+  date: Date
+  description: Text
 }
 function EventWrapper() {
   const data = useSite()
@@ -82,28 +81,27 @@ function EventWrapper() {
   return (
     <>
       <div
-        className={`' py-3 ${
+        className={`' py-3 shadow-sm ${
           data.theme === 'light' ? ' bg-[#F6F8FD]' : 'bg-[#151515]'
         }`}
       >
         <div className="flex py-3 max-w-6xl mx-auto">
           <div className="items-start text-start mx-auto">
-            <div className="py-2">
-              {' '}
+            <div className="py-2 mx-3">
               Etkinlikler Hakkında Detaylı Bilgi İçin :
               <span className="text-blue-700 mx-3">hsdturkiye@gmail.com</span>
             </div>
-            <div className=" py-2">
-              <h2 className="font-bold text-2xl text-black">
+            <div className="mx-3 py-2">
+              <h2 className="font-bold my-3 text-3xl text-black">
                 Yaklaşan Etkinlikler
               </h2>
             </div>
 
-            <div className=" mx-auto grid gap-3 grid-cols-1 lg:grid-cols-4">
+            <div className=" mx-auto grid gap-3 grid-cols-1 lg:grid-cols-3">
               {events.map((event, key) => {
                 if (isEventActiveAsDate(new Date(), new Date(event.date))) {
                   return (
-                    <div key={key} className="flex">
+                    <div key={key} className="flex ">
                       <EventCard events={event} />
                     </div>
                   )
@@ -166,37 +164,15 @@ function EventWrapper() {
                           height=""
                           alt=""
                         />
-                    </div>
-                </form>
-            </div>
-            <div className='flex mt-10 justify-between pt-8 max-w-7xl mx-auto text-left'>
-                {loading ? "Loading" :
-                    <table className="table-auto w-full  " >
-                        <thead>
-                            <tr>
-                                <th>Image</th>
-                                <th className='w-[50%]'>Event Name</th>
-                                <th>Date</th>
-                                <th>Details</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {events.map((event, key) => {
-                                if (totalPages >= 1 && key >= ((currentPage - 1) * eventsPerPage) && key < (currentPage * eventsPerPage)) {
-                                    return (
-                                        <tr key={key} className={`border-b-2 p-2 transition-colors rounded ${data.theme === 'light' ? 'hover:bg-gray-200' : 'hover:bg-gray-800'}`}>
-                                            <td><img className='p-3' src={require('../assets/Images/emplo.jpg').default.src} width="100px" height="" alt="" /></td>
-                                            <td>{event.name.length > 15 ? `${event.name.substring(0, 20)}...` : event.name}</td>
-                                            <td>{event.date.toLocaleDateString()}</td>
-                                            <td> <a href={`/event-detail/${event.slug_name}`} className='text-blue-500'>see more...</a> </td>
-                                        </tr>
-                                    );
-                                }
-                            }
-                            )}
-                        </tbody>
-                    </table>
-
+                      </td>
+                      <td className="text-black text-md">
+                        {event.name.length > 15
+                          ? `${event.name.substring(0, 20)}...`
+                          : event.name}
+                      </td>
+                      <td>{event.date.toLocaleDateString()}</td>{' '}
+                    </tr>
+                  )
                 }
               })}
             </tbody>
