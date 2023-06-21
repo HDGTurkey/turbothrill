@@ -36,10 +36,7 @@ export const EventCard = (events: any) => {
                     <img src={`https://picsum.photos/400/200`} width="250px" alt='i' />
                 </div>
                 <div className='p-4'>
-                    <Link href={`/event-detail/${EventClassic[0].slug_name}`}>
-                        <h3 className=' text-md  text-white font-medium p-2  bg-blue-800 hover:bg-gray-400 rounded-full text-center transition-all'> Daha Fazlası</h3>
-
-                    </Link>
+                   
                 </div>
             </div>
 

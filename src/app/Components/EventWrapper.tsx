@@ -1,8 +1,6 @@
 import { useState, useEffect, useContext } from 'react'
 import { useSite } from '../Context/Context'
 import EventCard from './Cards/EventCard';
-import { Pagination } from '../utils/Pagination';
-import EventClassic from '../data/event/EventClassic.json';
 import { useRouter } from 'next/router';
 import { AGCContext } from '../Context/AGCProvider';
 import { events as eventsModel } from "../model/events.js";
