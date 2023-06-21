@@ -15,7 +15,7 @@ interface Events {
     locName: string;
     locAddress: string;
     name: string;
-    date: string;
+    date: Date;
     description: Text;
 }
 function EventWrapper() {
@@ -154,7 +154,7 @@ function EventWrapper() {
                                         <tr key={key} className={`border-b-2 p-2 transition-colors rounded ${data.theme === 'light' ? 'hover:bg-gray-200' : 'hover:bg-gray-800'}`}>
                                             <td><img className='p-3' src={require('../assets/Images/emplo.jpg').default.src} width="100px" height="" alt="" /></td>
                                             <td>{event.name.length > 15 ? `${event.name.substring(0, 20)}...` : event.name}</td>
-                                            <td>2022-12-11</td>
+                                            <td>{event.date.toLocaleDateString()}</td>
                                             <td> <a href={`/event-detail/${event.slug_name}`} className='text-blue-500'>see more...</a> </td>
                                         </tr>
                                     );
