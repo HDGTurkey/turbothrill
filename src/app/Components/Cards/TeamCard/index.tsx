@@ -1,7 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom';
 import { useSite } from '../../../Context/Context'
-import TeamData from '../../../data/team/team.json';
 
 interface Props {
   teamData: any;

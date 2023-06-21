@@ -1,17 +1,20 @@
 import React, { useEffect } from 'react'
-import EventWrapper from '../../app/Components/EventWrapper';
+import BlogArea from '../../app/Components/EventWrapper';
 
-import PageTitle from '../../app/Components/PageTitle';
+import Breadcrumb from '@/app/Components/breadcrumb';
+import EventWrapper from '../../app/Components/EventWrapper';
 
 
 export const EventList = () => {
 
   return (
-    <div className='container mx-auto '>
-      <div className='mx-8'>
-        <PageTitle title='Events Page' />
+    <div className=' '>
+     
+        <Breadcrumb title={'Etkinlikler'} />
         <EventWrapper />
-      </div>
+        
+        
+     
     </div>
   )
 }

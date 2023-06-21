@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useContext, useState, useEffect } from 'react'
 import EventClassic from '../../app/data/event/EventClassic.json'
 import GuestListClassic from '../../app/data/event/GuestListClassic.json';
@@ -11,61 +12,77 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 import { AGCContext } from '../../app/Context/AGCProvider';
 import { events as eventsModel } from "../../app/model/events.js";
+import Breadcrumb from '@/app/Components/breadcrumb';
 
 
 
 
 
 const EventDetailPage: React.FC = () => {
-     const themeData = useSite();
 
-     const agcContext = useContext(AGCContext)
-     const [loading, setLoading] = useState(false);
-     // const eventData = agcContext.executeQuery(eventsModel);
-     interface Events {
-          name: string;
-          slug_name: string;
-          description: string;
-          date: Date;
-          state: string;
-          locName: string;
-          locAddress: string;
-     }
-     const [eventData, setEventData] = useState<Array<Events>>([])
+     
+          const themeData = useSite();
+        
+          const agcContext = useContext(AGCContext);
+          const [loading, setLoading] = useState(false);
+          const [eventData, setEventData] = useState<Events[]>([]);
+        
+          // slugname set
+          const router = useRouter();
+        
+          interface Events {
+            name: string;
+            slug_name: string;
+            description: string;
+            date: Date;
+            state: string;
+            locName: string;
+            locAddress: string;
+          }
+        
+          async function getEvent(slugName: string) {
+            setLoading(true);
+            const data = await agcContext.executeQueryWhere(eventsModel, 'slug_name', slugName);
+            setEventData(data);
+          }
+        
+          useEffect(() => {
+            const { slug } = router.query;
+            if (slug) {
+              const slugName = slug.toString().toLowerCase();
+              getEvent(slugName);
+            }
+          }, [getEvent, router.query]);
+        
+          useEffect(() => {
+            setLoading(false);
+            console.log(eventData);
+          }, [eventData]);
 
-     // slugname set 
-     const router = useRouter();
-     const [slugName] = useState(location.pathname.split("/")[location.pathname.split("/").length - 1])
-     //const {slug} = router.query;
-     //const [slugName , setSlugName] = useState(router.query.slug?.toString().toLowerCase());
-     // const data = eventData.filter((event: Event) => event.slug_name === lowercaseTitle);
-
-
-     async function getEvent() {
-          setLoading(true)
-          const data = await agcContext.executeQueryWhere(eventsModel, 'slug_name', slugName)
-          setEventData(data);
-     }
-
-     useEffect(() => {
-          const { slug } = router.query;
-          getEvent();
-     }, [])
-
-     useEffect(() => {
-          setLoading(false)
-          console.log(eventData);
-     }, [eventData])
 
 
      return (
           loading ? <div>Loading</div> :
 
-               <div className='container mx-auto'>
-                    <div className='max-w-6xl mx-8 '>
-                         <div className='flex text-2xl text-left max-w-6xl mx-auto p-5 '>
-                              <div className=' flex-1'>
-                                   <h1 className="text-3xl font-bold mb-3">{eventData[0]?.name}</h1>
+         
+          <div className=' '>
+                <Breadcrumb title={eventData[0]?.name} />
+                
+
+                
+               <div className=' mx-auto   '>
+                    <div className='flex text-2xl text-left mx-auto p-5 '>
+                         <div className=' flex-1'>
+                              <h1 className="text-3xl font-bold mb-3 text-black mx-5">{eventData[0]?.name}</h1>
+                         </div>
+                    </div>
+                    <div className={`shadow-lg justify-center grid grid-cols-1 lg:grid-cols-2 lg:flex ${themeData.theme === 'light' ? 'bg-gray-100 text-black' : 'bg-gray-800 text-white'}`}>
+                         <div className={`w-auto ${themeData.theme === 'light' ? 'bg-white text-black' : 'bg-black text-white'}`}>
+                              <div className="px-5 ">
+                                   <img alt="img" className='mt-3 ' src='https://www.meetup.com/_next/image/?url=https%3A%2F%2Fsecure-content.meetupstatic.com%2Fimages%2Fclassic-events%2F508957542%2F676x380.webp&w=3840&q=75'></img>
+                                   <p className="text-left m-5 ">{eventData[0]?.description}
+                                   </p>
+
                               </div>
                          </div>
                          <div className={`shadow-lg grid grid-cols-1 lg:grid-cols-2 lg:flex ${themeData.theme === 'light' ? 'bg-gray-100 text-black' : 'bg-gray-800 text-white'}`}>
@@ -124,6 +141,10 @@ const EventDetailPage: React.FC = () => {
                          </div>
                     </div>
                </div>
+
+               
+               
+          </div>
 
      )
 }

@@ -1,29 +1,125 @@
+import Link from 'next/link'
 
-
-export const HelloDiv = () => {
-    return (
-        <>
-            <div className=' items-center lg:mx-32 p-11 '>
-                <div className='grid grid-cols-1 md:grid-cols-2' >
-                    <div className='grid items-center'>
-                        <div>
-                            <div className='hidden text-left md:block mb-8 text-[#ec373c] font-thin '>HUAWEI DEVELOPERS</div>
-                            <h1 className='text-4xl font-bold text-gray-700'>  Make good things <span className='text-[#ec373c]'>together</span>.</h1>
-                            <p className='text-gray-500 mt-4 '>As developers of the Huawei community, we create sweepstakes and events with our ambassadors at our Universities.</p>
-                            <div className='mt-6'>
-                                <div className='text-left dark:text-white' color="text.secondary" >
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div >
-                        <div className=" transition-transform ">
-                            <img src={require("../../assets/Images/hi.png").default.src} alt='i' className='lg:w-[600px] sm:w-[500px]  whitespace-nowrap ' />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </>
-    )
+const hero_contents = {
+  title: 'Huawei Student Developers',
+  text: (
+    <>
+      HUAWEI Student Developers(HSD), öncü teknolojilere tutku duyan kolej ve
+      üniversite öğrencilerine yönelik küresel bir programdır.
+    </>
+  ),
+  btn_text: 'Visit Case Studies',
+  btn_text_2: 'About Collax',
+  social_links: [
+    {
+      id: 1,
+      icon: 'fab fa-instagram social-icon-1',
+      title: 'Instagram',
+      link: 'https://www.instagram.com/hsdturkiye/',
+    },
+    {
+      id: 3,
+      icon: 'fab fa-youtube social-icon-3',
+      title: 'Youtube',
+      link: 'https://www.youtube.com/@HuaweiDeveloperGroupsTurkiye ',
+    },
+    {
+      id: 2,
+      icon: 'fab fa-linkedin social-icon-2',
+      title: 'Linkedin',
+      link: 'https://www.linkedin.com/company/hsdturkiye/',
+    },
+    {
+      id: 2,
+      icon: 'fab fa-medium social-icon-2',
+      title: 'Medium',
+      link: 'https://medium.com/huawei-developers-tr',
+    },
+  ],
+  hero_img: '/assets/img/hero/hero-4.png',
 }
 
+const {
+  title,
+  text,
+  btn_text,
+  btn_text_2,
+  social_links,
+  hero_img,
+} = hero_contents
+export const HelloDiv = () => {
+  return (
+    <div className="tp-hero-area tp-hero-space p-relative z-index-1 fix">
+      <div className="tp-hero-shape">
+        <div className="shape-circle-yellow d-none"></div>
+        <div className="shape-circle-blue"></div>
+        <div className="shape-one">
+          <img src="/assets/img/hero/shape-1.png" alt="" />
+        </div>
+      </div>
+      <div className="tp-hero-wapper">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-xl-7 col-lg-7">
+              <div className="tp-hero-content">
+                <div className="tp-hero-text">
+                  <h2
+                    className="tp-hero-title wow tpfadeUp"
+                    data-wow-duration=".3s"
+                    data-wow-delay=".6s"
+                  >
+                    {title}
+                  </h2>
+                  <p
+                    className="wow tpfadeUp"
+                    data-wow-duration=".5s"
+                    data-wow-delay=".8s"
+                  >
+                    {text}
+                  </p>
+                  <div
+                    className="tp-hero-button mb-140 wow tpfadeUp"
+                    data-wow-duration=".7s"
+                    data-wow-delay="1s"
+                  >
+                    <Link href="/portfolio"></Link>
+                    <Link href="/about-me"></Link>
+                  </div>
+                  <div
+                    className="tp-hero-social pb-30 wow tpfadeIn"
+                    data-wow-duration=".7s"
+                    data-wow-delay="1.2s"
+                  >
+                    <div className="tp-hero-social bp-hero-social">
+                      {social_links.map((l, i) => (
+                        <a
+                          key={i}
+                          className={`social-icon-${l.id}`}
+                          href={l.link}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <i className={l.icon}></i>
+                          <span>{l.title}</span>
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-xl-5 col-lg-5">
+              <div
+                className="tp-hero-big-img wow fadeInRight"
+                data-wow-duration=".7s"
+                data-wow-delay="1.2s"
+              >
+                <img src={hero_img} alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}

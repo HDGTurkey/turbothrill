@@ -1,5 +1,6 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useState, useEffect, useContext } from 'react'
-import BlogClassicData from '../data/blog/BlogClassic.json';
+// import BlogClassicData from '../data/blog/BlogClassic.json';
 import BlogThreeCard from '../Components/Blogs/BlogThreeCard';
 import { Pagination } from '../utils/Pagination';
 import { AGCContext } from '../Context/AGCProvider';
@@ -8,11 +9,14 @@ import { blogs as blogsModel } from "../model/blogs.js";
 //state 
 import { useSite } from '../Context/Context';
 import { useRouter } from 'next/router';
+import BlogOneCard from './Blogs/BlogOneCard';
+
+import MyLoader from '../utils/MyLoader';
 
 interface Blogs {
-  id : string;
+  id: string;
   image: string;
-  largeImage : string;
+  largeImage: string;
   author: string;
   date: string;
   view: string;
@@ -46,7 +50,7 @@ export const BlogWrapper = () => {
   useEffect(() => {
     setBlogsLength(blogs.length)
     console.log(blogsLength);
-  }, [blogs])
+  }, [blogs, blogsLength])
 
   useEffect(() => {
     getBlogs();
@@ -64,7 +68,7 @@ export const BlogWrapper = () => {
     } else if ((blogsLength % blogsPerPage) != 0) {
       setTotalPage((Math.floor(blogsLength / blogsPerPage)) + 1)
     }
-  }, [blogsLength])
+  }, [blogsLength, blogsPerPage, getBlogs, location.query.page])
 
   //backward "currentPage set" function
   const _setCurrentPage = (currentPage: number) => {
@@ -88,21 +92,23 @@ export const BlogWrapper = () => {
   const finalData = mediumData.slice(0, 10);
 
   return (
-    loading ? "Loading" :
+    loading ? <MyLoader /> :
       <>
-        <div className="max-w-7xl mx-auto grid gap-3 grid-cols-1 lg:grid-cols-3">
+        <div className="max-w-7xl mx-auto grid gap-3 grid-cols-1 lg:grid-cols-3 mt-[200px]">
           {finalData.map((single, key) => {
-              if (totalPages >= 1 && key >= ((currentPage - 1) * blogsPerPage) && key < (currentPage * blogsPerPage)) {
-                return (
-                  <div key={key} className="flex" data-aos="fade-up">
-                    <BlogThreeCard blogData={single} key={key} />
-                  </div>
-                );
-              }
-            })}
+            if (totalPages >= 1 && key >= ((currentPage - 1) * blogsPerPage) && key < (currentPage * blogsPerPage)) {
+              return (
+
+                <div key={key} className="flex " data-aos="fade-up">
+
+                  <BlogThreeCard blogData={single} key={key} />
+                </div>
+              );
+            }
+          })}
         </div>
         <div className={`max-w-7xl mx-auto mt-3 text-right border-[0.5px] rounded-lg ${data.theme === 'light' ? 'border-gray-300' : ' border-gray-700'}`}>
-           {/* {totalPages > 1 && 
+          {/* {totalPages > 1 && 
             <Pagination pageName={location.pathname} currentPage={currentPage} totalPages={totalPages} _setCurrentPage={_setCurrentPage} />
            }  */}
         </div>
