@@ -152,7 +152,7 @@ function EventWrapper() {
                                     const handleClick = () => {
                                         window.location.href = `/event-detail/${event.slug_name}`;
                                     };
-                                    return (<<<<<<< 33-build
+                                    return (
 
                                         <tr
                                             key={key}
