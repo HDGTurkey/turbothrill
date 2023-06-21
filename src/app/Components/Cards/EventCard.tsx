@@ -11,7 +11,7 @@ interface Events {
     date: string;
     description: Text;
 }
-export const EventCard = ( events : Events) => {
+export const EventCard = ( events : any) => {
     return (
         <>
             <div className='card shadow-xl  min-w-[200px] max-w-[400px] rounded border border-gray-100'>

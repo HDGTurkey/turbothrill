@@ -22,7 +22,10 @@ interface Blogs {
   body: string;
 }
 
-export const BlogWrapper = () => {
+interface type {
+
+}
+export const BlogWrapper : any = () => {
   const data = useSite();
   let location = useRouter();
 
