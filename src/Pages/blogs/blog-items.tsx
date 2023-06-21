@@ -17,10 +17,10 @@ interface Props {
 }
 
 const BlogItem: React.FC<Props> = ({ blog }) => {
-          const { id, thumbnail, title, views, description, author, comment, pubDate } = blog;
+          const { id, thumbnail, title, views, author, comment, pubDate } = blog;
           const date = new Date(blog.pubDate);
           const formattedDate = date.toLocaleDateString('tr-TR');
-          const cleanDescription = blog.description.replace(/<\/?[^>]+(>|$)/g, '').replace(/<img[^>]*>/g, '');
+          const cleanDescription = blog.title.replace(/<\/?[^>]+(>|$)/g, '').replace(/<img[^>]*>/g, '');
           const maxLength = 400;
           const truncatedDescription = cleanDescription.length > maxLength
                     ? cleanDescription.slice(0, maxLength) + "..."  // İlk 100 karakter + "..." ekleniyor

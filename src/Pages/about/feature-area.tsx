@@ -54,11 +54,11 @@ const FeatureArea = () => {
                                                             <div className="row">
                                                                       <FeatureItem title={'Etkinlikler'}
                                                                                 subtitle={'Lorem Ipsum'} />
-                                                                      <FeatureItem title={'Yarışmalar'} color={'2'}
+                                                                      <FeatureItem title={'Yarışmalar'}
                                                                                 subtitle={'Lorem Ipsum'} />
-                                                                      <FeatureItem title={'Toplantılar'} color={'3'}
+                                                                      <FeatureItem title={'Toplantılar'} 
                                                                                 subtitle={'Lorem Ipsum'} />
-                                                                      <FeatureItem title={'Öğrenci Topluluğu'} color={'4'}
+                                                                      <FeatureItem title={'Öğrenci Topluluğu'} 
                                                                                 subtitle={'Lorem Ipsum'} />
                                                             </div>
                                                   </div>

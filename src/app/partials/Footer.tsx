@@ -10,7 +10,6 @@ const footer_contents = {
   text: 'Huawei Student Developers Program, Huawei’nin geliştiriciler için oluşturduğu bir programdır. Programa katılarak Huawei’nin sunduğu birçok fırsattan yararlanabilirsiniz. Huawei’nin sunduğu fırsatlardan yararlanmak için hemen başvurun!',
   btn_text: 'Contact us',
   copy_right_text: <>© {new Date().getFullYear()} HSD </>,
-  social_links: ['fab fa-linkedin-in', 'fab fa-instagram', 'fab fa-youtube'],
   social_links: [
     {icon: 'fab fa-linkedin-in',link: 'https://www.linkedin.com/company/hsdturkiye/' },
     {icon: 'fab fa-instagram',link: 'https://www.instagram.com/hsdturkiye/' },
