@@ -10,7 +10,7 @@
     color: var(--tp-common-black);
     font-weight: 500;
     &:hover{
-        color: var(--tp-theme-1);
+        color: var(--tp-common-dpink);
     }
 }
 .tpproduct{
@@ -71,7 +71,7 @@
     & button{
         height: 50px;
         width: 50px;
-        background-color: var(--tp-theme-primary);
+        background-color: var(--swiper-theme-color);
         line-height: 50px;
         text-align: center;
         border-radius: 50%;
@@ -80,7 +80,7 @@
         color: var(--tp-common-black);
         margin: 0px 6px;
         &:hover{
-            background-color: var(--tp-theme-1);
+            background-color: var(--tp-common-dpink);
             color: var(--tp-common-white);
             & .fa-check{
               color: var(--tp-common-white);
@@ -116,7 +116,7 @@
     }
     &__ratting{
         & i{
-            color: var(--tp-theme-primary);
+            color: var(--swiper-theme-color);
             font-size: 14px;
         }
         & span{
@@ -159,7 +159,7 @@
             margin-right: 10px;
             margin-bottom: 10px;
             &:hover{
-                background-color: var(--tp-theme-primary);
+                background-color: var(--swiper-theme-color);
                 color: var(--tp-common-black);
             }
         }
@@ -287,7 +287,7 @@
     & .nice-select {
       padding-left: 5px;
       border: none;
-      color: var(--tp-theme-primary);
+      color: var(--swiper-theme-color);
     }
   }
   
@@ -361,7 +361,7 @@
     }
     &-quantity {
       input {
-        color: var(--tp-theme-primary);
+        color: var(--swiper-theme-color);
         border: none;
         width: 40px;
         text-align: center;
@@ -416,7 +416,7 @@
       cursor: pointer;
       color: #8D8884;
       &:hover {
-        color: var(--tp-theme-primary);
+        color: var(--swiper-theme-color);
       }
     }
     & input {
@@ -567,7 +567,7 @@
       padding: 20px;
       &:focus {
         outline: 0;
-        border: 1px solid var(--tp-theme-primary);  
+        border: 1px solid var(--swiper-theme-color);  
       }
     }
     & input {
@@ -579,7 +579,7 @@
       padding:8px 20px;
       // margin-bottom: 30px;
       &:focus {
-        border: 1px solid var(--tp-theme-primary);
+        border: 1px solid var(--swiper-theme-color);
       }
     }
   }

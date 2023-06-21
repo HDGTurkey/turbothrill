@@ -13,7 +13,7 @@
 .shape-circle-yellow {
     height: 433px;
     width: 433px;
-    background-color: var(--tp-theme-primary);
+    background-color: var(--swiper-theme-color);
     border-radius: 100%;
     position: absolute;
     top: -180px;
@@ -331,12 +331,12 @@
 }
 
 .social-icon-1 {
-    color: var(--tp-theme-1);
+    color: var(--tp-common-dpink);
     @media #{$xs} {
         margin-bottom: 20px;
     }
     &:hover {
-        color: var(--tp-theme-1);
+        color: var(--tp-common-dpink);
     }
 }
 
@@ -395,7 +395,7 @@
         }
 
         & span {
-            color: var(--tp-theme-1);
+            color: var(--tp-common-dpink);
         }
     }
 }
@@ -740,9 +740,9 @@
         }
 
         &:hover {
-            background-color: var(--tp-theme-primary);
+            background-color: var(--swiper-theme-color);
             color: var(--tp-common-black);
-            border-color: var(--tp-theme-primary);
+            border-color: var(--swiper-theme-color);
         }
     }
 
@@ -753,7 +753,7 @@
 }
 .tp-bp-hero-paly-button{
     & button{
-        background-color: var(--tp-theme-primary);
+        background-color: var(--swiper-theme-color);
         &:hover{
             background-color: var(--tp-common-blue);
             color: var(--tp-common-white);
@@ -803,7 +803,7 @@
     position: absolute;
     height: 690px;
     width: 690px;
-    background-color: var(--tp-theme-primary);
+    background-color: var(--swiper-theme-color);
     border-radius: 50%;
     bottom: -150px;
     right: -100px;
@@ -852,7 +852,7 @@
         }
 
         &:hover {
-            color: var(--tp-theme-1);
+            color: var(--tp-common-dpink);
         }
     }
 }
@@ -861,7 +861,7 @@
     position: absolute;
     height: 100%;
     width: 475px;
-    background-color: var(--tp-theme-primary);
+    background-color: var(--swiper-theme-color);
     right: 0;
     top: 0;
     z-index: -1;
@@ -1098,7 +1098,7 @@
     & .tp-yellow-circle-five {
         height: 730px;
         width: 730px;
-        background-color: var(--tp-theme-primary);
+        background-color: var(--swiper-theme-color);
         border-radius: 50%;
         position: absolute;
         z-index: -1;

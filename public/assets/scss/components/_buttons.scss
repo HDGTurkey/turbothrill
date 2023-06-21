@@ -6,7 +6,7 @@
 	font-size: 16px;
 	font-weight: 700;
 	color: var(--tp-common-white);
-	background: var(--tp-theme-1);
+	background: var(--tp-common-dpink);
 	height: 70px;
 	line-height: 70px;
 	text-align: center;
@@ -21,7 +21,7 @@
 	}
 	&:hover{
 		color: var(--tp-common-black);
-		background-color: var(--tp-theme-primary);
+		background-color: var(--swiper-theme-color);
 		& i {
 			animation: tfLeftToRight 0.5s forwards;
 		}
@@ -87,7 +87,7 @@
 	}
 	&:hover{
 		color: var(--tp-common-black);
-		background-color: var(--tp-theme-primary);
+		background-color: var(--swiper-theme-color);
 		& i {
 			animation: tfLeftToRight 0.5s forwards;
 		}
@@ -145,7 +145,7 @@
 	}
 	&:hover{
 		color: var(--tp-common-black);
-		background-color: var(--tp-theme-primary);
+		background-color: var(--swiper-theme-color);
 		& i {
 			animation: tfLeftToRight 0.5s forwards;
 		}
@@ -207,7 +207,7 @@
 	}
 	&:hover{
 		color: var(--tp-common-black);
-		background-color: var(--tp-theme-primary);
+		background-color: var(--swiper-theme-color);
 		& i {
 			animation: tfLeftToRight 0.5s forwards;
 		}
@@ -250,7 +250,7 @@
 	font-size: 16px;
 	font-weight: 700;
 	color: var(--tp-common-white);
-	background: var(--tp-theme-1);
+	background: var(--tp-common-dpink);
 	height: 70px;
 	line-height: 70px;
 	text-align: center;
@@ -318,7 +318,7 @@
 	font-size: 16px;
 	font-weight: 700;
 	color: var(--tp-common-white);
-	background: var(--tp-theme-1);
+	background: var(--tp-common-dpink);
 	height: 60px;
 	line-height: 60px;
 	text-align: center;
@@ -374,7 +374,7 @@
 	display: inline-block;
 	font-size: 16px;
 	font-weight: 700;
-	color: var(--tp-theme-1);
+	color: var(--tp-common-dpink);
 	background: #EBEBF9;
 	height: 70px;
 	line-height: 70px;
@@ -400,7 +400,7 @@
 	}
 	&::before, &::after {
 		content: '';
-		background: var(--tp-theme-1);
+		background: var(--tp-common-dpink);
 		height: 50%;
 		width: 0;
 		position: absolute;
@@ -439,7 +439,7 @@
 	display: inline-block;
 	font-size: 16px;
 	font-weight: 700;
-	color: var(--tp-theme-1);
+	color: var(--tp-common-dpink);
 	background: rgba(89, 86, 233, .1);
 	height: 45px;
 	line-height: 45px;
@@ -455,7 +455,7 @@
 	}
 	&:hover{
 		color: var(--tp-common-black);
-		background-color: var(--tp-theme-primary);
+		background-color: var(--swiper-theme-color);
 		& i {
 			animation: tfLeftToRight 0.5s forwards;
 		}
@@ -466,7 +466,7 @@
 	font-size: 16px;
 	font-weight: 700;
 	color: var(--tp-common-black);
-	background: var(--tp-theme-primary);
+	background: var(--swiper-theme-color);
 	height: 70px;
 	line-height: 70px;
 	text-align: center;
@@ -486,7 +486,7 @@
 	}
 	&:hover{
 		color: var(--tp-common-black);
-		background-color: var(--tp-theme-1);
+		background-color: var(--tp-common-dpink);
 		& i {
 			animation: tfLeftToRight 0.5s forwards;
 		}
@@ -534,7 +534,7 @@
 	font-size: 16px;
 	font-weight: 700;
 	color: var(--tp-common-black);
-	background: var(--tp-theme-primary);
+	background: var(--swiper-theme-color);
 	height: 60px;
 	line-height: 60px;
 	text-align: center;
@@ -568,7 +568,7 @@
 	}
 	&::before, &::after {
 		content: '';
-		background:  var(--tp-theme-1);
+		background:  var(--tp-common-dpink);
 		height: 50%;
 		width: 0;
 		position: absolute;
@@ -622,7 +622,7 @@
 	}
 	&:hover{
 		color: var(--tp-common-black);
-		background-color: var(--tp-theme-primary);
+		background-color: var(--swiper-theme-color);
 		& i {
 			animation: tfLeftToRight 0.5s forwards;
 		}
@@ -637,7 +637,7 @@
 	font-size: 16px;
 	font-weight: 700;
 	color: var(--tp-common-black);
-	background: var(--tp-theme-primary);
+	background: var(--swiper-theme-color);
 	height: 50px;
 	line-height: 50px;
 	text-align: center;
@@ -662,7 +662,7 @@
 	}
 	&::before, &::after {
 		content: '';
-		background:  var(--tp-theme-1);
+		background:  var(--tp-common-dpink);
 		height: 50%;
 		width: 0;
 		position: absolute;
@@ -702,7 +702,7 @@
 	font-size: 16px;
 	font-weight: 700;
 	color: var(--tp-common-black);
-	background: var(--tp-theme-primary);
+	background: var(--swiper-theme-color);
 	height: 60px;
 	line-height: 60px;
 	text-align: center;
@@ -795,7 +795,7 @@
 	overflow: hidden;
     border-radius: 10px;
 	text-transform: capitalize;
-	border-bottom: 3px solid var(--tp-theme-1);
+	border-bottom: 3px solid var(--tp-common-dpink);
 	box-shadow: 0px 2px 55px rgba(168, 182, 218, 0.32);
 	@media #{$xs} {
 		height: 50px;
@@ -813,7 +813,7 @@
 	}
 	&::before, &::after {
 		content: '';
-		background:  var(--tp-theme-1);
+		background:  var(--tp-common-dpink);
 		height: 50%;
 		width: 0;
 		position: absolute;
@@ -871,7 +871,7 @@
 	}
 	&::before, &::after {
 		content: '';
-		background:  var(--tp-theme-1);
+		background:  var(--tp-common-dpink);
 		height: 50%;
 		width: 0;
 		position: absolute;
@@ -927,14 +927,14 @@
 	}
 	&:hover{
 		color: var(--tp-common-white);
-		background-color: var(--tp-theme-1);
+		background-color: var(--tp-common-dpink);
 		& i {
 			animation: tfLeftToRight 0.5s forwards;
 		}
 	}
 	&::before, &::after {
 		content: '';
-		background:  var(--tp-theme-1);
+		background:  var(--tp-common-dpink);
 		height: 50%;
 		width: 0;
 		position: absolute;
@@ -988,7 +988,7 @@
 		& i {
 			animation: tfLeftToRight 0.5s forwards;
 		}
-		color: var(--tp-theme-1);
+		color: var(--tp-common-dpink);
 	}
 }
 .tp-btn-white-sm{
@@ -1012,14 +1012,14 @@
 	}
 	&:hover{
 		color: var(--tp-common-white);
-		background-color: var(--tp-theme-1);
+		background-color: var(--tp-common-dpink);
 		& i {
 			animation: tfLeftToRight 0.5s forwards;
 		}
 	}
 	&::before, &::after {
 		content: '';
-		background:  var(--tp-theme-1);
+		background:  var(--tp-common-dpink);
 		height: 50%;
 		width: 0;
 		position: absolute;
@@ -1094,14 +1094,14 @@
 	}
 	&:hover{
 		color: var(--tp-common-white);
-		background-color: var(--tp-theme-1);
+		background-color: var(--tp-common-dpink);
 		& i {
 			animation: tfLeftToRight 0.5s forwards;
 		}
 	}
 	&::before, &::after {
 		content: '';
-		background:  var(--tp-theme-1);
+		background:  var(--tp-common-dpink);
 		height: 50%;
 		width: 0;
 		position: absolute;
@@ -1142,7 +1142,7 @@
 	text-align: center;
 	padding: 0 50px;
 	position: relative;
-	color: var(--tp-theme-primary);
+	color: var(--swiper-theme-color);
 	z-index: 1;
 	overflow: hidden;
     border-radius: 10px;
@@ -1152,11 +1152,11 @@
 	}
 	&:hover{
 		color: var(--tp-common-white);
-		border-color: var(--tp-theme-1);
+		border-color: var(--tp-common-dpink);
 	}
 	&::before, &::after {
 		content: '';
-		background:  var(--tp-theme-1);
+		background:  var(--tp-common-dpink);
 		height: 50%;
 		width: 0;
 		position: absolute;
@@ -1210,11 +1210,11 @@
 	}
 	&:hover{
 		color: var(--tp-common-black);
-		border-color: var(--tp-theme-1);
+		border-color: var(--tp-common-dpink);
 	}
 	&::before, &::after {
 		content: '';
-		background:  var(--tp-theme-1);
+		background:  var(--tp-common-dpink);
 		height: 50%;
 		width: 0;
 		position: absolute;

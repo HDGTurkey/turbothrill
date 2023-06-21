@@ -20,7 +20,7 @@
             font-size: 26px;
         }
         & b{
-            color: var(--tp-theme-primary);
+            color: var(--swiper-theme-color);
             text-decoration: underline;
         }
     }
@@ -44,9 +44,9 @@
             font-size: 22px;
         }
         &:hover{
-            background-color: var(--tp-theme-primary);
+            background-color: var(--swiper-theme-color);
             color: var(--tp-common-black);
-            border-color: var(--tp-theme-primary);
+            border-color: var(--swiper-theme-color);
         }
     }
     & span{
@@ -58,7 +58,7 @@
     }
 }
 .tp-creative-item{
-    background-color: var(--tp-theme-primary);
+    background-color: var(--swiper-theme-color);
     padding: 40px 50px;
     border-radius: 20px;
     @media #{$xl}{
@@ -274,7 +274,7 @@
                 border-radius: 50%;
                 bottom: -25px;
                 right: -7px;
-                background-color: var(--tp-theme-1);
+                background-color: var(--tp-common-dpink);
             }
         }
     }

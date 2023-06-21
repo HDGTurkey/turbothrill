@@ -36,7 +36,7 @@
 		margin-top: 20px;
 		& a{
 			margin-right: 5px;
-			background-color: var(--tp-theme-primary);
+			background-color: var(--swiper-theme-color);
 			color: #fff;
 			display: inline-block;
 			width: 35px;
@@ -85,7 +85,7 @@
 	line-height: 1.5;
 	font-weight: 700;
     &:hover{
-        color: var(--tp-theme-primary);
+        color: var(--swiper-theme-color);
     }
 }
 

@@ -64,7 +64,7 @@
         padding-left: 45px;
 
         &:hover {
-            color: var(--tp-theme-primary);
+            color: var(--swiper-theme-color);
         }
     }
 }
@@ -91,8 +91,8 @@
         margin-left: 20px;
 
         &:hover {
-            background-color: var(--tp-theme-1);
-            border-color: var(--tp-theme-1);
+            background-color: var(--tp-common-dpink);
+            border-color: var(--tp-common-dpink);
             color: var(--tp-common-white);
         }
 
@@ -177,7 +177,7 @@
         }
 
         &:hover {
-            color: var(--tp-theme-1);
+            color: var(--tp-common-dpink);
         }
     }
 }
@@ -235,7 +235,7 @@
             margin-right: 10px;
 
             &:hover {
-                background-color: var(--tp-theme-1);
+                background-color: var(--tp-common-dpink);
                 color: var(--tp-common-white);
             }
         }
@@ -266,7 +266,7 @@
 
                 &:hover {
                     & a {
-                        color: var(--tp-theme-primary);
+                        color: var(--swiper-theme-color);
                     }
                 }
             }
@@ -294,7 +294,7 @@
         & button {
             height: 60px;
             width: 60px;
-            background-color: var(--tp-theme-1);
+            background-color: var(--tp-common-dpink);
             border-radius: 10px;
             line-height: 60px;
             color: var(--tp-common-white);
@@ -383,7 +383,7 @@
         margin-left: 60px;
 
         &:hover {
-            color: var(--tp-theme-primary);
+            color: var(--swiper-theme-color);
         }
 
         @media #{$lg} {
@@ -652,7 +652,7 @@
     &::after{
         height: 100%;
         width: 100%;
-        background-color: var(--tp-theme-primary);
+        background-color: var(--swiper-theme-color);
         content: "";
         border-radius: 50%;
         display: inline-block;
@@ -700,7 +700,7 @@
 	color: var(--tp-common-white);
 	text-align: center;
 	cursor: pointer;
-	background: var(--tp-theme-1);
+	background: var(--tp-common-dpink);
 	transition: 1s ease;
 	border: none;
     @media #{$xs} {

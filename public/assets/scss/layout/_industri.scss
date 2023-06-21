@@ -75,7 +75,7 @@
 }
 .tp-ind-color-one{
     &::before{
-        background-color: var(--tp-theme-primary);
+        background-color: var(--swiper-theme-color);
     }
 }
 .tp-ind-color-two{
@@ -85,12 +85,12 @@
 }
 .tp-ind-color-three{
     &::before{
-        background-color: var(--tp-theme-1);
+        background-color: var(--tp-common-dpink);
     }
 }
 .tp-ind-color-four{
     &::before{
-        background-color: var(--tp-theme-1);
+        background-color: var(--tp-common-dpink);
     }
 }
 .tp-ind-color-five{
@@ -105,7 +105,7 @@
 }
 .tp-ind-color-seven{
     &::before{
-        background-color: var(--tp-theme-primary);
+        background-color: var(--swiper-theme-color);
     }
 }
 

@@ -10,7 +10,7 @@
     &__icon-img {
         height: 60px;
         width: 60px;
-        background-color: var(--tp-theme-1);
+        background-color: var(--tp-common-dpink);
         text-align: center;
         line-height: 60px;
         border-radius: 50%;
@@ -91,7 +91,7 @@
     background-color:rgba(66, 62, 243, .15);
     transition: .5s;
     & svg{
-        color: var(--tp-theme-1);
+        color: var(--tp-common-dpink);
         transition: .5s;
     }
 }
@@ -175,7 +175,7 @@
 .fea-color-5 {
     & a {
         background-color: rgba(252, 220, 2, .15);
-        color: var(--tp-theme-primary);
+        color: var(--swiper-theme-color);
     }
 }
 .fea-wrapper-main{
@@ -404,11 +404,11 @@
     transition: .3s;
 
     &:hover {
-        color: var(--tp-theme-primary);
+        color: var(--swiper-theme-color);
     }
 
     &::after {
-        background-color: var(--tp-theme-primary);
+        background-color: var(--swiper-theme-color);
     }
 }
 
@@ -416,10 +416,10 @@
     transition: .3s;
 
     &:hover {
-        color: var(--tp-theme-1);
+        color: var(--tp-common-dpink);
     }
 
     &::after {
-        background-color: var(--tp-theme-1);
+        background-color: var(--tp-common-dpink);
     }
 }

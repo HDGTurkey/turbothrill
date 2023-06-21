@@ -41,7 +41,7 @@
 }
 .tp-blog-meta {
     & a {
-        color: var(--tp-theme-1);
+        color: var(--tp-common-dpink);
         font-size: 14px;
         font-weight: 700;
         text-transform: uppercase;
@@ -62,7 +62,7 @@
         }
 
         &:hover {
-            background-color: var(--tp-theme-1);
+            background-color: var(--tp-common-dpink);
             color: #fff;
         }
     }
@@ -73,7 +73,7 @@
 
         &:hover {
             background-color: rgba(89, 86, 233, .1);
-            color: var(--tp-theme-1);
+            color: var(--tp-common-dpink);
         }
     }
 }
@@ -86,7 +86,7 @@
         margin-bottom: 15px;
 
         &:hover {
-            color: var(--tp-theme-1);
+            color: var(--tp-common-dpink);
         }
 
         @media #{$xl} {
@@ -228,7 +228,7 @@
 
     &__meta {
         & a {
-            color: var(--tp-theme-1);
+            color: var(--tp-common-dpink);
             font-weight: 700;
             text-transform: uppercase;
             font-size: 14px;
@@ -271,7 +271,7 @@
                 color: var(--tp-common-black);
 
                 &:hover {
-                    color: var(--tp-theme-1);
+                    color: var(--tp-common-dpink);
                 }
             }
         }
@@ -308,7 +308,7 @@
     }
 
     &:hover {
-        color: var(--tp-theme-1);
+        color: var(--tp-common-dpink);
     }
 }
 
@@ -339,7 +339,7 @@
 
     &__meta {
         & a {
-            color: var(--tp-theme-1);
+            color: var(--tp-common-dpink);
             font-weight: 700;
             text-transform: uppercase;
             font-size: 16px;
@@ -387,7 +387,7 @@
                 color: var(--tp-common-black);
 
                 &:hover {
-                    color: var(--tp-theme-1);
+                    color: var(--tp-common-dpink);
                 }
             }
         }
@@ -419,7 +419,7 @@
     }
 
     &:hover {
-        color: var(--tp-theme-1);
+        color: var(--tp-common-dpink);
     }
 }
 
@@ -466,7 +466,7 @@
         }
 
         & a {
-            color: var(--tp-theme-1);
+            color: var(--tp-common-dpink);
             font-weight: 700;
             text-transform: uppercase;
             font-size: 16px;
@@ -507,7 +507,7 @@
                 color: var(--tp-common-black);
 
                 &:hover {
-                    color: var(--tp-theme-1);
+                    color: var(--tp-common-dpink);
                 }
             }
         }
@@ -533,7 +533,7 @@
     }
 
     &:hover {
-        color: var(--tp-theme-1);
+        color: var(--tp-common-dpink);
     }
 }
 
@@ -623,7 +623,7 @@
     }
 
     &:hover {
-        color: var(--tp-theme-1);
+        color: var(--tp-common-dpink);
     }
 }
 
@@ -715,7 +715,7 @@
             transition: .3s;
 
             &:hover {
-                color: var(--tp-theme-1);
+                color: var(--tp-common-dpink);
             }
         }
     }
@@ -769,7 +769,7 @@
 
             &:hover {
                 color: var(--tp-common-black);
-                background-color: var(--tp-theme-primary);
+                background-color: var(--swiper-theme-color);
             }
         }
 
@@ -820,7 +820,7 @@
     }
 
     &:hover {
-        color: var(--tp-theme-1);
+        color: var(--tp-common-dpink);
     }
 }
 
@@ -866,11 +866,11 @@
             background-color: var(--tp-common-white);
             text-align: center;
             line-height: 90px;
-            color: var(--tp-theme-1);
+            color: var(--tp-common-dpink);
            border-radius: 50%;
            animation: pulse 2s infinite;
             &:hover {
-                background-color: var(--tp-theme-primary);
+                background-color: var(--swiper-theme-color);
                 color: var(--tp-common-black);
             }
         }
@@ -945,7 +945,7 @@
 
         & a {
             &:hover {
-                color: var(--tp-theme-1);
+                color: var(--tp-common-dpink);
             }
         }
     }
@@ -972,10 +972,10 @@
             }
 
             &:hover {
-                color: var(--tp-theme-1);
+                color: var(--tp-common-dpink);
 
                 & i {
-                    color: var(--tp-theme-1);
+                    color: var(--tp-common-dpink);
                 }
             }
         }
@@ -1146,7 +1146,7 @@
 
             & a {
                 display: inline-block;
-                color: var(--tp-theme-1);
+                color: var(--tp-common-dpink);
                 background: rgba(61, 108, 231, 0.1);
                 height: 22px;
                 line-height: 22px;
@@ -1161,7 +1161,7 @@
 
                 &:hover {
                     color: var(--tp-common-white);
-                    background: var(--tp-theme-1);
+                    background: var(--tp-common-dpink);
                 }
             }
         }
@@ -1185,7 +1185,7 @@
 
                 &:checked {
                     position: relative;
-                    background-color: var(--tp-theme-1);
+                    background-color: var(--tp-common-dpink);
                     border-color: transparent;
 
                     &::after {
@@ -1217,7 +1217,7 @@
                     padding-left: 4px;
 
                     &:hover {
-                        color: var(--tp-theme-1);
+                        color: var(--tp-common-dpink);
                     }
                 }
 
@@ -1316,7 +1316,7 @@
 
             & a {
                 &:hover {
-                    color: var(--tp-theme-1);
+                    color: var(--tp-common-dpink);
                 }
             }
         }
@@ -1398,11 +1398,11 @@
 
                 &:hover {
                     & a {
-                        color: var(--tp-theme-1);
+                        color: var(--tp-common-dpink);
                     }
 
                     & span {
-                        color: var(--tp-theme-1);
+                        color: var(--tp-common-dpink);
                     }
                 }
             }
@@ -1450,7 +1450,7 @@
             bottom: 0;
             right: 0;
             z-index: 1;
-            background: var(--tp-theme-1);
+            background: var(--tp-common-dpink);
 
             & h4 {
                 padding: 15px 20px;
@@ -1480,7 +1480,7 @@
         border-radius: 5px;
 
         &:hover {
-            background: var(--tp-theme-primary);
+            background: var(--swiper-theme-color);
             color: var(--tp-common-black);
         }
     }
@@ -1517,10 +1517,10 @@ blockquote {
         &::before {
             content: "";
             font-size: 28px;
-            color: var(--tp-theme-1);
+            color: var(--tp-common-dpink);
             padding-bottom: 0px;
             display: inline-block;
-            background: var(--tp-theme-1);
+            background: var(--tp-common-dpink);
             height: 2px;
             width: 40px;
             font-weight: 400;

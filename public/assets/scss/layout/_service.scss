@@ -95,7 +95,7 @@
         font-weight: 500;
 
         &:hover {
-            color: var(--tp-theme-1);
+            color: var(--tp-common-dpink);
         }
 
         @media #{$lg} {
@@ -128,7 +128,7 @@
         font-weight: 600;
 
         &:hover {
-            color: var(--tp-theme-1);
+            color: var(--tp-common-dpink);
 
             & i {
                 animation: tfLeftToRight 0.4s forwards;
@@ -349,7 +349,7 @@
     }
 
     &:hover {
-        color: var(--tp-theme-1);
+        color: var(--tp-common-dpink);
     }
 }
 
@@ -564,12 +564,12 @@
             padding-bottom: 10px;
 
             &:hover {
-                color: var(--tp-theme-1);
+                color: var(--tp-common-dpink);
             }
         }
 
         & i {
-            color: var(--tp-theme-1);
+            color: var(--tp-common-dpink);
             font-weight: 900;
             font-size: 110px;
             transform: rotate(45deg);
@@ -638,7 +638,7 @@
             }
 
             &:hover {
-                color: var(--tp-theme-1);
+                color: var(--tp-common-dpink);
             }
         }
     }
@@ -821,7 +821,7 @@
                 border-radius: 50%;
                 bottom: -25px;
                 right: -7px;
-                background-color: var(--tp-theme-1);
+                background-color: var(--tp-common-dpink);
             }
         }
     }
@@ -1042,12 +1042,12 @@
 .bp-sv-color-3 {
     & .bpservice__icon {
         & a {
-            background-color: var(--tp-theme-1);
+            background-color: var(--tp-common-dpink);
         }
     }
 
     &:hover {
-        color: var(--tp-theme-1);
+        color: var(--tp-common-dpink);
     }
 }
 
@@ -1099,7 +1099,7 @@
     }
 
     &:hover {
-        color: var(--tp-theme-1);
+        color: var(--tp-common-dpink);
     }
 }
 

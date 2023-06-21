@@ -54,7 +54,7 @@
     }
 
     & i {
-        color: var(--tp-theme-primary);
+        color: var(--swiper-theme-color);
     }
 }
 
@@ -137,7 +137,7 @@
         display: inline-block;
 
         & i {
-            color: var(--tp-theme-primary);
+            color: var(--swiper-theme-color);
         }
 
         & .fa-stars-1 {
@@ -169,14 +169,14 @@
         height: 8px;
         display: inline-block;
         border-radius: 50%;
-        background-color: var(--tp-theme-1);
+        background-color: var(--tp-common-dpink);
         margin: 0px 3px;
         opacity: .5;
         transition: .3s;
     }
 
     & .swiper-pagination-bullet.swiper-pagination-bullet-active {
-        background-color: var(--tp-theme-1);
+        background-color: var(--tp-common-dpink);
         width: 30px;
         border-radius: 30px;
         opacity: 1;
@@ -272,7 +272,7 @@
 
     &__rating {
         & span {
-            color: var(--tp-theme-primary);
+            color: var(--swiper-theme-color);
             font-size: 26px;
             padding-right: 5px;
             margin-bottom: 55px;
@@ -355,14 +355,14 @@
         height: 8px;
         display: inline-block;
         border-radius: 50%;
-        background-color: var(--tp-theme-1);
+        background-color: var(--tp-common-dpink);
         margin: 0px 3px;
         opacity: .5;
         transition: .3s;
     }
 
     & .swiper-pagination-bullet.swiper-pagination-bullet-active {
-        background-color: var(--tp-theme-1);
+        background-color: var(--tp-common-dpink);
         width: 30px;
         border-radius: 30px;
         opacity: 1;
@@ -402,7 +402,7 @@
 
     &__rating {
         & span {
-            color: var(--tp-theme-primary);
+            color: var(--swiper-theme-color);
             line-height: 1;
         }
     }
@@ -472,7 +472,7 @@
 .tptestimonial{
     &__rating-5{
         & span{
-            color: var(--tp-theme-primary);
+            color: var(--swiper-theme-color);
             padding-right: 2px;
             margin-bottom: 55px;
             display: inline-block;
@@ -600,7 +600,7 @@
 }
 .basic-pagination ul li a:hover, 
 .basic-pagination ul li.active a{
-	background: var(--tp-theme-primary);
-	border-color: var(--tp-theme-primary);
+	background: var(--swiper-theme-color);
+	border-color: var(--swiper-theme-color);
 	color: var(--tp-common-black);
 }

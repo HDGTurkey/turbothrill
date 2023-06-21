@@ -45,7 +45,7 @@
                     left: 0;
                     width: 0;
                     height: 4px;
-                    background-color: var(--tp-theme-1);
+                    background-color: var(--tp-common-dpink);
                     border-radius: 33px;
                     opacity: 1;
                     visibility: visible;
@@ -59,7 +59,7 @@
                     right: 0;
                     width: 0;
                     height: 4px;
-                    background-color: var(--tp-theme-primary);
+                    background-color: var(--swiper-theme-color);
                     border-radius: 33px;
                     z-index: 9;
                     opacity: 0;
@@ -127,7 +127,7 @@
                         }
 
                         &:hover {
-                            color: var(--tp-theme-primary);
+                            color: var(--swiper-theme-color);
                         }
                     }
                 }
@@ -150,7 +150,7 @@
         }
         &:hover{
             &::after{
-                color: var(--tp-theme-primary);
+                color: var(--swiper-theme-color);
             }
         }
     }
@@ -275,7 +275,7 @@
         z-index: 2;
 
         &:hover {
-            background-color: var(--tp-theme-primary);
+            background-color: var(--swiper-theme-color);
             color: var(--tp-common-black);
         }
     }
@@ -357,7 +357,7 @@
 }
 .hasdropdown-white{
     &.header-sticky{
-        background-color: var(--tp-theme-1);
+        background-color: var(--tp-common-dpink);
         padding-bottom: 0px;
         padding-top: 0;
         box-shadow: none;
@@ -388,7 +388,7 @@
 }
 .tp-green-bg{
     &.header-sticky {
-        background: var(--tp-theme-1);
+        background: var(--tp-common-dpink);
     }
     & button{
         box-shadow: none;
@@ -420,7 +420,7 @@
 
             &:hover {
                 & a {
-                    color: var(--tp-theme-primary);
+                    color: var(--swiper-theme-color);
                 }
 
                 & ul.submenu {
@@ -465,7 +465,7 @@
         color: var(--tp-common-black);
         transition: .3s;
         &:hover{
-            color: var(--tp-theme-1);
+            color: var(--tp-common-dpink);
         }
     }
 }
@@ -517,14 +517,14 @@
     font-weight: 500;
 
     &:hover {
-        color: var(--tp-theme-primary);
+        color: var(--swiper-theme-color);
     }
 }
 .tp-login-primary {
     & a{
     color: var(--tp-common-white);
     &:hover {
-        color: var(--tp-theme-primary);
+        color: var(--swiper-theme-color);
     }
     }
 }
@@ -582,7 +582,7 @@
         }
 
         & span {
-            color: var(--tp-theme-1);
+            color: var(--tp-common-dpink);
             font-size: 14px;
             font-weight: 400;
             display: inline-block;
@@ -635,7 +635,7 @@
                 color: var(--tp-common-black);
 
                 & .arrow-down {
-                    color: var(--tp-theme-1);
+                    color: var(--tp-common-dpink);
                     font-size: 16px;
                     margin-left: 5px;
                 }
@@ -649,10 +649,10 @@
 
             &:hover> {
                 & a {
-                    color: var(--tp-theme-1);
+                    color: var(--tp-common-dpink);
 
                     & i {
-                        color: var(--tp-theme-1);
+                        color: var(--tp-common-dpink);
                     }
                 }
 
@@ -685,7 +685,7 @@
 
                     &:hover {
                         & a {
-                            color: var(--tp-theme-primary);
+                            color: var(--swiper-theme-color);
                         }
                     }
                 }
@@ -806,7 +806,7 @@
                     margin-bottom: 0;
                 }
                 & i{
-                    color: var(--tp-theme-primary);
+                    color: var(--swiper-theme-color);
                     font-size: 22px;
                     position: absolute;
                     left: 0;
@@ -816,7 +816,7 @@
                     }
                 }
                 &:hover{
-                    color: var(--tp-theme-primary);
+                    color: var(--swiper-theme-color);
                 }
             }
         }
@@ -848,7 +848,7 @@
         & button{
             height: 60px;
             width: 60px;
-            background-color: var(--tp-theme-1);
+            background-color: var(--tp-common-dpink);
             color: var(--tp-common-white);
             font-size: 16px;
             position: absolute;
