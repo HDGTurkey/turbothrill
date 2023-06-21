@@ -10,12 +10,14 @@ import { AGCProvider } from '@/app/Context/AGCProvider'
 export default function MyApp({ Component, pageProps }) {
   const { theme } = useSite()
   return (
-    <AGCProvider>
-      <SiteProvider>
-        <Navbar />
-        <Component {...pageProps} />
-        <Footer />
-      </SiteProvider>
-    </AGCProvider>
+    <>
+      <AGCProvider>
+        <SiteProvider>
+          <Navbar />
+          <Component {...pageProps} />
+          <Footer />
+        </SiteProvider>
+      </AGCProvider>
+    </>
   )
 }

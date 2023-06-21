@@ -11,10 +11,12 @@ import { useSite } from '../Context/Context';
 import { useRouter } from 'next/router';
 import BlogOneCard from './Blogs/BlogOneCard';
 
+import MyLoader from '../utils/MyLoader';
+
 interface Blogs {
-  id : string;
+  id: string;
   image: string;
-  largeImage : string;
+  largeImage: string;
   author: string;
   date: string;
   view: string;
@@ -90,23 +92,23 @@ export const BlogWrapper = () => {
   const finalData = mediumData.slice(0, 10);
 
   return (
-    loading ? "Loading" :
+    loading ? <MyLoader /> :
       <>
         <div className="max-w-7xl mx-auto grid gap-3 grid-cols-1 lg:grid-cols-3 mt-[200px]">
           {finalData.map((single, key) => {
-              if (totalPages >= 1 && key >= ((currentPage - 1) * blogsPerPage) && key < (currentPage * blogsPerPage)) {
-                return (
-                  
-                  <div key={key} className="flex " data-aos="fade-up">
-                    
-                    <BlogThreeCard blogData={single} key={key} />
-                  </div>
-                );
-              }
-            })}
+            if (totalPages >= 1 && key >= ((currentPage - 1) * blogsPerPage) && key < (currentPage * blogsPerPage)) {
+              return (
+
+                <div key={key} className="flex " data-aos="fade-up">
+
+                  <BlogThreeCard blogData={single} key={key} />
+                </div>
+              );
+            }
+          })}
         </div>
         <div className={`max-w-7xl mx-auto mt-3 text-right border-[0.5px] rounded-lg ${data.theme === 'light' ? 'border-gray-300' : ' border-gray-700'}`}>
-           {/* {totalPages > 1 && 
+          {/* {totalPages > 1 && 
             <Pagination pageName={location.pathname} currentPage={currentPage} totalPages={totalPages} _setCurrentPage={_setCurrentPage} />
            }  */}
         </div>

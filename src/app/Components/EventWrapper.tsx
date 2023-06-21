@@ -7,6 +7,7 @@ import { useRouter } from 'next/router';
 import { AGCContext } from '../Context/AGCProvider';
 import { events as eventsModel } from "../model/events.js";
 
+import MyLoader from '../utils/MyLoader';
 
 interface Events {
     id: string;
@@ -125,7 +126,7 @@ function EventWrapper() {
 
             </div>
             <div className='flex mt-10 justify-between pt-8 max-w-7xl mx-auto text-left'>
-                {loading ? "Loading" :
+                {loading ? <MyLoader/> :
                     <table className="table-auto w-full shadow-2xl " >
                         <thead >
                             <tr >
