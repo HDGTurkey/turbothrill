@@ -6,7 +6,7 @@ interface Blog {
           thumbnail: string;
           title: string;
           views: number;
-          truncatedDescription: string;
+          description: string;
           author: string;
           comment: number;
           pubDate: string;
@@ -17,10 +17,10 @@ interface Props {
 }
 
 const BlogItem: React.FC<Props> = ({ blog }) => {
-          const { id, thumbnail, title, views, author, comment, pubDate } = blog;
+          const { id, thumbnail, title, views, author, comment, pubDate , description} = blog;
           const date = new Date(blog.pubDate);
           const formattedDate = date.toLocaleDateString('tr-TR');
-          const cleanDescription = blog.title.replace(/<\/?[^>]+(>|$)/g, '').replace(/<img[^>]*>/g, '');
+          const cleanDescription = blog.description.replace(/<\/?[^>]+(>|$)/g, '').replace(/<img[^>]*>/g, '');
           const maxLength = 400;
           const truncatedDescription = cleanDescription.length > maxLength
                     ? cleanDescription.slice(0, maxLength) + "..."  // İlk 100 karakter + "..." ekleniyor
@@ -39,7 +39,7 @@ const BlogItem: React.FC<Props> = ({ blog }) => {
 
                                         </Link>
                               </div>
-                              <div className="postbox__content">
+                              <div className="postbox__content ">
                                         <div className="postbox__meta">
                                                   <span>
                                                             <a href="#">
@@ -63,7 +63,7 @@ const BlogItem: React.FC<Props> = ({ blog }) => {
                                                   <p>{truncatedDescription}</p>
                                         </div>
                                         <div className="post__button">
-                                                  <a className="tp-btn-yellow"> READ MORE</a>
+                                                  <a className="tp-btn-yellow text-white"> Daha Fazla</a>
 
                                         </div>
                               </div>
