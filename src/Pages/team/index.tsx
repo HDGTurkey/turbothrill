@@ -18,12 +18,20 @@ const TeamArea: React.FC = () => {
   }
   useEffect(() => {
     getTeams()
+    console.log(teamData);
+    console.log(teamData);
+    console.log(teamData);
+    console.log(teamData);
+    console.log(teamData);
+    console.log(teamData);
+    
+    
   }, [])
 
   return (
     <>
       <Breadcrumb title={'Ekibimiz'} />
-      <div className="ac-team-area pt-130 pb-100">
+      <div className="ac-team-area pt-130 pb-50">
         <div className="container">
           <div className="row">
             <div className="col-12">

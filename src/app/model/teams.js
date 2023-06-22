@@ -6,10 +6,9 @@
 class teams {
     constructor() {
         this.id = undefined;
+        this.img = undefined;
         this.name = undefined;
-        this.slug_name = undefined;
         this.designation = undefined;
-        this.image = undefined;
         this.twitter = undefined;
         this.linkedin = undefined;
         this.github = undefined;
@@ -23,6 +22,14 @@ class teams {
         return this.id;
     }
 
+    setImg(img) {
+        this.img = img;
+    }
+
+    getImg() {
+        return this.img;
+    }
+
     setName(name) {
         this.name = name;
     }
@@ -31,28 +38,12 @@ class teams {
         return this.name;
     }
 
-    setSlug_name(slug_name) {
-        this.slug_name = slug_name;
-    }
-
-    getSlug_name() {
-        return this.slug_name;
-    }
-
     setDesignation(designation) {
         this.designation = designation;
     }
 
     getDesignation() {
         return this.designation;
-    }
-
-    setImage(image) {
-        this.image = image;
-    }
-
-    getImage() {
-        return this.image;
     }
 
     setTwitter(twitter) {

@@ -1,18 +1,22 @@
 {
-    "schemaVersion": 5,
+    "schemaVersion": 9,
     "permissions": [
         {
             "permissions": [
                 {
                     "role": "World",
                     "rights": [
-                        "Read"
+                        "Read",
+                        "Upsert",
+                        "Delete"
                     ]
                 },
                 {
                     "role": "Authenticated",
                     "rights": [
-                        "Read"
+                        "Read",
+                        "Upsert",
+                        "Delete"
                     ]
                 },
                 {
@@ -76,13 +80,17 @@
                 {
                     "role": "World",
                     "rights": [
-                        "Read"
+                        "Read",
+                        "Upsert",
+                        "Delete"
                     ]
                 },
                 {
                     "role": "Authenticated",
                     "rights": [
-                        "Read"
+                        "Read",
+                        "Upsert",
+                        "Delete"
                     ]
                 },
                 {
@@ -120,6 +128,14 @@
                 },
                 {
                     "isNeedEncrypt": false,
+                    "fieldName": "img",
+                    "notNull": false,
+                    "isSensitive": false,
+                    "belongPrimaryKey": false,
+                    "fieldType": "String"
+                },
+                {
+                    "isNeedEncrypt": false,
                     "fieldName": "name",
                     "notNull": false,
                     "isSensitive": false,
@@ -128,23 +144,7 @@
                 },
                 {
                     "isNeedEncrypt": false,
-                    "fieldName": "slug_name",
-                    "notNull": false,
-                    "isSensitive": false,
-                    "belongPrimaryKey": false,
-                    "fieldType": "String"
-                },
-                {
-                    "isNeedEncrypt": false,
                     "fieldName": "designation",
-                    "notNull": false,
-                    "isSensitive": false,
-                    "belongPrimaryKey": false,
-                    "fieldType": "String"
-                },
-                {
-                    "isNeedEncrypt": false,
-                    "fieldName": "image",
                     "notNull": false,
                     "isSensitive": false,
                     "belongPrimaryKey": false,
