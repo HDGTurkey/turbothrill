@@ -9,6 +9,7 @@ import agconnect from "@hw-agconnect/api";
 import "@hw-agconnect/auth";
 import "@hw-agconnect/instance";
 import { agConnectConfig } from "../../app/config/agconnect-services.js";
+import "../../app/assets/Css/splash-screen.css";
 
 export const AGCContext = createContext<any>({executeQuery: undefined});
 type x = {
@@ -58,7 +59,12 @@ export const AGCProvider: React.FC<x> = ({ children }) => {
   }, []);
 
   if (loading) {
-    return <div>Loading</div>;
+    return (
+      <div className="splash-screen">
+        <img src={require('../../../public/assets/img/logo/logo-blue.png').default.src} width={300} height={300} />
+        <div className="loading-dot">...</div>
+      </div>
+    );
   }
 
   return <AGCContext.Provider value={{ executeQuery , executeQueryWhere }}>{children}</AGCContext.Provider>;
