@@ -25,7 +25,7 @@ const MobileMenu = ({
         <div className="container-fluid">
           <div className="row align-items-center">
             <div className="col-8">
-              <div className="my-5 mx-3 tp-logo">
+              <div className="mt-2 mx-3 tp-logo">
                 <img src="/assets/img/logo/logo-blue.png" alt="" />
               </div>
             </div>
