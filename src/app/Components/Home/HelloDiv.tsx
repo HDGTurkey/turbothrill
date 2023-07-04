@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 const hero_contents = {
-  title: 'Huawei Student Developers',
+  title: 'HSD Beykent ',
   text: (
     <>
       HUAWEI Student Developers(HSD), öncü teknolojilere tutku duyan kolej ve
