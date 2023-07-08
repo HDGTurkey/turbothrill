@@ -18,11 +18,20 @@ const Header = () => {
         >
           <div className="container-fluid">
             <div className="row align-items-center">
-              <div className="col-xl-3 col-lg-3">
-                <div className="tp-logo">
+              <div className="col-xl-5 col-lg-3">
+                <div className="tp-logo flex ">
                   <Link href="/">
-                    <img src="/assets/img/logo/logo-blue.png" alt="" />
+                    <img
+                      src="/assets/img/logo/logo-blue.png"
+                      alt=""
+                      width="30"
+                    />
                   </Link>
+                  <span className=" text-[30px] mt-1.5 ml-3 cursor-pointer font-extrabold  text-black ">
+                    <div className="bg-red-700 text-white rounded px-2">
+                      İSTANBUL BEYKENT
+                    </div>
+                  </span>
                 </div>
               </div>
               <div className="col-xl-7 col-lg-7">
@@ -34,7 +43,7 @@ const Header = () => {
                   </nav>
                 </div>
               </div>
-              <div className="col-xl-2 col-lg-2">
+              <div className="col-xl-0 col-lg-2">
                 <div
                   className="tp-menu-bar text-end block md:hidden"
                   onClick={() => setSidebarOpen(true)}
