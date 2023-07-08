@@ -19,25 +19,33 @@ const MobileMenu = ({
         id="header-sticky-mobile"
         className={`tp-md-menu ${
           transparent ? 'header-transparent' : ''
-        } d-lg-none  
-    ${bg ? bg : ''} ${headerSticky ? 'header-sticky' : ''}`}
+        } d-lg-none ${bg ? bg : ''} ${headerSticky ? 'header-sticky' : ''}`}
       >
-        <div className="container-fluid">
-          <div className="row align-items-center">
-            <div className="col-8">
-              <div className="mt-2 mx-3 tp-logo">
-                <img src="/assets/img/logo/logo-blue.png" alt="" />
-              </div>
+        <div className="container-fluid mt-3">
+          <div className="grid grid-cols-12 ">
+            <div className="col-span-4 max-w-[200px]">
+              <img src="/assets/img/logo/logo-blue.png" alt="" />
             </div>
-            <div className="col-4">
-              <div className="bar text-end">
-                <button
-                  className="tp-menu-bar"
-                  onClick={() => setSidebarOpen(true)}
-                  type="button"
-                >
-                  <i className="fal fa-bars"></i>
-                </button>
+            <div className="col-span-7">
+              <div className="grid grid-cols-5">
+                <div className="col-span-4">
+                  <div className="flex">
+                    <div className="flex bg-red-700 mt-1.5 mx-1 px-1   text-white rounded">
+                      <div className="text-lg sm:text-xl">İSTANBUL BEYKENT</div>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex ">
+                  <div className="bar text-left">
+                    <button
+                      className="tp-menu-bar"
+                      onClick={() => setSidebarOpen(true)}
+                      type="button"
+                    >
+                      <i className="fal fa-bars"></i>
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
