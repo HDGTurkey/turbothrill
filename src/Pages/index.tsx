@@ -9,18 +9,18 @@ import ProjectArea from '@/app/components/Home/project-area'
 
 //container mx-auto
 export default function HomePage() {
-  return (
-    <>
-      <div className="">
-        <HelloDiv />
-        <WhatWeDo />
-        {/* <About /> */}
-        <ProjectArea />
+	return (
+		<>
+			<div className="">
+				<HelloDiv />
+				<WhatWeDo />
+				{/* <About /> */}
+				<ProjectArea />
 
-        {/* <OurEvents />
+				{/* <OurEvents />
         <FeatureEvent /> */}
-        {/* <Partner /> */}
-      </div>
-    </>
-  )
+				{/* <Partner /> */}
+			</div>
+		</>
+	)
 }

@@ -12,23 +12,23 @@ import FeatureArea from '@/pages/about/feature-area'
 // import TeamArea from './team-area';
 
 const About = () => {
-  return (
-    <>
-      {/* <HeaderSix /> */}
-      <Breadcrumb title={'HSD Nedir ?'} />
-      <AboutArea />
-      <ServicesArea />
-      <FeatureArea />
+	return (
+		<>
+			{/* <HeaderSix /> */}
+			<Breadcrumb title={'HSD Nedir ?'} />
+			<AboutArea />
+			<ServicesArea />
+			<FeatureArea />
 
-      <FaqArea />
-      {/*
+			<FaqArea />
+			{/*
       
       <FeatureArea/>
       <TeamArea/>
       <CtaTwo/>
       <FooterThree /> */}
-    </>
-  )
+		</>
+	)
 }
 
 export default About
