@@ -8,8 +8,8 @@
 }
 #dark {
   /* @apply bg-gray-900; */
-    background-color: #212121;
-    color: white;
+  background-color: #212121;
+  color: white;
 }
 
 pageTitle {

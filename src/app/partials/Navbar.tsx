@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import useSticky from '../hooks/use-sticky'
-import Sidebar from '../Components/common/off-canvas'
+import Sidebar from '../components/common/off-canvas'
 import NavMenus from './nav-menus'
 import MobileMenu from './mobile-menu'
 

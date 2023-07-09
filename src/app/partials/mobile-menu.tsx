@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import useSticky from '../hooks/use-sticky'
-import Sidebar from '../Components/common/off-canvas'
+import Sidebar from '../components/common/off-canvas'
 
 const MobileMenu = ({
   logo,

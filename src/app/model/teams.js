@@ -4,73 +4,73 @@
  */
 
 class teams {
-    constructor() {
-        this.id = undefined;
-        this.img = undefined;
-        this.name = undefined;
-        this.designation = undefined;
-        this.twitter = undefined;
-        this.linkedin = undefined;
-        this.github = undefined;
-    }
+  constructor() {
+    this.id = undefined
+    this.img = undefined
+    this.name = undefined
+    this.designation = undefined
+    this.twitter = undefined
+    this.linkedin = undefined
+    this.github = undefined
+  }
 
-    setId(id) {
-        this.id = id;
-    }
+  setId(id) {
+    this.id = id
+  }
 
-    getId() {
-        return this.id;
-    }
+  getId() {
+    return this.id
+  }
 
-    setImg(img) {
-        this.img = img;
-    }
+  setImg(img) {
+    this.img = img
+  }
 
-    getImg() {
-        return this.img;
-    }
+  getImg() {
+    return this.img
+  }
 
-    setName(name) {
-        this.name = name;
-    }
+  setName(name) {
+    this.name = name
+  }
 
-    getName() {
-        return this.name;
-    }
+  getName() {
+    return this.name
+  }
 
-    setDesignation(designation) {
-        this.designation = designation;
-    }
+  setDesignation(designation) {
+    this.designation = designation
+  }
 
-    getDesignation() {
-        return this.designation;
-    }
+  getDesignation() {
+    return this.designation
+  }
 
-    setTwitter(twitter) {
-        this.twitter = twitter;
-    }
+  setTwitter(twitter) {
+    this.twitter = twitter
+  }
 
-    getTwitter() {
-        return this.twitter;
-    }
+  getTwitter() {
+    return this.twitter
+  }
 
-    setLinkedin(linkedin) {
-        this.linkedin = linkedin;
-    }
+  setLinkedin(linkedin) {
+    this.linkedin = linkedin
+  }
 
-    getLinkedin() {
-        return this.linkedin;
-    }
+  getLinkedin() {
+    return this.linkedin
+  }
 
-    setGithub(github) {
-        this.github = github;
-    }
+  setGithub(github) {
+    this.github = github
+  }
 
-    getGithub() {
-        return this.github;
-    }
+  getGithub() {
+    return this.github
+  }
 }
 
-teams.className = 'teams';
+teams.className = 'teams'
 
-export {teams}
+export { teams }
