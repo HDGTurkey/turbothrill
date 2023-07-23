@@ -13,10 +13,21 @@
 }
 
 .tp-footer-title {
-    font-size: 35px;
-    color: var(--tp-common-white);
-    font-weight: 500;
-
+    display: inline-block;
+	font-size: 16px;
+	font-weight: 700;
+	color:  var(--tp-common-black);
+    background-color: #EDEEF1;
+	height: 60px;
+    width: 50%;
+	line-height: 60px;
+	text-align: center;
+	padding: 0 50px;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+    border-radius: 10px;
+	text-transform: capitalize;
     @media #{$lg,$xl,$md,$xs} {
         & br {
             display: none;
@@ -35,6 +46,45 @@
         font-size: 28px;
         margin-bottom: 30px;
     }
+    &:hover{
+		color: var(--tp-common-white);
+		background-color: var(--tp-theme-secondary);
+		& i {
+			animation: tfLeftToRight 0.5s forwards;
+		}
+	}
+	&::before, &::after {
+		content: '';
+		background:  var(--tp-common-dpink);
+		height: 50%;
+		width: 0;
+		position: absolute;
+		transition: 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+		-webkit-transition: 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+		z-index: -1;
+	}
+	&::before {
+		top: 0;
+		left: 0;
+		right: auto;
+	}
+	&::after {
+		bottom: 0;
+		right: 0;
+		left: auto;
+	}
+	&:hover{
+		&::before {
+			width: 100%;
+			right: 0;
+			left: auto;
+		}
+		&::after {
+			width: 100%;
+			left: 0;
+			right: auto;
+		}
+	}
 }
 
 .tp-copyright-bottom {
