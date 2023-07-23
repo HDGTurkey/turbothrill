@@ -515,8 +515,9 @@
     position: absolute;
     left: 0;
     bottom: 70px;
+    width: 300px;
     @media #{$md} {
-        left: -60px;
+        left: -80px;
         bottom: 90px;
     }
 

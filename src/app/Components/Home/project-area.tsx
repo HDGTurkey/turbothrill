@@ -18,8 +18,8 @@ const ProjectArea = () => {
 
   const project_contents = {
     subtitle: '',
-    title: `Etkinliklerimizden Kalan${' '}`,
-    highlight_text: 'Fotoğraflarımız'
+    title: `Remaining Photos from${' '}`,
+    highlight_text: 'Our Events'
   }
   const { title, subtitle, highlight_text } = project_contents;
   return (

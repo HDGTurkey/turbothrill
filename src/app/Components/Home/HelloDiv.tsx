@@ -4,8 +4,8 @@ const hero_contents = {
   title: 'Huawei Student Developers',
   text: (
     <>
-      HUAWEI Student Developers(HSD), öncü teknolojilere tutku duyan kolej ve
-      üniversite öğrencilerine yönelik küresel bir programdır.
+HUAWEI Student Developers(HSD) is a college and university with a passion for leading-edge technologies.
+       It is a global program for university students.
     </>
   ),
   btn_text: 'Visit Case Studies',

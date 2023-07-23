@@ -30,16 +30,12 @@ const TeamArea: React.FC = () => {
 
   return (
     <>
-      <Breadcrumb title={'Ekibimiz'} />
+      <Breadcrumb title={'Our Team'} />
       <div className="ac-team-area pt-130 pb-50">
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <div className="ac-team-title-section text-center mb-60">
-                <h3 className="ac-team-title">
-                  İnsanlar başarının anahtarıdır
-                </h3>
-              </div>
+             
             </div>
           </div>
           <div className="row">

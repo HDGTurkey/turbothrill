@@ -28,8 +28,8 @@ const Header = () => {
                     />
                   </Link>
                   <span className=" text-[30px] mt-1.5 ml-3 cursor-pointer font-extrabold  text-black ">
-                    <div className="bg-red-700 text-white rounded px-2">
-                      İSTANBUL BEYKENT
+                    <div className="bg-[#ec373c] text-white rounded px-2">
+                      ISTANBUL BEYKENT
                     </div>
                   </span>
                 </div>

@@ -36,7 +36,7 @@ const BlogArea = () => {
 
   return (
     <>
-    <Breadcrumb title={'Yazılarımız'} />
+    <Breadcrumb title={'Blogs'} />
       <div className="postbox__area w-full pt-120 pb-120">
         <div className="md:mx-32">
           <div className="row">

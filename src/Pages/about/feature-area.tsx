@@ -26,8 +26,8 @@ const FeatureItem: React.FC<FeatureItemProps> = ({ title, subtitle, color }) => 
 }
 
 const contents = {
-          title: 'Elçi Olma Süreci',
-          sm_desc_1: "Huawei Öğrenci Elçisi programı, teknoloji ve yenilik konusunda hevesli ve deneyimlerini akranlarıyla paylaşmaya istekli bir grup öğrenci lideri oluşturmayı amaçlayan küresel bir programdır. Program, öğrencilerin mesleki ve kişisel becerilerini geliştirmelerine, en son teknolojiler hakkında bilgi edinmelerine ve daha iyi bir topluluk oluşturmalarına yardımcı olmak için tasarlanmıştır.",
+          title: 'The Process of Being an Ambassador',
+          sm_desc_1: "The Huawei Student Ambassador program is a global program that aims to create a group of student leaders enthusiastic about technology and innovation and willing to share their experiences with their peers. The program is designed to help students develop their professional and personal skills, learn about the latest technologies, and build a better community.",
           sm_desc_2: ""
 }
 const { title, sm_desc_1, sm_desc_2 } = contents;
@@ -52,13 +52,13 @@ const FeatureArea = () => {
                                                   </div>
                                                   <div className="ac-feature-border-top">
                                                             <div className="row ">
-                                                                      <FeatureItem title={'Başvuru'} 
+                                                                      <FeatureItem title={'Application'} 
                                                                                 subtitle={''}  />
-                                                                      <FeatureItem title={'Ulusal Proje Yöneticileri İle Mülakat'}
+                                                                      <FeatureItem title={'Interview with National Project Managers'}
                                                                                 subtitle={''} />
-                                                                      <FeatureItem  title={'Küresel Proje Yöneticileri İle Mülakat'} 
+                                                                      <FeatureItem  title={'Interview with Global Project Managers'} 
                                                                                 subtitle={''} />
-                                                                      <FeatureItem title={'Sertifika'} 
+                                                                      <FeatureItem title={'Certificate'} 
                                                                                 subtitle={''} />
                                                             </div>
                                                   </div>

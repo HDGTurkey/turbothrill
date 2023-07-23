@@ -86,14 +86,14 @@ function EventWrapper() {
         }`}
       >
         <div className="flex py-3 max-w-6xl mx-auto">
-          <div className="items-start text-start mx-auto">
+          <div cla ssName="items-start text-start mx-auto">
             <div className="py-2 mx-3">
-              Etkinlikler Hakkında Detaylı Bilgi İçin :
+            For Detailed Information About the Events:
               <span className="text-blue-700 mx-3">hsdturkiye@gmail.com</span>
             </div>
             <div className="mx-3 py-2">
               <h2 className="font-bold my-3 text-3xl text-black">
-                Yaklaşan Etkinlikler
+              Upcoming Events
               </h2>
             </div>
 
@@ -130,9 +130,9 @@ function EventWrapper() {
           <table className="table-auto w-full shadow-2xl mx-5 ">
             <thead>
               <tr>
-                <th className="p-5 text-lg ">Resim</th>
-                <th className="w-[50%] text-lg">Etkinlik İsmi</th>
-                <th className="text-lg">Tarih</th>
+                <th className="p-5 text-lg ">Image</th>
+                <th className="w-[50%] text-lg">Event Name</th>
+                <th className="text-lg">Date</th>
               </tr>
             </thead>
             <tbody className="">

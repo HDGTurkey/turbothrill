@@ -15,7 +15,7 @@ const About = () => {
   return (
     <>
       {/* <HeaderSix /> */}
-      <Breadcrumb title={'HSD Nedir ?'} />
+      <Breadcrumb title={'What is HSD?'} />
        <AboutArea/>
        <ServicesArea />
          <FeatureArea/>

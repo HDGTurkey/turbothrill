@@ -3,8 +3,8 @@ import React from 'react';
 
 const contents = {
   title:'Huawei Student Developers',
-  right_text_1:"HUAWEI Öğrenci Geliştiricileri (HSD), öncü teknolojilere tutku duyan kolej ve üniversite öğrencilerine yönelik küresel bir programdır. Geliştirici olarak büyümeye ilgi duyan tüm lisans ve lisansüstü öğrenciler başvurabilirler. ",
-  right_text_2:"HSD, zenginleştirici eğitim kursları ve etkinlikleri aracılığıyla öğrencilere dinamik bir eşler arası öğrenme ortamında bilgi kapsamlarını genişletme fırsatı sunar.",
+  right_text_1:"HUAWEI Student Developers (HSD) is a global program for college and university students who share a passion for pioneering technologies. All undergraduate and postgraduate students with an interest in growing as developers are welcome to apply. ",
+  right_text_2:"HSD offers students an opportunity to expand their scope of knowledge in a dynamic peer-to-peer learning environment, through enriching training courses and activities.",
   desc:"Youtube Kanalımız",
   about_img:'/assets/img/breadcrum/ab-1.2.jpg',
 }

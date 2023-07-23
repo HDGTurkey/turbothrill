@@ -8,8 +8,8 @@ const services_data = [
     duration:'.5s',
     delay:'.8s',
     img:'/assets/img/service/service-1.png',
-    title:'Bağlantı Kurun',
-    text_1:'Benzer Bir Teknoloji Tutkusuna Sahip Öğrenci Geliştiricilerle Tanışın, Fikir Alışverişinde Bulunun',
+    title:'Connection',
+    text_1:'Meet student developers with a similar passion for technology, exchange ideas, and collaborate on new projects.',
     text_2:'',
     home:true,
     service_p_2:true,
@@ -19,8 +19,8 @@ const services_data = [
     duration:'.5s',
     delay:'.8s',
     img:'/assets/img/service/service-7.png',
-    title:'Öğrenin',
-    text_1:'Topluluğumuzun Sunduğu Eğlenceli ve Bilgilendirici Etkinliklerle Kendinizi Geliştirin.',
+    title:'Learning',
+    text_1:'Acquire new skills and knowledge on a wide range of technical topics through engaging technical workshops, summits and training sessions.',
     home:true,
     service_p_2:true,
   },
@@ -29,8 +29,8 @@ const services_data = [
     duration:'.5s',
     delay:'.8s',
     img:'/assets/img/service/service-3.png',
-    title:'Gelişin',
-    text_1:'Topluluk İçindeki Deneyim Paylaşımları ile Yeni Perspektifler Kazanın.',
+    title:'Growth',
+    text_1:'Continuously improve your technical skills by partnering with accomplished developers, to fast-track your career.',
     home:true,
     service_p_2:true,
   },
@@ -41,7 +41,7 @@ const services_data = [
 const services_contents = {
   shape_img: '/assets/img/service/service-shape.png',
   subtitle: '',
-  title: 'Sizleri Neler Bekliyor?',
+  title: 'What awaits you?',
   
 }
 

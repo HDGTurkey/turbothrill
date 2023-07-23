@@ -10,7 +10,7 @@ export const EventList = () => {
   return (
     <div className=' '>
      
-        <Breadcrumb title={'Etkinlikler'} />
+        <Breadcrumb title={'Events'} />
         <EventWrapper />
         
         

@@ -3,12 +3,12 @@ import React from 'react'
 
 const footer_contents = {
   shapes: [
-    { num: 'one', img: '/assets/img/creative/creative-hand.png' },
+    { num: 'one', img: '/assets/img/creative/ThumpsUp.png' },
     { num: 'two', img: '/assets/img/service/service-1.png' },
   ],
-  title: 'Hadi sen de aramıza katıl',
+  title: 'Come join us',
   text:
-    'Huawei Student Developers Program, Huawei’nin geliştiriciler için oluşturduğu bir programdır. Programa katılarak Huawei’nin sunduğu birçok fırsattan yararlanabilirsiniz. Huawei’nin sunduğu fırsatlardan yararlanmak için hemen başvurun!',
+    'Huawei Student Developers Program is a program created by Huawei for developers. By joining the program, you can take advantage of the many opportunities Huawei has to offer. Apply now to take advantage of the opportunities Huawei offers!',
   btn_text: 'Contact us',
   copy_right_text: <>© {new Date().getFullYear()} HSD </>,
   social_links: [
