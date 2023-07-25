@@ -12,6 +12,7 @@ class teams {
         this.twitter = undefined;
         this.linkedin = undefined;
         this.github = undefined;
+        this.mail = undefined;
     }
 
     setId(id) {
@@ -68,6 +69,14 @@ class teams {
 
     getGithub() {
         return this.github;
+    }
+
+    setMail(mail) {
+        this.mail = mail;
+    }
+
+    getMail() {
+        return this.mail;
     }
 }
 
