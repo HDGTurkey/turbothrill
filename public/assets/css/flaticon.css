@@ -1,0 +1,116 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("../fonts/flaticon.ttf") format("truetype"),
+url("../fonts/flaticon.woff") format("woff"),
+url("../fonts/flaticon.woff") format("woff2"),
+url("../fonts/flaticon.eot") format("embedded-opentype"),
+url("../fonts/flaticon.svg") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-clipboard:before {
+    content: "\f101";
+}
+.flaticon-satisfaction:before {
+    content: "\f102";
+}
+.flaticon-setting:before {
+    content: "\f103";
+}
+.flaticon-diagonal-arrow:before {
+    content: "\f104";
+}
+.flaticon-down-arrow:before {
+    content: "\f105";
+}
+.flaticon-right-arrow:before {
+    content: "\f106";
+}
+.flaticon-email:before {
+    content: "\f107";
+}
+.flaticon-programming:before {
+    content: "\f108";
+}
+.flaticon-customer-support:before {
+    content: "\f109";
+}
+.flaticon-bell:before {
+    content: "\f10a";
+}
+.flaticon-document:before {
+    content: "\f10b";
+}
+.flaticon-briefcase:before {
+    content: "\f10c";
+}
+.flaticon-bar-chart:before {
+    content: "\f10d";
+}
+.flaticon-shuttle:before {
+    content: "\f10e";
+}
+.flaticon-group:before {
+    content: "\f10f";
+}
+.flaticon-24-hours:before {
+    content: "\f110";
+}
+.flaticon-web:before {
+    content: "\f111";
+}
+.flaticon-star:before {
+    content: "\f112";
+}
+.flaticon-target:before {
+    content: "\f113";
+}
+.flaticon-coding:before {
+    content: "\f114";
+}
+.flaticon-statistics:before {
+    content: "\f115";
+}
+.flaticon-team:before {
+    content: "\f116";
+}
+.flaticon-target-1:before {
+    content: "\f117";
+}
+.flaticon-configure:before {
+    content: "\f118";
+}
+.flaticon-startup:before {
+    content: "\f119";
+}
+.flaticon-graph:before {
+    content: "\f11a";
+}
+.flaticon-graph-1:before {
+    content: "\f11b";
+}
+.flaticon-settings:before {
+    content: "\f11c";
+}
+.flaticon-lcd:before {
+    content: "\f11d";
+}
+.flaticon-solution:before {
+    content: "\f11e";
+}
+.flaticon-developer:before {
+    content: "\f11f";
+}
+.flaticon-presentation:before {
+    content: "\f120";
+}
