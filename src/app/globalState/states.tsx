@@ -1,8 +1,7 @@
-import { createGlobalState } from "react-hooks-global-state"
+import { createGlobalState } from 'react-hooks-global-state'
 
 const { setGlobalState, useGlobalState } = createGlobalState({
-    isPagginated: "false",
-    
-});
+	isPagginated: 'false',
+})
 
-export { setGlobalState, useGlobalState };
+export { setGlobalState, useGlobalState }
