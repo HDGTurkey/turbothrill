@@ -4,100 +4,100 @@
  */
 
 class blogs {
-  constructor() {
-    this.id = undefined;
-    this.image = undefined;
-    this.largeImage = undefined;
-    this.author = undefined;
-    this.date = undefined;
-    this.view = undefined;
-    this.title = undefined;
-    this.slug_title = undefined;
-    this.excerpt = undefined;
-    this.body = undefined;
-  }
+   constructor() {
+      this.id = undefined;
+      this.image = undefined;
+      this.largeImage = undefined;
+      this.author = undefined;
+      this.date = undefined;
+      this.view = undefined;
+      this.title = undefined;
+      this.slug_title = undefined;
+      this.excerpt = undefined;
+      this.body = undefined;
+   }
 
-  setId(id) {
-    this.id = id;
-  }
+   setId(id) {
+      this.id = id;
+   }
 
-  getId() {
-    return this.id;
-  }
+   getId() {
+      return this.id;
+   }
 
-  setImage(image) {
-    this.image = image;
-  }
+   setImage(image) {
+      this.image = image;
+   }
 
-  getImage() {
-    return this.image;
-  }
+   getImage() {
+      return this.image;
+   }
 
-  setLargeImage(largeImage) {
-    this.largeImage = largeImage;
-  }
+   setLargeImage(largeImage) {
+      this.largeImage = largeImage;
+   }
 
-  getLargeImage() {
-    return this.largeImage;
-  }
+   getLargeImage() {
+      return this.largeImage;
+   }
 
-  setAuthor(author) {
-    this.author = author;
-  }
+   setAuthor(author) {
+      this.author = author;
+   }
 
-  getAuthor() {
-    return this.author;
-  }
+   getAuthor() {
+      return this.author;
+   }
 
-  setDate(date) {
-    this.date = date;
-  }
+   setDate(date) {
+      this.date = date;
+   }
 
-  getDate() {
-    return this.date;
-  }
+   getDate() {
+      return this.date;
+   }
 
-  setView(view) {
-    this.view = view;
-  }
+   setView(view) {
+      this.view = view;
+   }
 
-  getView() {
-    return this.view;
-  }
+   getView() {
+      return this.view;
+   }
 
-  setTitle(title) {
-    this.title = title;
-  }
+   setTitle(title) {
+      this.title = title;
+   }
 
-  getTitle() {
-    return this.title;
-  }
+   getTitle() {
+      return this.title;
+   }
 
-  setSlug_title(slug_title) {
-    this.slug_title = slug_title;
-  }
+   setSlug_title(slug_title) {
+      this.slug_title = slug_title;
+   }
 
-  getSlug_title() {
-    return this.slug_title;
-  }
+   getSlug_title() {
+      return this.slug_title;
+   }
 
-  setExcerpt(excerpt) {
-    this.excerpt = excerpt;
-  }
+   setExcerpt(excerpt) {
+      this.excerpt = excerpt;
+   }
 
-  getExcerpt() {
-    return this.excerpt;
-  }
+   getExcerpt() {
+      return this.excerpt;
+   }
 
-  setBody(body) {
-    this.body = body;
-  }
+   setBody(body) {
+      this.body = body;
+   }
 
-  getBody() {
-    return this.body;
-  }
+   getBody() {
+      return this.body;
+   }
 }
 
-blogs.className = "blogs";
+blogs.className = 'blogs';
 
 export { blogs };

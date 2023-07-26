@@ -4,82 +4,82 @@
  */
 
 class events {
-  constructor() {
-    this.id = undefined;
-    this.slug_name = undefined;
-    this.state = undefined;
-    this.locName = undefined;
-    this.locAddress = undefined;
-    this.name = undefined;
-    this.date = undefined;
-    this.description = undefined;
-  }
+   constructor() {
+      this.id = undefined;
+      this.slug_name = undefined;
+      this.state = undefined;
+      this.locName = undefined;
+      this.locAddress = undefined;
+      this.name = undefined;
+      this.date = undefined;
+      this.description = undefined;
+   }
 
-  setId(id) {
-    this.id = id;
-  }
+   setId(id) {
+      this.id = id;
+   }
 
-  getId() {
-    return this.id;
-  }
+   getId() {
+      return this.id;
+   }
 
-  setSlug_name(slug_name) {
-    this.slug_name = slug_name;
-  }
+   setSlug_name(slug_name) {
+      this.slug_name = slug_name;
+   }
 
-  getSlug_name() {
-    return this.slug_name;
-  }
+   getSlug_name() {
+      return this.slug_name;
+   }
 
-  setState(state) {
-    this.state = state;
-  }
+   setState(state) {
+      this.state = state;
+   }
 
-  getState() {
-    return this.state;
-  }
+   getState() {
+      return this.state;
+   }
 
-  setLocName(locName) {
-    this.locName = locName;
-  }
+   setLocName(locName) {
+      this.locName = locName;
+   }
 
-  getLocName() {
-    return this.locName;
-  }
+   getLocName() {
+      return this.locName;
+   }
 
-  setLocAddress(locAddress) {
-    this.locAddress = locAddress;
-  }
+   setLocAddress(locAddress) {
+      this.locAddress = locAddress;
+   }
 
-  getLocAddress() {
-    return this.locAddress;
-  }
+   getLocAddress() {
+      return this.locAddress;
+   }
 
-  setName(name) {
-    this.name = name;
-  }
+   setName(name) {
+      this.name = name;
+   }
 
-  getName() {
-    return this.name;
-  }
+   getName() {
+      return this.name;
+   }
 
-  setDate(date) {
-    this.date = date;
-  }
+   setDate(date) {
+      this.date = date;
+   }
 
-  getDate() {
-    return this.date;
-  }
+   getDate() {
+      return this.date;
+   }
 
-  setDescription(description) {
-    this.description = description;
-  }
+   setDescription(description) {
+      this.description = description;
+   }
 
-  getDescription() {
-    return this.description;
-  }
+   getDescription() {
+      return this.description;
+   }
 }
 
-events.className = "events";
+events.className = 'events';
 
 export { events };
