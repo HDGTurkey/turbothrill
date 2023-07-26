@@ -1,26 +1,26 @@
-"use client";
+'use client'
 
-import { About } from '../app/Components/Home/About';
-import { FeatureEvent } from '../app/Components/Home/FeatureEvent';
-import { OurEvents } from '../app/Components/Home/OurEvents';
-import WhatWeDo from '../app/Components/Home/WhatWeDo';
-import { HelloDiv } from '../app/Components/Home/HelloDiv';
-import ProjectArea from '@/app/Components/Home/project-area';
+import { About } from '../app/components/home/About'
+import { FeatureEvent } from '../app/components/home/FeatureEvent'
+import { OurEvents } from '../app/components/home/OurEvents'
+import WhatWeDo from '../app/components/home/WhatWeDo'
+import { HelloDiv } from '../app/components/home/HelloDiv'
+import ProjectArea from '@/app/components/home/project-area'
 
 //container mx-auto
 export default function HomePage() {
-  return (
-    <>
-      <div className=''>
-        <HelloDiv />
-        <WhatWeDo />
-        {/* <About /> */}
-        <ProjectArea />
-        
-        {/* <OurEvents />
+	return (
+		<>
+			<div className="">
+				<HelloDiv />
+				<WhatWeDo />
+				{/* <About /> */}
+				<ProjectArea />
+
+				{/* <OurEvents />
         <FeatureEvent /> */}
-        {/* <Partner /> */}
-      </div>
-    </>
-  );
+				{/* <Partner /> */}
+			</div>
+		</>
+	)
 }

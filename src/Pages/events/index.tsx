@@ -1,22 +1,16 @@
 import React, { useEffect } from 'react'
-import BlogArea from '../../app/Components/EventWrapper';
+import BlogArea from '../../app/components/EventWrapper'
 
-import Breadcrumb from '@/app/Components/breadcrumb';
-import EventWrapper from '../../app/Components/EventWrapper';
-
+import Breadcrumb from '@/app/components/breadcrumb'
+import EventWrapper from '../../app/components/EventWrapper'
 
 export const EventList = () => {
-
-  return (
-    <div className=' '>
-     
-        <Breadcrumb title={'Events'} />
-        <EventWrapper />
-        
-        
-     
-    </div>
-  )
+	return (
+		<div className=" ">
+			<Breadcrumb title={'Events'} />
+			<EventWrapper />
+		</div>
+	)
 }
 
-export default EventList;
+export default EventList
