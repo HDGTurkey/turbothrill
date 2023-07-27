@@ -19,18 +19,19 @@ const FaqArea = () => {
                     const { id, show, title, desc } = item;
                     return <div key={id} className='accordion-items'>
                       <h2 className="accordion-header" id={`heading-${id}`}>
-                        <div className={`accordion-buttons`}  data-bs-toggle="collapse" data-bs-target={`#collapse-${id}`}
+                        <button className={`accordion-buttons ${show ? '' : 'collapsed'}`} type="button" data-bs-toggle="collapse" data-bs-target={`#collapse-${id}`}
                           aria-expanded={show ? 'true' : 'false'} aria-controls={`collapse-${id}`}>
                           {title}
-                        </div>
+                        </button>
                       </h2>
-                      <div id={`collapse-${id}`} className={`accordion-collapse  ${show ? 'show' : ''}`} aria-labelledby={`heading-${id}`} data-bs-parent="#accordionExample">
+                      <div id={`collapse-${id}`} className={`accordion-collapse collapse ${show ? 'show' : ''}`} aria-labelledby={`heading-${id}`} data-bs-parent="#accordionExample">
                         <div className="accordion-body">
                           {desc}
                         </div>
                       </div>
                     </div>
                   })}
+
 
                 </div>
               </div>

@@ -40,12 +40,15 @@ const ServicesArea: React.FC = () => {
       <div className="ac-chose-area mb-130">
         <div className=" ac-chose-bg">
           <div className="row">
-            <ChoseItem duration='.3s' delay='.5s' icon='flaticon-group' title={<>Connection <br /><br /> </>}
-              text={'Continuously improve your technical skills by partnering with successful developers to accelerate your career.'} />
-            <ChoseItem duration='.5s' delay='.7s' item_num={'tpchosebox-three'} color="fea-color-5" icon='fas fa-star' title={<>Learning <br /> </>} text={'Community ambassadors and members can receive training in many areas that a student may need and participate in all HSD-related events.'} />
-            <ChoseItem duration='.7s' delay='.9s' item_num={'tpchosebox-two'} color="fea-color-4" icon='flaticon-web' title={<>Growth <br /><br></br> </>} text={'Continuously improve your technical skills by partnering with successful developers to accelerate your career.'} /> <br />
-            <ChoseItem duration='.9s' delay='1s' icon='fas fa-star' title={<>Connection <br /><br/> </>}
-              text={`Continuously improve your technical skills by partnering with successful developers to accelerate your career.`} />
+            <ChoseItem duration='.3s' delay='.5s' icon='flaticon-group' title={<>Connection <br /> </>}
+              text={'Community ambassadors become part of a global ecosystem with apps like "Chi Chi Match", "Learnship Buddy". Thanks to this, he can have regular meetings with other HSD ambassadors and attend social events with all the members involved in the program.'} />
+            <ChoseItem duration='.5s' delay='.7s' item_num={'tpchosebox-three'} color="fea-color-5" icon='fas fa-star' title={<>Learning <br /> </>} text={`Community ambassadors and members can receive training in many areas a student may need and participate in all HSD-related events.
+
+It also gets the opportunity to participate in the HSD Summit held at HUAWEI Turkey R&D Center every year.`} />
+            <ChoseItem duration='.7s' delay='.9s' item_num={'tpchosebox-two'} color="fea-color-4" icon='flaticon-web' title={<>Career <br /> </>} text={`Community ambassadors receive an official, global certification from Huawei from the moment they become an ambassador.
+Ambassadors who successfully complete the program will be given priority in job opportunities if they apply for positions at HUAWEI, provided that their skills match the job position.`} /> <br />
+            <ChoseItem duration='.9s' delay='1s' icon='fas fa-star' title={<>Supports <br /><br/> </>}
+              text={`Speaker support, gifts to be distributed at the event, planning support, communication network support from Huawei under certain conditions in the events organized by the communities.`} />
           </div>
         </div>
       </div>
