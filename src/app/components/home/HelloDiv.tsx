@@ -36,7 +36,7 @@ const hero_contents = {
          link: 'https://medium.com/huawei-developers-tr'
       }
    ],
-   hero_img: '/assets/img/hero/hero-4.png'
+   hero_img: '/assets/img/hero/hero-99.png'
 };
 
 const { title, text, btn_text, btn_text_2, social_links, hero_img } = hero_contents;
@@ -94,8 +94,8 @@ export const HelloDiv = () => {
                      </div>
                   </div>
                   <div className="col-xl-5 col-lg-5">
-                     <div className="tp-hero-big-img wow fadeInRight" data-wow-duration=".7s" data-wow-delay="1.2s">
-                        <img src={hero_img} alt="" />
+                     <div className="tp-hero-big-img  wow fadeInRight" data-wow-duration=".7s" data-wow-delay="1.2s">
+                        <img className="rounded-full" src={hero_img} alt="" />
                      </div>
                   </div>
                </div>

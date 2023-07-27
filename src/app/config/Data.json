@@ -1,71 +1,58 @@
 {
-   "schemaVersion": 10,
+   "schemaVersion": 3,
    "permissions": [
       {
          "permissions": [
-            {
-               "role": "World",
-               "rights": ["Read", "Upsert", "Delete"]
-            },
-            {
-               "role": "Authenticated",
-               "rights": ["Read", "Upsert", "Delete"]
-            },
-            {
-               "role": "Creator",
-               "rights": ["Read", "Upsert", "Delete"]
-            },
-            {
-               "role": "Administrator",
-               "rights": ["Read", "Upsert", "Delete"]
-            }
+            { "role": "World", "rights": ["Read"] },
+            { "role": "Authenticated", "rights": ["Read"] },
+            { "role": "Creator", "rights": ["Read", "Upsert", "Delete"] },
+            { "role": "Administrator", "rights": ["Read", "Upsert", "Delete"] }
+         ],
+         "objectTypeName": "navbarName"
+      },
+      {
+         "permissions": [
+            { "role": "World", "rights": ["Read", "Upsert", "Delete"] },
+            { "role": "Authenticated", "rights": ["Read", "Upsert", "Delete"] },
+            { "role": "Creator", "rights": ["Read", "Upsert", "Delete"] },
+            { "role": "Administrator", "rights": ["Read", "Upsert", "Delete"] }
          ],
          "objectTypeName": "teams"
       },
       {
          "permissions": [
-            {
-               "role": "World",
-               "rights": ["Read", "Upsert", "Delete"]
-            },
-            {
-               "role": "Authenticated",
-               "rights": ["Read", "Upsert", "Delete"]
-            },
-            {
-               "role": "Creator",
-               "rights": ["Read", "Upsert", "Delete"]
-            },
-            {
-               "role": "Administrator",
-               "rights": ["Read", "Upsert", "Delete"]
-            }
+            { "role": "World", "rights": ["Read", "Upsert", "Delete"] },
+            { "role": "Authenticated", "rights": ["Read", "Upsert", "Delete"] },
+            { "role": "Creator", "rights": ["Read", "Upsert", "Delete"] },
+            { "role": "Administrator", "rights": ["Read", "Upsert", "Delete"] }
          ],
          "objectTypeName": "blogs"
       },
       {
          "permissions": [
-            {
-               "role": "World",
-               "rights": ["Read", "Upsert", "Delete"]
-            },
-            {
-               "role": "Authenticated",
-               "rights": ["Read", "Upsert", "Delete"]
-            },
-            {
-               "role": "Creator",
-               "rights": ["Read", "Upsert", "Delete"]
-            },
-            {
-               "role": "Administrator",
-               "rights": ["Read", "Upsert", "Delete"]
-            }
+            { "role": "World", "rights": ["Read", "Upsert", "Delete"] },
+            { "role": "Authenticated", "rights": ["Read", "Upsert", "Delete"] },
+            { "role": "Creator", "rights": ["Read", "Upsert", "Delete"] },
+            { "role": "Administrator", "rights": ["Read", "Upsert", "Delete"] }
          ],
          "objectTypeName": "events"
       }
    ],
    "objectTypes": [
+      {
+         "indexes": [],
+         "objectTypeName": "navbarName",
+         "fields": [
+            {
+               "isNeedEncrypt": false,
+               "fieldName": "schoolName",
+               "notNull": true,
+               "isSensitive": false,
+               "belongPrimaryKey": true,
+               "fieldType": "String"
+            }
+         ]
+      },
       {
          "indexes": [],
          "objectTypeName": "teams",

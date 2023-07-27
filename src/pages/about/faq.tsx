@@ -5,13 +5,15 @@ const accordion_items = [
       id: 'one',
       show: true,
       title: 'Do I need to be proficient in computer science and an experienced coder to join the HSD community?',
-      desc: 'The HSD community welcomes aspiring developers of all skill levels. Any student interested in acquiring new skills and expanding their network is welcome to apply.'
+      desc:
+         'The HSD community welcomes aspiring developers of all skill levels. Any student interested in acquiring new skills and expanding their network is welcome to apply.'
    },
    {
       id: 'two',
       show: true,
       title: 'How long does it take to become an HSD ambassador?',
-      desc: 'Upon receiving your application, we will begin a review process. If we determine that your application meets our requirements, we will contact within 1 week and arrange to conduct an interview. Our final decision will be made within 3 days following the interview. Due to the large number of applications received, it may take more time to process your application.'
+      desc:
+         'Upon receiving your application, we will begin a review process. If we determine that your application meets our requirements, we will contact within 1 week and arrange to conduct an interview. Our final decision will be made within 3 days following the interview. Due to the large number of applications received, it may take more time to process your application.'
    }
 ];
 
@@ -33,7 +35,7 @@ const FaqArea = () => {
                                           className={`accordion-buttons`}
                                           data-bs-toggle="collapse"
                                           data-bs-target={`#collapse-${id}`}
-                                          aria-expanded={show ? 'true' : 'false'}
+                                          aria-expanded={show ? 'false' : 'false'}
                                           aria-controls={`collapse-${id}`}
                                        >
                                           {title}
