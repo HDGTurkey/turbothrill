@@ -1,13 +1,29 @@
-import React from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import Link from 'next/link';
 import useSticky from '../hooks/use-sticky';
 import Sidebar from '../components/common/off-canvas';
 import NavMenus from './nav-menus';
 import MobileMenu from './mobile-menu';
+import { AGCContext } from '@/app/context/AGCProvider';
+import { navbarName } from '../../app/model/navbarName';
+
 
 const Header = () => {
+   const agcContext = useContext(AGCContext);
    const { headerSticky } = useSticky();
    const [sidebarOpen, setSidebarOpen] = React.useState(false);
+   const [navbarData, setNavbarData] = useState([]);
+   const [loading, setLoading] = useState(false);
+
+   async function getSchoolName() {
+      setLoading(true);
+      setNavbarData(await agcContext.executeQuery(navbarName));
+      setLoading(false);
+   }
+   useEffect(() => {
+      getSchoolName();
+   }, []);
+
    return (
       <React.Fragment>
          <header className="d-none d-lg-block">
@@ -24,7 +40,12 @@ const Header = () => {
                               <img src="/assets/img/logo/logo-blue.png" alt="" width="30" />
                            </Link>
                            <span className=" text-[30px] mt-1.5 ml-3 cursor-pointer font-extrabold  text-black ">
-                              <div className="bg-[#ec373c] text-white rounded px-2">ISTANBUL BEYKENT</div>
+                              <div className="bg-[#ec373c] text-white rounded px-2">
+                                 {navbarData.map((navbar, key) => (
+                                    <span key={key}>{navbar.schoolName}</span>
+                                 ))}
+
+                              </div>
                            </span>
                         </div>
                      </div>

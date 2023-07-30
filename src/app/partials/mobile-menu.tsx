@@ -1,10 +1,26 @@
-import React, { useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import useSticky from '../hooks/use-sticky';
 import Sidebar from '../components/common/off-canvas';
+import { AGCContext } from '@/app/context/AGCProvider';
+import { navbarName } from '../../app/model/navbarName';
 
 const MobileMenu = ({ logo, bg, transparent = true }: { logo: string; bg: string; transparent?: boolean }) => {
    const { headerSticky } = useSticky();
+   const agcContext = useContext(AGCContext);
    const [sidebarOpen, setSidebarOpen] = useState(false);
+   const [navbarData, setNavbarData] = useState([]);
+   const [loading, setLoading] = useState(false);
+
+   async function getSchoolName() {
+      setLoading(true);
+      setNavbarData(await agcContext.executeQuery(navbarName));
+      setLoading(false);
+   }
+   useEffect(() => {
+      getSchoolName();
+   }, []);
+
+
    return (
       <React.Fragment>
          <div
@@ -22,8 +38,12 @@ const MobileMenu = ({ logo, bg, transparent = true }: { logo: string; bg: string
                      <div className="grid grid-cols-5">
                         <div className="col-span-4">
                            <div className="flex">
-                              <div className="flex bg-red-700 mt-1.5 mx-1 px-1   text-white rounded">
-                                 <div className="text-lg sm:text-xl">İSTANBUL BEYKENT</div>
+                              <div className="my-2 bg-[#ec373c] p-2 text-white rounded px-2 mx-3  ">
+                                 <div className="text-lg sm:text-xl">
+                                    {navbarData.map((navbar, key) => (
+                                       <span key={key}>{navbar.schoolName}</span>
+                                    ))}
+                                 </div>
                               </div>
                            </div>
                         </div>

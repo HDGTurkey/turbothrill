@@ -87,9 +87,9 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen }) => {
       <>
          <div className="tp-offcanvas-area">
             <div className={`tpoffcanvas ${isOpen ? 'opened' : ''}`}>
-               <div className="tpoffcanvas__logo">
+               <div className="tpoffcanvas__logo py-2 ">
                   <Link href="/">
-                     <img src="/assets/img/logo/logo-white.png" alt="" />
+                     <img  src="/assets/img/logo/logo-white.png" alt="" />
                   </Link>
                </div>
                <div className="tpoffcanvas__close-btn" onClick={() => setIsOpen(false)}>
