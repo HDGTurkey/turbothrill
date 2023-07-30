@@ -10,6 +10,7 @@ interface Blog {
    author: string;
    comment: number;
    pubDate: string;
+   link : string;
 }
 
 interface Props {
@@ -17,7 +18,7 @@ interface Props {
 }
 
 const BlogItem: React.FC<Props> = ({ blog }) => {
-   const { id, thumbnail, title, views, author, comment, pubDate, description } = blog;
+   const { id, thumbnail, title, views, author, comment, pubDate, description,link } = blog;
    const date = new Date(blog.pubDate);
    const formattedDate = date.toLocaleDateString('tr-TR');
    const cleanDescription = blog.description.replace(/<\/?[^>]+(>|$)/g, '').replace(/<img[^>]*>/g, '');
@@ -29,34 +30,37 @@ const BlogItem: React.FC<Props> = ({ blog }) => {
    return (
       <article key={id} className="postbox__item format-image mb-50 transition-3">
          <div className="postbox__thumb w-img">
-            <Link href={`/blog-details/${id}`}>
+            <a href={link}>
                <div className="w-full min-h-[300px]  flex items-center justify-center overflow-hidden">
+                  <a href={link}>
                   <img className="w-full h-full object-contain" src={thumbnail} alt="" />
+
+                  </a>
                </div>
-            </Link>
+            </a>
          </div>
          <div className="postbox__content ">
             <div className="postbox__meta">
                <span>
-                  <a href="#">
+                
                      <i className="fal fa-user-circle"></i> {author}
-                  </a>
+                 
                </span>
                <span>
-                  <a href="#">
+                 
                      <i className="fal fa-clock"></i>
                      {formattedDate}
-                  </a>
+                 
                </span>
             </div>
             <h3 className="postbox__title">
-               <Link href={`/blog-details/${id}`}>{title}</Link>
+               <a href={link}>{title}</a>
             </h3>
             <div className="postbox__text">
                <p>{truncatedDescription}</p>
             </div>
             <div className="post__button">
-               <a className="tp-btn-yellow text-white"> Daha Fazla</a>
+               <a className="tp-btn-yellow text-white" href={link}> Daha Fazla</a>
             </div>
          </div>
       </article>

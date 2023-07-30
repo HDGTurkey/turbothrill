@@ -20,12 +20,15 @@ const accordion_items = [
 const FaqArea = () => {
    return (
       <>
-         <div className="sd-accordio-area pt-130 pb-130">
+         <div className="sd-accordio-area pt-130 pb-50">
             <div className="container">
                <div className="row">
                   <div className="col-xl-12">
                      <div className="tp-custom-accordio faq-accordio-border">
                         <div className="accordion" id="accordionExample">
+                        <h3 className="ac-ab-title">
+                              <a href="#">FAQ</a>
+                           </h3>
                            {accordion_items.map((item, i) => {
                               const { id, show, title, desc } = item;
                               return (

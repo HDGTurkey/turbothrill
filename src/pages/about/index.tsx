@@ -6,6 +6,7 @@ import AboutArea from './about-area';
 import ServicesArea from './services-area';
 import FaqArea from './faq';
 import FeatureArea from './feature-area';
+import CtaTwo from './Ctatowo';
 // import FeatureArea from './feature-area';
 // import ServicesArea from './services-area';
 // import TeamArea from './team-area';
@@ -20,6 +21,7 @@ const About = () => {
          <FeatureArea />
 
          <FaqArea />
+         <CtaTwo/>
          {/*
       
       <FeatureArea/>
