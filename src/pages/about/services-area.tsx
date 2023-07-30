@@ -93,11 +93,11 @@ const ServicesArea: React.FC = () => {
                      icon="fas fa-star"
                      title={
                         <>
-                           Connection <br />
-                           <br />{' '}
+                           Awards <br />
+                           {' '}
                         </>
                      }
-                     text={`Continuously improve your technical skills by partnering with successful developers to accelerate your career.`}
+                     text={`In the events to be organized by HSD Communities; HSD printed products are provided to ensure brand awareness. In addition, a "Welcome!" package is given.`}
                   />
                </div>
             </div>
