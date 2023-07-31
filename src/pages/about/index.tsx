@@ -21,7 +21,7 @@ const About = () => {
          <FeatureArea />
 
          <FaqArea />
-         <CtaTwo/>
+         <CtaTwo />
          {/*
       
       <FeatureArea/>

@@ -15,7 +15,6 @@ const handleButtonClick = () => {
    window.open('https://www.youtube.com/watch?v=oau5llTtxWM', '_blank');
 };
 
-
 const AboutArea = () => {
    return (
       <>
@@ -29,10 +28,11 @@ const AboutArea = () => {
                               <a href="#">{title}</a>
                            </h3>
                            <div className="ac-play-button">
-                    <button  onClick={handleButtonClick}  className="popup-video">
-                      <i className="far fa-play"></i></button>
-                    <span>See Our Video</span>
-                  </div>
+                              <button onClick={handleButtonClick} className="popup-video">
+                                 <i className="far fa-play"></i>
+                              </button>
+                              <span>See Our Video</span>
+                           </div>
                         </div>
                      </div>
                      <div className="col-xl- col-lg-6 wow tpfadeRight" data-wow-duration=".5s" data-wow-delay=".7s">

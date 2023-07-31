@@ -10,7 +10,7 @@ interface Blog {
    author: string;
    comment: number;
    pubDate: string;
-   link : string;
+   link: string;
 }
 
 interface Props {
@@ -18,7 +18,7 @@ interface Props {
 }
 
 const BlogItem: React.FC<Props> = ({ blog }) => {
-   const { id, thumbnail, title, views, author, comment, pubDate, description,link } = blog;
+   const { id, thumbnail, title, views, author, comment, pubDate, description, link } = blog;
    const date = new Date(blog.pubDate);
    const formattedDate = date.toLocaleDateString('tr-TR');
    const cleanDescription = blog.description.replace(/<\/?[^>]+(>|$)/g, '').replace(/<img[^>]*>/g, '');
@@ -33,8 +33,7 @@ const BlogItem: React.FC<Props> = ({ blog }) => {
             <a href={link}>
                <div className="w-full min-h-[300px]  flex items-center justify-center overflow-hidden">
                   <a href={link}>
-                  <img className="w-full h-full object-contain" src={thumbnail} alt="" />
-
+                     <img className="w-full h-full object-contain" src={thumbnail} alt="" />
                   </a>
                </div>
             </a>
@@ -42,15 +41,11 @@ const BlogItem: React.FC<Props> = ({ blog }) => {
          <div className="postbox__content ">
             <div className="postbox__meta">
                <span>
-                
-                     <i className="fal fa-user-circle"></i> {author}
-                 
+                  <i className="fal fa-user-circle"></i> {author}
                </span>
                <span>
-                 
-                     <i className="fal fa-clock"></i>
-                     {formattedDate}
-                 
+                  <i className="fal fa-clock"></i>
+                  {formattedDate}
                </span>
             </div>
             <h3 className="postbox__title">
@@ -60,7 +55,10 @@ const BlogItem: React.FC<Props> = ({ blog }) => {
                <p>{truncatedDescription}</p>
             </div>
             <div className="post__button">
-               <a className="tp-btn-yellow text-white" href={link}> Daha Fazla</a>
+               <a className="tp-btn-yellow text-white" href={link}>
+                  {' '}
+                  Daha Fazla
+               </a>
             </div>
          </div>
       </article>
