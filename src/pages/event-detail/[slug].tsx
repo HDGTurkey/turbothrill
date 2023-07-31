@@ -21,7 +21,6 @@ const EventDetailPage: React.FC = () => {
    const [loading, setLoading] = useState(false);
    const [eventData, setEventData] = useState<Events[]>([]);
 
-   // slugname set
    const router = useRouter();
 
    interface Events {
@@ -46,7 +45,8 @@ const EventDetailPage: React.FC = () => {
          const slugName = slug.toString().toLowerCase();
          getEvent(slugName);
       }
-   }, [getEvent, router.query]);
+   }, [
+      router.query]);
 
    useEffect(() => {
       setLoading(false);
@@ -66,9 +66,8 @@ const EventDetailPage: React.FC = () => {
                </div>
             </div>
             <div
-               className={`shadow-lg justify-center grid grid-cols-1 lg:grid-cols-2 lg:flex ${
-                  themeData.theme === 'light' ? 'bg-gray-100 text-black' : 'bg-gray-800 text-white'
-               }`}
+               className={`shadow-lg justify-center grid grid-cols-1 lg:grid-cols-2 lg:flex ${themeData.theme === 'light' ? 'bg-gray-100 text-black' : 'bg-gray-800 text-white'
+                  }`}
             >
                <div className={`w-auto ${themeData.theme === 'light' ? 'bg-white text-black' : 'bg-black text-white'}`}>
                   <div className="px-5 ">
@@ -81,9 +80,8 @@ const EventDetailPage: React.FC = () => {
                   </div>
                </div>
                <div
-                  className={`min-w-[300px] m-5 ${
-                     themeData.theme === 'light' ? 'bg-gray-100 text-black' : 'bg-gray-800 text-white'
-                  }`}
+                  className={`min-w-[300px] m-5 ${themeData.theme === 'light' ? 'bg-gray-100 text-black' : 'bg-gray-800 text-white'
+                     }`}
                >
                   <div className="mb-3 bg-red-100 flex rounded-lg ">
                      <svg
@@ -129,18 +127,16 @@ const EventDetailPage: React.FC = () => {
                         ></path>
                      </svg>
                      <p
-                        className={`text-lg font-bold mx-5 ${
-                           themeData.theme === 'light' ? 'text-black' : 'text-black'
-                        }`}
+                        className={`text-lg font-bold mx-5 ${themeData.theme === 'light' ? 'text-black' : 'text-black'
+                           }`}
                      >
                         {eventData[0]?.state}
                      </p>
                   </div>
 
                   <div
-                     className={`p-5 mb-5  border-solid border-2 shadow-md w-auto rounded-lg flex space-x-4 items-start ${
-                        themeData.theme === 'light' ? 'bg-white text-black' : 'bg-black text-white'
-                     }`}
+                     className={`p-5 mb-5  border-solid border-2 shadow-md w-auto rounded-lg flex space-x-4 items-start ${themeData.theme === 'light' ? 'bg-white text-black' : 'bg-black text-white'
+                        }`}
                   >
                      {/* <img alt="img" className="w-5 h-5 bg-black " src="https://img.icons8.com/material-outlined/24/null/calendar--v1.png" /> */}
                      <CalendarTodayIcon className=""></CalendarTodayIcon>
@@ -150,9 +146,8 @@ const EventDetailPage: React.FC = () => {
                      <p className=" ">{eventData[0]?.date ? new Date(eventData[0]?.date).toLocaleTimeString() : ''}</p>
                   </div>
                   <div
-                     className={`p-5 mb-5 border-solid border-2 shadow-md w-auto rounded-lg flex items-start ${
-                        themeData.theme === 'light' ? 'bg-white text-black' : 'bg-black text-white'
-                     }`}
+                     className={`p-5 mb-5 border-solid border-2 shadow-md w-auto rounded-lg flex items-start ${themeData.theme === 'light' ? 'bg-white text-black' : 'bg-black text-white'
+                        }`}
                   >
                      {/* <img alt="img" className='w-6 h-6' src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/null/external-marker-map-pin-flatart-icons-outline-flatarticons.png" /> */}
                      <LocationOnIcon></LocationOnIcon>
@@ -162,9 +157,8 @@ const EventDetailPage: React.FC = () => {
                      </div>
                   </div>
                   <div
-                     className={`p-5 mb-5  border-solid border-2 shadow-md rounded-lg w-auto ${
-                        themeData.theme === 'light' ? 'bg-white text-black' : 'bg-black text-white'
-                     }`}
+                     className={`p-5 mb-5  border-solid border-2 shadow-md rounded-lg w-auto ${themeData.theme === 'light' ? 'bg-white text-black' : 'bg-black text-white'
+                        }`}
                   >
                      <p className="m-3 text-lg font-bold text-left ">Konuklar</p>
 
