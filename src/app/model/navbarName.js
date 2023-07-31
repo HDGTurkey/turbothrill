@@ -4,19 +4,19 @@
  */
 
 class navbarName {
-    constructor() {
-        this.schoolName = undefined;
-    }
+   constructor() {
+      this.schoolName = undefined;
+   }
 
-    setSchoolName(schoolName) {
-        this.schoolName = schoolName;
-    }
+   setSchoolName(schoolName) {
+      this.schoolName = schoolName;
+   }
 
-    getSchoolName() {
-        return this.schoolName;
-    }
+   getSchoolName() {
+      return this.schoolName;
+   }
 }
 
 navbarName.className = 'navbarName';
 
-export {navbarName}
+export { navbarName };
