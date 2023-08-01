@@ -1,13 +1,32 @@
-import React from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import Link from 'next/link';
 import useSticky from '../hooks/use-sticky';
 import Sidebar from '../components/common/off-canvas';
 import NavMenus from './nav-menus';
 import MobileMenu from './mobile-menu';
 
+import { AGCContext } from '@/app/context/AGCProvider';
+import { university } from '../model/university';
+
 const Header = () => {
+   const agcContext = useContext(AGCContext);
+   const [logoData, setLogoData] = useState<{ name: string; logo: string; city: string } | undefined>(undefined);
+   const [loading, setLoading] = useState(false);
+
+   async function getLogo() {
+      setLoading(true);
+      const data = await agcContext.executeQuery(university);
+      setLogoData(data[0]);
+      setLoading(false);
+   }
+   useEffect(() => {
+      getLogo();
+   }, []);
+
    const { headerSticky } = useSticky();
    const [sidebarOpen, setSidebarOpen] = React.useState(false);
+   console.log(logoData);
+
    return (
       <React.Fragment>
          <header className="d-none d-lg-block">
@@ -24,7 +43,15 @@ const Header = () => {
                               <img src="/assets/img/logo/logo-blue.png" alt="" width="30" />
                            </Link>
                            <span className=" text-[30px] mt-1.5 ml-3 cursor-pointer font-extrabold  text-black ">
-                              <div className="bg-[#ec373c] text-white rounded px-2">ISTANBUL BEYKENT</div>
+                              <div>
+                                 {loading ? (
+                                    <div>Loading...</div>
+                                 ) : (
+                                    <div className="bg-[#ec373c] text-white font-DMSans uppercase font-normal rounded-md px-1.5">
+                                       {logoData?.logo}
+                                    </div>
+                                 )}
+                              </div>
                            </span>
                         </div>
                      </div>

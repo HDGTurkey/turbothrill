@@ -22,6 +22,8 @@ const TeamArea: React.FC = () => {
       getTeams();
    }, []);
 
+   console.log(teamData);
+
    return (
       <>
          <Breadcrumb title={'Our Team'} />
