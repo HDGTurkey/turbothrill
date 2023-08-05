@@ -1,425 +1,488 @@
 {
-   "schemaVersion": 11,
-   "permissions": [
-      {
-         "permissions": [
-            { "role": "World", "rights": ["Read", "Upsert", "Delete"] },
-            { "role": "Authenticated", "rights": ["Read", "Upsert", "Delete"] },
-            { "role": "Creator", "rights": ["Read", "Upsert", "Delete"] },
-            { "role": "Administrator", "rights": ["Read", "Upsert", "Delete"] }
-         ],
-         "objectTypeName": "teams"
-      },
-      {
-         "permissions": [
-            { "role": "World", "rights": ["Read", "Upsert", "Delete"] },
-            { "role": "Authenticated", "rights": ["Read", "Upsert", "Delete"] },
-            { "role": "Creator", "rights": ["Read", "Upsert", "Delete"] },
-            { "role": "Administrator", "rights": ["Read", "Upsert", "Delete"] }
-         ],
-         "objectTypeName": "blogs"
-      },
-      {
-         "permissions": [
-            { "role": "World", "rights": ["Read", "Upsert", "Delete"] },
-            { "role": "Authenticated", "rights": ["Read", "Upsert", "Delete"] },
-            { "role": "Creator", "rights": ["Read", "Upsert", "Delete"] },
-            { "role": "Administrator", "rights": ["Read", "Upsert", "Delete"] }
-         ],
-         "objectTypeName": "university"
-      },
-      {
-         "permissions": [
-            { "role": "World", "rights": ["Read", "Upsert", "Delete"] },
-            { "role": "Authenticated", "rights": ["Read", "Upsert", "Delete"] },
-            { "role": "Creator", "rights": ["Read", "Upsert", "Delete"] },
-            { "role": "Administrator", "rights": ["Read", "Upsert", "Delete"] }
-         ],
-         "objectTypeName": "ambassador"
-      },
-      {
-         "permissions": [
-            { "role": "World", "rights": ["Read", "Upsert", "Delete"] },
-            { "role": "Authenticated", "rights": ["Read", "Upsert", "Delete"] },
-            { "role": "Creator", "rights": ["Read", "Upsert", "Delete"] },
-            { "role": "Administrator", "rights": ["Read", "Upsert", "Delete"] }
-         ],
-         "objectTypeName": "events"
-      }
-   ],
-   "objectTypes": [
-      {
-         "indexes": [],
-         "objectTypeName": "teams",
-         "fields": [
-            {
-               "isNeedEncrypt": false,
-               "fieldName": "id",
-               "notNull": true,
-               "isSensitive": false,
-               "belongPrimaryKey": true,
-               "fieldType": "IntAutoIncrement"
-            },
-            {
-               "isNeedEncrypt": false,
-               "fieldName": "img",
-               "notNull": false,
-               "isSensitive": false,
-               "belongPrimaryKey": false,
-               "fieldType": "String"
-            },
-            {
-               "isNeedEncrypt": false,
-               "fieldName": "name",
-               "notNull": false,
-               "isSensitive": false,
-               "belongPrimaryKey": false,
-               "fieldType": "String"
-            },
-            {
-               "isNeedEncrypt": false,
-               "fieldName": "designation",
-               "notNull": false,
-               "isSensitive": false,
-               "belongPrimaryKey": false,
-               "fieldType": "String"
-            },
-            {
-               "isNeedEncrypt": false,
-               "fieldName": "twitter",
-               "notNull": false,
-               "isSensitive": false,
-               "belongPrimaryKey": false,
-               "fieldType": "String"
-            },
-            {
-               "isNeedEncrypt": false,
-               "fieldName": "linkedin",
-               "notNull": false,
-               "isSensitive": false,
-               "belongPrimaryKey": false,
-               "fieldType": "String"
-            },
-            {
-               "isNeedEncrypt": false,
-               "fieldName": "github",
-               "notNull": false,
-               "isSensitive": false,
-               "belongPrimaryKey": false,
-               "fieldType": "String"
-            },
-            {
-               "isNeedEncrypt": false,
-               "fieldName": "mail",
-               "notNull": false,
-               "isSensitive": false,
-               "belongPrimaryKey": false,
-               "fieldType": "String"
-            }
-         ]
-      },
-      {
-         "indexes": [],
-         "objectTypeName": "blogs",
-         "fields": [
-            {
-               "isNeedEncrypt": false,
-               "fieldName": "id",
-               "notNull": true,
-               "isSensitive": false,
-               "belongPrimaryKey": true,
-               "fieldType": "Integer"
-            },
-            {
-               "isNeedEncrypt": false,
-               "fieldName": "image",
-               "notNull": false,
-               "isSensitive": false,
-               "belongPrimaryKey": false,
-               "fieldType": "String"
-            },
-            {
-               "isNeedEncrypt": false,
-               "fieldName": "largeImage",
-               "notNull": false,
-               "isSensitive": false,
-               "belongPrimaryKey": false,
-               "fieldType": "String"
-            },
-            {
-               "isNeedEncrypt": false,
-               "fieldName": "author",
-               "notNull": false,
-               "isSensitive": false,
-               "belongPrimaryKey": false,
-               "fieldType": "String"
-            },
-            {
-               "isNeedEncrypt": false,
-               "fieldName": "date",
-               "notNull": false,
-               "isSensitive": false,
-               "belongPrimaryKey": false,
-               "fieldType": "String"
-            },
-            {
-               "isNeedEncrypt": false,
-               "fieldName": "view",
-               "notNull": false,
-               "isSensitive": false,
-               "belongPrimaryKey": false,
-               "fieldType": "String"
-            },
-            {
-               "isNeedEncrypt": false,
-               "fieldName": "title",
-               "notNull": false,
-               "isSensitive": false,
-               "belongPrimaryKey": false,
-               "fieldType": "String"
-            },
-            {
-               "isNeedEncrypt": false,
-               "fieldName": "slug_title",
-               "notNull": false,
-               "isSensitive": false,
-               "belongPrimaryKey": false,
-               "fieldType": "String"
-            },
-            {
-               "isNeedEncrypt": false,
-               "fieldName": "excerpt",
-               "notNull": false,
-               "isSensitive": false,
-               "belongPrimaryKey": false,
-               "fieldType": "String"
-            },
-            {
-               "isNeedEncrypt": false,
-               "fieldName": "body",
-               "notNull": false,
-               "isSensitive": false,
-               "belongPrimaryKey": false,
-               "fieldType": "String"
-            }
-         ]
-      },
-      {
-         "indexes": [],
-         "objectTypeName": "university",
-         "fields": [
-            {
-               "isNeedEncrypt": false,
-               "fieldName": "id",
-               "notNull": true,
-               "isSensitive": false,
-               "belongPrimaryKey": true,
-               "fieldType": "IntAutoIncrement"
-            },
-            {
-               "isNeedEncrypt": false,
-               "fieldName": "name",
-               "notNull": true,
-               "isSensitive": false,
-               "defaultValue": "",
-               "belongPrimaryKey": false,
-               "fieldType": "String"
-            },
-            {
-               "isNeedEncrypt": false,
-               "fieldName": "city",
-               "notNull": true,
-               "isSensitive": false,
-               "defaultValue": "",
-               "belongPrimaryKey": false,
-               "fieldType": "String"
-            },
-            {
-               "isNeedEncrypt": false,
-               "fieldName": "medium_link",
-               "notNull": false,
-               "isSensitive": false,
-               "belongPrimaryKey": false,
-               "fieldType": "String"
-            },
-            {
-               "isNeedEncrypt": false,
-               "fieldName": "linkedin_link",
-               "notNull": false,
-               "isSensitive": false,
-               "belongPrimaryKey": false,
-               "fieldType": "String"
-            },
-            {
-               "isNeedEncrypt": false,
-               "fieldName": "twitter_link",
-               "notNull": false,
-               "isSensitive": false,
-               "belongPrimaryKey": false,
-               "fieldType": "String"
-            },
-            {
-               "isNeedEncrypt": false,
-               "fieldName": "instagram_link",
-               "notNull": false,
-               "isSensitive": false,
-               "belongPrimaryKey": false,
-               "fieldType": "String"
-            },
-            {
-               "isNeedEncrypt": false,
-               "fieldName": "github_link",
-               "notNull": false,
-               "isSensitive": false,
-               "belongPrimaryKey": false,
-               "fieldType": "String"
-            },
-            {
-               "isNeedEncrypt": false,
-               "fieldName": "logo",
-               "notNull": true,
-               "isSensitive": false,
-               "defaultValue": "",
-               "belongPrimaryKey": false,
-               "fieldType": "String"
-            }
-         ]
-      },
-      {
-         "indexes": [],
-         "objectTypeName": "ambassador",
-         "fields": [
-            {
-               "isNeedEncrypt": false,
-               "fieldName": "id",
-               "notNull": true,
-               "isSensitive": false,
-               "belongPrimaryKey": true,
-               "fieldType": "IntAutoIncrement"
-            },
-            {
-               "isNeedEncrypt": false,
-               "fieldName": "full_name",
-               "notNull": true,
-               "isSensitive": false,
-               "defaultValue": "",
-               "belongPrimaryKey": false,
-               "fieldType": "String"
-            },
-            {
-               "isNeedEncrypt": false,
-               "fieldName": "age",
-               "notNull": true,
-               "isSensitive": false,
-               "defaultValue": "0",
-               "belongPrimaryKey": false,
-               "fieldType": "Integer"
-            },
-            {
-               "isNeedEncrypt": false,
-               "fieldName": "university_department",
-               "notNull": true,
-               "isSensitive": false,
-               "defaultValue": "",
-               "belongPrimaryKey": false,
-               "fieldType": "String"
-            },
-            {
-               "isNeedEncrypt": false,
-               "fieldName": "what_year_university",
-               "notNull": true,
-               "isSensitive": false,
-               "defaultValue": "",
-               "belongPrimaryKey": false,
-               "fieldType": "String"
-            },
-            {
-               "isNeedEncrypt": false,
-               "fieldName": "linkedin_link",
-               "notNull": false,
-               "isSensitive": false,
-               "belongPrimaryKey": false,
-               "fieldType": "String"
-            },
-            {
-               "isNeedEncrypt": false,
-               "fieldName": "web_url",
-               "notNull": false,
-               "isSensitive": false,
-               "belongPrimaryKey": false,
-               "fieldType": "String"
-            }
-         ]
-      },
-      {
-         "indexes": [],
-         "objectTypeName": "events",
-         "fields": [
-            {
-               "isNeedEncrypt": false,
-               "fieldName": "id",
-               "notNull": true,
-               "isSensitive": false,
-               "belongPrimaryKey": true,
-               "fieldType": "IntAutoIncrement"
-            },
-            {
-               "isNeedEncrypt": false,
-               "fieldName": "slug_name",
-               "notNull": false,
-               "isSensitive": false,
-               "belongPrimaryKey": false,
-               "fieldType": "String"
-            },
-            {
-               "isNeedEncrypt": false,
-               "fieldName": "state",
-               "notNull": false,
-               "isSensitive": false,
-               "belongPrimaryKey": false,
-               "fieldType": "String"
-            },
-            {
-               "isNeedEncrypt": false,
-               "fieldName": "locName",
-               "notNull": false,
-               "isSensitive": false,
-               "belongPrimaryKey": false,
-               "fieldType": "String"
-            },
-            {
-               "isNeedEncrypt": false,
-               "fieldName": "locAddress",
-               "notNull": false,
-               "isSensitive": false,
-               "belongPrimaryKey": false,
-               "fieldType": "String"
-            },
-            {
-               "isNeedEncrypt": false,
-               "fieldName": "name",
-               "notNull": false,
-               "isSensitive": false,
-               "belongPrimaryKey": false,
-               "fieldType": "String"
-            },
-            {
-               "isNeedEncrypt": false,
-               "fieldName": "date",
-               "notNull": false,
-               "isSensitive": false,
-               "belongPrimaryKey": false,
-               "fieldType": "Date"
-            },
-            {
-               "isNeedEncrypt": false,
-               "fieldName": "description",
-               "notNull": false,
-               "isSensitive": false,
-               "belongPrimaryKey": false,
-               "fieldType": "Text"
-            }
-         ]
-      }
-   ]
+  "schemaVersion": 17,
+  "permissions": [
+    {
+      "permissions": [
+        { "role": "World", "rights": ["Read", "Upsert", "Delete"] },
+        { "role": "Authenticated", "rights": ["Read", "Upsert", "Delete"] },
+        { "role": "Creator", "rights": ["Read", "Upsert", "Delete"] },
+        { "role": "Administrator", "rights": ["Read", "Upsert", "Delete"] }
+      ],
+      "objectTypeName": "teams"
+    },
+    {
+      "permissions": [
+        { "role": "World", "rights": ["Read", "Upsert", "Delete"] },
+        { "role": "Authenticated", "rights": ["Read", "Upsert", "Delete"] },
+        { "role": "Creator", "rights": ["Read", "Upsert", "Delete"] },
+        { "role": "Administrator", "rights": ["Read", "Upsert", "Delete"] }
+      ],
+      "objectTypeName": "blogs"
+    },
+    {
+      "permissions": [
+        { "role": "World", "rights": ["Read", "Upsert", "Delete"] },
+        { "role": "Authenticated", "rights": ["Read", "Upsert", "Delete"] },
+        { "role": "Creator", "rights": ["Read", "Upsert", "Delete"] },
+        { "role": "Administrator", "rights": ["Read", "Upsert", "Delete"] }
+      ],
+      "objectTypeName": "university"
+    },
+    {
+      "permissions": [
+        { "role": "World", "rights": ["Read", "Upsert", "Delete"] },
+        { "role": "Authenticated", "rights": ["Read", "Upsert", "Delete"] },
+        { "role": "Creator", "rights": ["Read", "Upsert", "Delete"] },
+        { "role": "Administrator", "rights": ["Read", "Upsert", "Delete"] }
+      ],
+      "objectTypeName": "ambassador"
+    },
+    {
+      "permissions": [
+        { "role": "World", "rights": ["Read", "Upsert", "Delete"] },
+        { "role": "Authenticated", "rights": ["Read", "Upsert", "Delete"] },
+        { "role": "Creator", "rights": ["Read", "Upsert", "Delete"] },
+        { "role": "Administrator", "rights": ["Read", "Upsert", "Delete"] }
+      ],
+      "objectTypeName": "events"
+    }
+  ],
+  "objectTypes": [
+    {
+      "indexes": [],
+      "objectTypeName": "teams",
+      "fields": [
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "id",
+          "notNull": true,
+          "isSensitive": false,
+          "belongPrimaryKey": true,
+          "fieldType": "IntAutoIncrement"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "name",
+          "notNull": true,
+          "isSensitive": false,
+          "defaultValue": "",
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "img",
+          "notNull": false,
+          "isSensitive": false,
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "age",
+          "notNull": true,
+          "isSensitive": false,
+          "defaultValue": "0",
+          "belongPrimaryKey": false,
+          "fieldType": "Integer"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "position",
+          "notNull": true,
+          "isSensitive": false,
+          "defaultValue": "",
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "department",
+          "notNull": true,
+          "isSensitive": false,
+          "defaultValue": "",
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "class_year",
+          "notNull": true,
+          "isSensitive": false,
+          "defaultValue": "",
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "linkedin",
+          "notNull": false,
+          "isSensitive": false,
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "github",
+          "notNull": false,
+          "isSensitive": false,
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "mail",
+          "notNull": false,
+          "isSensitive": false,
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "twitter",
+          "notNull": false,
+          "isSensitive": false,
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        }
+      ]
+    },
+    {
+      "indexes": [],
+      "objectTypeName": "blogs",
+      "fields": [
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "id",
+          "notNull": true,
+          "isSensitive": false,
+          "belongPrimaryKey": true,
+          "fieldType": "Integer"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "image",
+          "notNull": false,
+          "isSensitive": false,
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "largeImage",
+          "notNull": false,
+          "isSensitive": false,
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "author",
+          "notNull": false,
+          "isSensitive": false,
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "date",
+          "notNull": false,
+          "isSensitive": false,
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "view",
+          "notNull": false,
+          "isSensitive": false,
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "title",
+          "notNull": false,
+          "isSensitive": false,
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "slug_title",
+          "notNull": false,
+          "isSensitive": false,
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "excerpt",
+          "notNull": false,
+          "isSensitive": false,
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "body",
+          "notNull": false,
+          "isSensitive": false,
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        }
+      ]
+    },
+    {
+      "indexes": [],
+      "objectTypeName": "university",
+      "fields": [
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "id",
+          "notNull": true,
+          "isSensitive": false,
+          "belongPrimaryKey": true,
+          "fieldType": "IntAutoIncrement"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "name",
+          "notNull": true,
+          "isSensitive": false,
+          "defaultValue": "",
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "city",
+          "notNull": true,
+          "isSensitive": false,
+          "defaultValue": "",
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "medium_link",
+          "notNull": false,
+          "isSensitive": false,
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "linkedin_link",
+          "notNull": false,
+          "isSensitive": false,
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "twitter_link",
+          "notNull": false,
+          "isSensitive": false,
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "instagram_link",
+          "notNull": false,
+          "isSensitive": false,
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "github_link",
+          "notNull": false,
+          "isSensitive": false,
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "logo",
+          "notNull": true,
+          "isSensitive": false,
+          "defaultValue": "",
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        }
+      ]
+    },
+    {
+      "indexes": [],
+      "objectTypeName": "ambassador",
+      "fields": [
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "id",
+          "notNull": true,
+          "isSensitive": false,
+          "belongPrimaryKey": true,
+          "fieldType": "IntAutoIncrement"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "full_name",
+          "notNull": true,
+          "isSensitive": false,
+          "defaultValue": "",
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "age",
+          "notNull": true,
+          "isSensitive": false,
+          "defaultValue": "0",
+          "belongPrimaryKey": false,
+          "fieldType": "Integer"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "university_department",
+          "notNull": true,
+          "isSensitive": false,
+          "defaultValue": "",
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "what_year_university",
+          "notNull": true,
+          "isSensitive": false,
+          "defaultValue": "",
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "linkedin_link",
+          "notNull": false,
+          "isSensitive": false,
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "web_url",
+          "notNull": false,
+          "isSensitive": false,
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        }
+      ]
+    },
+    {
+      "indexes": [],
+      "objectTypeName": "events",
+      "fields": [
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "id",
+          "notNull": true,
+          "isSensitive": false,
+          "belongPrimaryKey": true,
+          "fieldType": "IntAutoIncrement"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "name",
+          "notNull": true,
+          "isSensitive": false,
+          "defaultValue": "",
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "description",
+          "notNull": true,
+          "isSensitive": false,
+          "defaultValue": "",
+          "belongPrimaryKey": false,
+          "fieldType": "Text"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "date",
+          "notNull": false,
+          "isSensitive": false,
+          "belongPrimaryKey": false,
+          "fieldType": "Date"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "local_name",
+          "notNull": false,
+          "isSensitive": false,
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "local_address",
+          "notNull": false,
+          "isSensitive": false,
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "slug_name",
+          "notNull": false,
+          "isSensitive": false,
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "speakers",
+          "notNull": false,
+          "isSensitive": false,
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "moderator",
+          "notNull": false,
+          "isSensitive": false,
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "organizer",
+          "notNull": false,
+          "isSensitive": false,
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "imgs",
+          "notNull": false,
+          "isSensitive": false,
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "state",
+          "notNull": false,
+          "isSensitive": false,
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        }
+      ]
+    }
+  ]
 }

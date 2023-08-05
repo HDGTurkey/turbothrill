@@ -4,82 +4,109 @@
  */
 
 class teams {
-   constructor() {
-      this.id = undefined;
-      this.img = undefined;
-      this.name = undefined;
-      this.designation = undefined;
-      this.twitter = undefined;
-      this.linkedin = undefined;
-      this.github = undefined;
-      this.mail = undefined;
-   }
+  constructor() {
+    this.id = undefined;
+    this.name = "";
+    this.img = undefined;
+    this.age = 0;
+    this.position = "";
+    this.department = "";
+    this.class_year = "";
+    this.linkedin = undefined;
+    this.github = undefined;
+    this.mail = undefined;
+    this.twitter = undefined;
+  }
 
-   setId(id) {
-      this.id = id;
-   }
+  setId(id) {
+    this.id = id;
+  }
 
-   getId() {
-      return this.id;
-   }
+  getId() {
+    return this.id;
+  }
 
-   setImg(img) {
-      this.img = img;
-   }
+  setName(name) {
+    this.name = name;
+  }
 
-   getImg() {
-      return this.img;
-   }
+  getName() {
+    return this.name;
+  }
 
-   setName(name) {
-      this.name = name;
-   }
+  setImg(img) {
+    this.img = img;
+  }
 
-   getName() {
-      return this.name;
-   }
+  getImg() {
+    return this.img;
+  }
 
-   setDesignation(designation) {
-      this.designation = designation;
-   }
+  setAge(age) {
+    this.age = age;
+  }
 
-   getDesignation() {
-      return this.designation;
-   }
+  getAge() {
+    return this.age;
+  }
 
-   setTwitter(twitter) {
-      this.twitter = twitter;
-   }
+  setPosition(position) {
+    this.position = position;
+  }
 
-   getTwitter() {
-      return this.twitter;
-   }
+  getPosition() {
+    return this.position;
+  }
 
-   setLinkedin(linkedin) {
-      this.linkedin = linkedin;
-   }
+  setDepartment(department) {
+    this.department = department;
+  }
 
-   getLinkedin() {
-      return this.linkedin;
-   }
+  getDepartment() {
+    return this.department;
+  }
 
-   setGithub(github) {
-      this.github = github;
-   }
+  setClass_year(class_year) {
+    this.class_year = class_year;
+  }
 
-   getGithub() {
-      return this.github;
-   }
+  getClass_year() {
+    return this.class_year;
+  }
 
-   setMail(mail) {
-      this.mail = mail;
-   }
+  setLinkedin(linkedin) {
+    this.linkedin = linkedin;
+  }
 
-   getMail() {
-      return this.mail;
-   }
+  getLinkedin() {
+    return this.linkedin;
+  }
+
+  setGithub(github) {
+    this.github = github;
+  }
+
+  getGithub() {
+    return this.github;
+  }
+
+  setMail(mail) {
+    this.mail = mail;
+  }
+
+  getMail() {
+    return this.mail;
+  }
+
+  setTwitter(twitter) {
+    this.twitter = twitter;
+  }
+
+  getTwitter() {
+    return this.twitter;
+  }
 }
 
-teams.className = 'teams';
+teams.className = "teams";
 
 export { teams };

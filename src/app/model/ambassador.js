@@ -4,73 +4,73 @@
  */
 
 class ambassador {
-   constructor() {
-      this.id = undefined;
-      this.full_name = '';
-      this.age = 0;
-      this.university_department = '';
-      this.what_year_university = '';
-      this.linkedin_link = undefined;
-      this.web_url = undefined;
-   }
+  constructor() {
+    this.id = undefined;
+    this.full_name = "";
+    this.age = 0;
+    this.university_department = "";
+    this.what_year_university = "";
+    this.linkedin_link = undefined;
+    this.web_url = undefined;
+  }
 
-   setId(id) {
-      this.id = id;
-   }
+  setId(id) {
+    this.id = id;
+  }
 
-   getId() {
-      return this.id;
-   }
+  getId() {
+    return this.id;
+  }
 
-   setFull_name(full_name) {
-      this.full_name = full_name;
-   }
+  setFull_name(full_name) {
+    this.full_name = full_name;
+  }
 
-   getFull_name() {
-      return this.full_name;
-   }
+  getFull_name() {
+    return this.full_name;
+  }
 
-   setAge(age) {
-      this.age = age;
-   }
+  setAge(age) {
+    this.age = age;
+  }
 
-   getAge() {
-      return this.age;
-   }
+  getAge() {
+    return this.age;
+  }
 
-   setUniversity_department(university_department) {
-      this.university_department = university_department;
-   }
+  setUniversity_department(university_department) {
+    this.university_department = university_department;
+  }
 
-   getUniversity_department() {
-      return this.university_department;
-   }
+  getUniversity_department() {
+    return this.university_department;
+  }
 
-   setWhat_year_university(what_year_university) {
-      this.what_year_university = what_year_university;
-   }
+  setWhat_year_university(what_year_university) {
+    this.what_year_university = what_year_university;
+  }
 
-   getWhat_year_university() {
-      return this.what_year_university;
-   }
+  getWhat_year_university() {
+    return this.what_year_university;
+  }
 
-   setLinkedin_link(linkedin_link) {
-      this.linkedin_link = linkedin_link;
-   }
+  setLinkedin_link(linkedin_link) {
+    this.linkedin_link = linkedin_link;
+  }
 
-   getLinkedin_link() {
-      return this.linkedin_link;
-   }
+  getLinkedin_link() {
+    return this.linkedin_link;
+  }
 
-   setWeb_url(web_url) {
-      this.web_url = web_url;
-   }
+  setWeb_url(web_url) {
+    this.web_url = web_url;
+  }
 
-   getWeb_url() {
-      return this.web_url;
-   }
+  getWeb_url() {
+    return this.web_url;
+  }
 }
 
-ambassador.className = 'ambassador';
+ambassador.className = "ambassador";
 
 export { ambassador };

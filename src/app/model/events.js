@@ -4,82 +4,118 @@
  */
 
 class events {
-   constructor() {
-      this.id = undefined;
-      this.slug_name = undefined;
-      this.state = undefined;
-      this.locName = undefined;
-      this.locAddress = undefined;
-      this.name = undefined;
-      this.date = undefined;
-      this.description = undefined;
-   }
+  constructor() {
+    this.id = undefined;
+    this.name = "";
+    this.description = "";
+    this.date = undefined;
+    this.local_name = undefined;
+    this.local_address = undefined;
+    this.slug_name = undefined;
+    this.speakers = undefined;
+    this.moderator = undefined;
+    this.organizer = undefined;
+    this.imgs = undefined;
+    this.state = undefined;
+  }
 
-   setId(id) {
-      this.id = id;
-   }
+  setId(id) {
+    this.id = id;
+  }
 
-   getId() {
-      return this.id;
-   }
+  getId() {
+    return this.id;
+  }
 
-   setSlug_name(slug_name) {
-      this.slug_name = slug_name;
-   }
+  setName(name) {
+    this.name = name;
+  }
 
-   getSlug_name() {
-      return this.slug_name;
-   }
+  getName() {
+    return this.name;
+  }
 
-   setState(state) {
-      this.state = state;
-   }
+  setDescription(description) {
+    this.description = description;
+  }
 
-   getState() {
-      return this.state;
-   }
+  getDescription() {
+    return this.description;
+  }
 
-   setLocName(locName) {
-      this.locName = locName;
-   }
+  setDate(date) {
+    this.date = date;
+  }
 
-   getLocName() {
-      return this.locName;
-   }
+  getDate() {
+    return this.date;
+  }
 
-   setLocAddress(locAddress) {
-      this.locAddress = locAddress;
-   }
+  setLocal_name(local_name) {
+    this.local_name = local_name;
+  }
 
-   getLocAddress() {
-      return this.locAddress;
-   }
+  getLocal_name() {
+    return this.local_name;
+  }
 
-   setName(name) {
-      this.name = name;
-   }
+  setLocal_address(local_address) {
+    this.local_address = local_address;
+  }
 
-   getName() {
-      return this.name;
-   }
+  getLocal_address() {
+    return this.local_address;
+  }
 
-   setDate(date) {
-      this.date = date;
-   }
+  setSlug_name(slug_name) {
+    this.slug_name = slug_name;
+  }
 
-   getDate() {
-      return this.date;
-   }
+  getSlug_name() {
+    return this.slug_name;
+  }
 
-   setDescription(description) {
-      this.description = description;
-   }
+  setSpeakers(speakers) {
+    this.speakers = speakers;
+  }
 
-   getDescription() {
-      return this.description;
-   }
+  getSpeakers() {
+    return this.speakers;
+  }
+
+  setModerator(moderator) {
+    this.moderator = moderator;
+  }
+
+  getModerator() {
+    return this.moderator;
+  }
+
+  setOrganizer(organizer) {
+    this.organizer = organizer;
+  }
+
+  getOrganizer() {
+    return this.organizer;
+  }
+
+  setImgs(imgs) {
+    this.imgs = imgs;
+  }
+
+  getImgs() {
+    return this.imgs;
+  }
+
+  setState(state) {
+    this.state = state;
+  }
+
+  getState() {
+    return this.state;
+  }
 }
 
-events.className = 'events';
+events.className = "events";
 
 export { events };

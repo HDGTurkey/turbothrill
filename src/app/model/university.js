@@ -4,91 +4,91 @@
  */
 
 class university {
-   constructor() {
-      this.id = undefined;
-      this.name = '';
-      this.city = '';
-      this.medium_link = undefined;
-      this.linkedin_link = undefined;
-      this.twitter_link = undefined;
-      this.instagram_link = undefined;
-      this.github_link = undefined;
-      this.logo = '';
-   }
+  constructor() {
+    this.id = undefined;
+    this.name = "";
+    this.city = "";
+    this.medium_link = undefined;
+    this.linkedin_link = undefined;
+    this.twitter_link = undefined;
+    this.instagram_link = undefined;
+    this.github_link = undefined;
+    this.logo = "";
+  }
 
-   setId(id) {
-      this.id = id;
-   }
+  setId(id) {
+    this.id = id;
+  }
 
-   getId() {
-      return this.id;
-   }
+  getId() {
+    return this.id;
+  }
 
-   setName(name) {
-      this.name = name;
-   }
+  setName(name) {
+    this.name = name;
+  }
 
-   getName() {
-      return this.name;
-   }
+  getName() {
+    return this.name;
+  }
 
-   setCity(city) {
-      this.city = city;
-   }
+  setCity(city) {
+    this.city = city;
+  }
 
-   getCity() {
-      return this.city;
-   }
+  getCity() {
+    return this.city;
+  }
 
-   setMedium_link(medium_link) {
-      this.medium_link = medium_link;
-   }
+  setMedium_link(medium_link) {
+    this.medium_link = medium_link;
+  }
 
-   getMedium_link() {
-      return this.medium_link;
-   }
+  getMedium_link() {
+    return this.medium_link;
+  }
 
-   setLinkedin_link(linkedin_link) {
-      this.linkedin_link = linkedin_link;
-   }
+  setLinkedin_link(linkedin_link) {
+    this.linkedin_link = linkedin_link;
+  }
 
-   getLinkedin_link() {
-      return this.linkedin_link;
-   }
+  getLinkedin_link() {
+    return this.linkedin_link;
+  }
 
-   setTwitter_link(twitter_link) {
-      this.twitter_link = twitter_link;
-   }
+  setTwitter_link(twitter_link) {
+    this.twitter_link = twitter_link;
+  }
 
-   getTwitter_link() {
-      return this.twitter_link;
-   }
+  getTwitter_link() {
+    return this.twitter_link;
+  }
 
-   setInstagram_link(instagram_link) {
-      this.instagram_link = instagram_link;
-   }
+  setInstagram_link(instagram_link) {
+    this.instagram_link = instagram_link;
+  }
 
-   getInstagram_link() {
-      return this.instagram_link;
-   }
+  getInstagram_link() {
+    return this.instagram_link;
+  }
 
-   setGithub_link(github_link) {
-      this.github_link = github_link;
-   }
+  setGithub_link(github_link) {
+    this.github_link = github_link;
+  }
 
-   getGithub_link() {
-      return this.github_link;
-   }
+  getGithub_link() {
+    return this.github_link;
+  }
 
-   setLogo(logo) {
-      this.logo = logo;
-   }
+  setLogo(logo) {
+    this.logo = logo;
+  }
 
-   getLogo() {
-      return this.logo;
-   }
+  getLogo() {
+    return this.logo;
+  }
 }
 
-university.className = 'university';
+university.className = "university";
 
 export { university };
