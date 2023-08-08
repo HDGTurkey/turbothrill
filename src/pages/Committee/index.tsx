@@ -2,11 +2,11 @@ import Breadcrumb from "@/app/components/breadcrumb";
 import ServiceArea from "./comitelist";
 import CommitteAbout from "./comitteAbout";
 
-const comitte = () => {
+const Committee = () => {
   return (
     <>
       {/* <HeaderSix /> */}
-      <Breadcrumb title={"Comitte"} />
+      <Breadcrumb title={"Committee"} />
       <CommitteAbout></CommitteAbout>
 
       <ServiceArea></ServiceArea>
@@ -14,4 +14,4 @@ const comitte = () => {
   );
 };
 
-export default comitte;
+export default Committee;
