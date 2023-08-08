@@ -1,6 +1,7 @@
 import Breadcrumb from "@/app/components/breadcrumb";
-import ServiceArea from "./comitelist";
 import CommitteAbout from "./comitteAbout";
+import ServiceArea from "./comitelist";
+import NewsLetter from "./whichComite";
 
 const Committee = () => {
   return (
@@ -10,6 +11,7 @@ const Committee = () => {
       <CommitteAbout></CommitteAbout>
 
       <ServiceArea></ServiceArea>
+      <NewsLetter></NewsLetter>
     </>
   );
 };
