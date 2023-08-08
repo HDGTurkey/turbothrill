@@ -1,3 +1,4 @@
+import { HighlightTwo } from "@/svg";
 import React from "react";
 
 const contents = {
@@ -16,6 +17,7 @@ const { about_img, desc, right_text_1, right_text_2, title } = contents;
 const CommitteAbout = () => {
   return (
     <>
+    
       <div className="ac-about-content-area pt-130">
         <div className="container">
           <div className=" ">
