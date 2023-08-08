@@ -10,9 +10,6 @@ const comitte = () => {
       <CommitteAbout></CommitteAbout>
 
       <ServiceArea></ServiceArea>
-     
-      
-     
     </>
   );
 };

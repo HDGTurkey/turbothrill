@@ -1,9 +1,8 @@
+import Link from "next/link";
+import React, { useState, useRef, useEffect } from "react";
+import services_data from "../../app/data/committe/services-data";
 
-import Link from 'next/link';
-import React, { useState, useRef, useEffect } from 'react';
-import services_data from '../../app/data/committe/services-data';
-
-const services_items = services_data.filter(ser => ser.service_p);
+const services_items = services_data.filter((ser) => ser.service_p);
 
 const ServiceArea = () => {
   const [active, setActive] = useState(0); // active state variable with initial value 0
@@ -17,17 +16,20 @@ const ServiceArea = () => {
     // Scroll to the active card when it is set
     if (activeCardRef.current) {
       activeCardRef.current.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
+        behavior: "smooth",
+        block: "start",
       });
     }
   }, [active]);
 
   const getActiveServiceItem = () => {
     if (active !== 0) {
-      const activeService = services_items.find(service => service.id === active);
+      const activeService = services_items.find(
+        (service) => service.id === active,
+      );
       if (activeService) {
-        const { delay, duration, id, img, title, border_effect } = activeService;
+        const { delay, duration, id, img, title, border_effect } =
+          activeService;
         return (
           <div
             key={id}
@@ -42,9 +44,7 @@ const ServiceArea = () => {
                   {/* Render the image if available */}
                 </div>
                 <div className="tp-service-item-four__title">
-                  <h3 className="tp-sv-sm-title">
-                    {title}
-                  </h3>
+                  <h3 className="tp-sv-sm-title">{title}</h3>
                 </div>
               </div>
             </div>
@@ -61,19 +61,23 @@ const ServiceArea = () => {
         <div className="container">
           <div className="row">
             {services_items.map((service, i) => {
-              const { delay, duration, id, img, title, border_effect } = service;
+              const { delay, duration, id, img, title, border_effect } =
+                service;
               return (
                 <div
                   key={id}
                   onClick={() => handleServiceItemClick(id)} // Pass the id as a parameter to handleServiceItemClick
-                  className={`col-xl-3 col-lg-4 col-md-6 wow tpfadeUp ${active === id ? 'active' : ''}`}
+                  className={`col-xl-3 col-lg-4 col-md-6 wow tpfadeUp ${
+                    active === id ? "active" : ""
+                  }`}
                   data-wow-duration={duration}
                   data-wow-delay={delay}
                 >
                   <div className={`tp-sv-border-effect ${border_effect}`}>
                     <div
-                      className={`tp-service-item-four sv-1-border ${i + 1 === 8 ? 'sv-color-1' : `sv-color-${i + 1}`
-                        } mb-30`}
+                      className={`tp-service-item-four sv-1-border ${
+                        i + 1 === 8 ? "sv-color-1" : `sv-color-${i + 1}`
+                      } mb-30`}
                     >
                       <div className="tp-service-item-four__img  mb-40"></div>
                       <div className="tp-service-item-four__title">
