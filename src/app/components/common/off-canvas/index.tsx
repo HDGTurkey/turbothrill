@@ -39,6 +39,13 @@ const menu_data: MenuData[] = [
     link: "/about",
   },
   {
+    id: 2,
+    mega_menu: false,
+    has_dropdown: false,
+    title: "Comitte",
+    link: "/comitte",
+  },
+  {
     id: 3,
     mega_menu: true,
     has_dropdown: false,
