@@ -129,6 +129,7 @@ const ServiceArea = () => {
         </div>
       </div>
       {getActiveServiceItem()}
+       
     </>
   );
 };

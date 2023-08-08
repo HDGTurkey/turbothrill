@@ -1,4 +1,5 @@
 import { HighlightTwo } from "@/svg";
+import { Button } from "@mui/material";
 import React from "react";
 
 const contents = {
@@ -7,7 +8,7 @@ const contents = {
     "The committees aim for our volunteers to take more responsibility and risk, take a more active role in the program, and move the community further in line with their abilities.",
   right_text_2:
     "",
-  desc: "Youtube Kanalımız",
+  desc: "",
   about_img: "/assets/img/breadcrum/ab-1.2.jpg",
 };
 const { about_img, desc, right_text_1, right_text_2, title } = contents;
@@ -29,10 +30,11 @@ const CommitteAbout = () => {
               >
                 <div className="ac-about-left">
                   <h3 className="ac-ab-title">
-                    <a href="#">{title}</a>
+                   {title}
                   </h3>
-                 
+                  
                 </div>
+                
               </div>
               <div
                 className="col-xl- col-lg-6 wow tpfadeRight"
