@@ -7,6 +7,7 @@ import WhatWeDo from "../app/components/home/WhatWeDo";
 import { HelloDiv } from "../app/components/home/HelloDiv";
 import ProjectArea from "@/app/components/home/project-area";
 import Committe from "@/app/components/home/community";
+import Sponsor from "@/app/components/home/Sponsor";
 
 //container mx-auto
 export default function HomePage() {
@@ -18,7 +19,7 @@ export default function HomePage() {
         {/* <About /> */}
         <Committe/>
         <ProjectArea />
-
+        <Sponsor/>
         {/* <OurEvents />
         <FeatureEvent /> */} 
         {/* <Partner /> */}
