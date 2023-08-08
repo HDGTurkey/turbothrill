@@ -160,11 +160,11 @@ const Test: React.FC = () => {
             return (
               <div
                 key={index}
-                className="card shadow my-3 w-full rounded-md p-6"
+                className="card shadow w-full rounded-md p-6"
               >
                 <p className=" flex text-xl text-black">{index + 1} ) {title}</p>
                 <div className="grid gap-2 p-3 sm:grid-cols-2">
-                  <label className="dark:bg-slate-900 flex w-full rounded-md border border-gray-200 bg-white p-3 text-sm focus-within:border-blue-500 focus-within:ring-blue-500 dark:border-gray-700 dark:text-gray-400">
+                  <label className="dark:bg-slate-900 flex w-full rounded-md  border-gray-200 bg-white p-3 text-sm focus-within:border-blue-500 focus-within:ring-blue-500 dark:border-gray-700 dark:text-gray-400">
                     <input
                       type="radio"
                       name={`question-${index}`}
@@ -194,7 +194,7 @@ const Test: React.FC = () => {
                     <span className="ml-3 text-sm text-gray-700">{desc}</span>
                   </label>
 
-                  <label className="dark:bg-slate-900 flex w-full rounded-md border border-gray-200 bg-white p-3 text-sm focus-within:border-blue-500 focus-within:ring-blue-500 dark:border-gray-700 dark:text-gray-400">
+                  <label className="dark:bg-slate-900 flex w-full rounded-md  border-gray-200 bg-white p-3 text-sm focus-within:border-blue-500 focus-within:ring-blue-500 dark:border-gray-700 dark:text-gray-400">
                     <input
                       type="radio"
                       name={`question-${index}`}
