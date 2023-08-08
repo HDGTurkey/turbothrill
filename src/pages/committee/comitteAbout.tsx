@@ -5,19 +5,15 @@ const contents = {
   title: "The purpose of HSD Committees?",
   right_text_1:
     "The committees aim for our volunteers to take more responsibility and risk, take a more active role in the program, and move the community further in line with their abilities.",
-  right_text_2:
-    "",
+  right_text_2: "",
   desc: "Youtube Kanalımız",
   about_img: "/assets/img/breadcrum/ab-1.2.jpg",
 };
 const { about_img, desc, right_text_1, right_text_2, title } = contents;
 
-
-
 const CommitteAbout = () => {
   return (
     <>
-    
       <div className="ac-about-content-area pt-130">
         <div className="container">
           <div className=" ">
@@ -31,7 +27,6 @@ const CommitteAbout = () => {
                   <h3 className="ac-ab-title">
                     <a href="#">{title}</a>
                   </h3>
-                 
                 </div>
               </div>
               <div
@@ -50,15 +45,10 @@ const CommitteAbout = () => {
               className="col-xl-6 col-lg-6 wow tpfadeLeft"
               data-wow-duration=".3s"
               data-wow-delay=".5s"
-            >
-             
-            </div>
-          
+            ></div>
           </div>
         </div>
       </div>
-
-     
     </>
   );
 };
