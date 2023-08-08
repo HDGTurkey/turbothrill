@@ -17,11 +17,11 @@ export default function HomePage() {
         <HelloDiv />
         <WhatWeDo />
         {/* <About /> */}
-        <Committe/>
+        <Committe />
         <ProjectArea />
-        <Sponsor/>
+        <Sponsor />
         {/* <OurEvents />
-        <FeatureEvent /> */} 
+        <FeatureEvent /> */}
         {/* <Partner /> */}
       </div>
     </>
