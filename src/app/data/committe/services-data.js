@@ -1,4 +1,4 @@
-import { Bulb, Code, Managed } from "../../svg"
+import { Bulb, Code, Managed } from "../../../svg"
 
 const services_data = [
   {
