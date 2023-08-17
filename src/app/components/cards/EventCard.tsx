@@ -86,10 +86,11 @@ export const EventCard = (events: any) => {
             <div className="flex-1"></div>
             <div className="relative float-right text-green-700">
               <span
-                className={`rounded-sm p-2 text-lg font-bold capitalize shadow-lg ${status_event === "active"
-                  ? "text-green-500 "
-                  : "text-red-500 "
-                  }`}
+                className={`rounded-sm p-2 text-lg font-bold capitalize shadow-lg ${
+                  status_event === "active"
+                    ? "text-green-500 "
+                    : "text-red-500 "
+                }`}
               >
                 {status_event}
               </span>
@@ -110,7 +111,10 @@ export const EventCard = (events: any) => {
               Location : {local_name}
             </div>
           </div>
-          <div className="flex w-full bg-gray-200 mx-auto hover:bg-gray-300 cursor-pointer transition rounded-sm p-1 items-center justify-center text-black shadow-md " onClick={handleClick}>
+          <div
+            className="mx-auto flex w-full cursor-pointer items-center justify-center rounded-sm bg-gray-200 p-1 text-black shadow-md transition hover:bg-gray-300 "
+            onClick={handleClick}
+          >
             View event
           </div>
           <div
