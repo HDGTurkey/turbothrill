@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import { TeamImage } from "./TeamImage";
 
 interface SingleTeamProps {
   team: {
@@ -31,12 +32,12 @@ const SingleTeam: React.FC<SingleTeamProps> = ({ team }: any) => {
           <img src="assets/img/team/team-shape-5.2.png" alt="" />
         </div>
         <div className="tpteam__thumb h-[300px] w-full overflow-hidden">
-          {img && (
-            <img
-              className="h-auto w-full object-cover"
-              src={require(`../../app/assets/Images/team/` + img).default.src}
-              alt=""
-            />
+          {team.img ? (
+            <div>
+              <TeamImage imgPath={team.img} width="450px" alt="" />
+            </div>
+          ) : (
+            <div>No image available</div>
           )}
         </div>
         <div className="tpteam__content">
@@ -64,13 +65,12 @@ const SingleTeam: React.FC<SingleTeamProps> = ({ team }: any) => {
                 {/*header*/}
 
                 {/*body*/}
-                <div className="relative my-3 flex-auto p-2 p-6">
-                  <img
-                    className="mx-auto h-32 w-32 rounded-full"
-                    src={
-                      require(`../../app/assets/Images/team/` + img).default.src
-                    }
-                    alt="John Doe"
+                <div className="relative mx-auto my-3 flex ">
+                  <TeamImage
+                    imgPath={team.img}
+                    width="150px"
+                    height="150px"
+                    alt=""
                   />
                 </div>
 

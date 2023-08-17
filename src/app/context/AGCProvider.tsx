@@ -5,11 +5,12 @@ import {
   CloudDBZoneConfig,
   CloudDBZone,
 } from "@hw-agconnect/database";
-import agconnect from "@hw-agconnect/api";
-import "@hw-agconnect/auth";
-import "@hw-agconnect/instance";
+
+import agconnect from "@agconnect/api";
+import "@agconnect/auth";
+import "@agconnect/instance";
 import { agConnectConfig } from "../config/agconnect-services.js";
-import "../../app/assets/Css/splash-screen.css";
+import { async } from "@agconnect/cloudstorage/dist/src/task.js";
 
 export const AGCContext = createContext<any>({ executeQuery: undefined });
 type x = {
@@ -54,6 +55,24 @@ export const AGCProvider: React.FC<x> = ({ children }) => {
     return snapshot.getSnapshotObjects();
   }
 
+  async function getImageUrl(getPath: any) {
+    try {
+      await agconnect.auth().signInAnonymously();
+
+      const downloadURL = await agconnect
+        //@ts-ignore
+
+        .cloudStorage()
+        .storageReference()
+        .child(getPath)
+        .getDownloadURL();
+      return downloadURL;
+    } catch (err) {
+      console.error(err);
+      return null;
+    }
+  }
+
   useEffect(() => {
     init();
   }, []);
@@ -74,7 +93,9 @@ export const AGCProvider: React.FC<x> = ({ children }) => {
   }
 
   return (
-    <AGCContext.Provider value={{ executeQuery, executeQueryWhere }}>
+    <AGCContext.Provider
+      value={{ executeQuery, executeQueryWhere, getImageUrl }}
+    >
       {children}
     </AGCContext.Provider>
   );

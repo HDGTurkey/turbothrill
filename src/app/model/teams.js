@@ -16,6 +16,8 @@ class teams {
     this.github = undefined;
     this.mail = undefined;
     this.twitter = undefined;
+    this.descriptions = undefined;
+    this.slug_name = undefined;
   }
 
   setId(id) {
@@ -104,6 +106,22 @@ class teams {
 
   getTwitter() {
     return this.twitter;
+  }
+
+  setDescriptions(descriptions) {
+    this.descriptions = descriptions;
+  }
+
+  getDescriptions() {
+    return this.descriptions;
+  }
+
+  setSlug_name(slug_name) {
+    this.slug_name = slug_name;
+  }
+
+  getSlug_name() {
+    return this.slug_name;
   }
 }
 

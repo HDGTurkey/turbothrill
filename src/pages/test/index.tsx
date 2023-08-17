@@ -158,11 +158,10 @@ const Test: React.FC = () => {
           {accordion_items.map((item, index) => {
             const { id, show, title, desc, descNo } = item;
             return (
-              <div
-                key={index}
-                className="card shadow w-full rounded-md p-6"
-              >
-                <p className=" flex text-xl text-black">{index + 1} ) {title}</p>
+              <div key={index} className="card w-full rounded-md p-6 shadow">
+                <p className=" flex text-xl text-black">
+                  {index + 1} ) {title}
+                </p>
                 <div className="grid gap-2 p-3 sm:grid-cols-2">
                   <label className="dark:bg-slate-900 flex w-full rounded-md  border-gray-200 bg-white p-3 text-sm focus-within:border-blue-500 focus-within:ring-blue-500 dark:border-gray-700 dark:text-gray-400">
                     <input
@@ -173,14 +172,14 @@ const Test: React.FC = () => {
                       onChange={() => handleAnswerChange(index, "yes")}
                       className="hidden"
                     />
-                    <div className="relative rounded-full w-6 h-6 border border-blue-600 transition-transform duration-300 transform scale-100 bg-white dark:bg-gray-800 dark:border-gray-700 dark:ring-offset-gray-800">
+                    <div className="relative h-6 w-6 scale-100 transform rounded-full border border-blue-600 bg-white transition-transform duration-300 dark:border-gray-700 dark:bg-gray-800 dark:ring-offset-gray-800">
                       {answers[index] === "yes" && (
                         <div className="absolute inset-0 flex items-center justify-center rounded-full bg-blue-500 dark:bg-blue-500">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 20 20"
                             fill="currentColor"
-                            className="w-4 h-4 text-white"
+                            className="h-4 w-4 text-white"
                           >
                             <path
                               fillRule="evenodd"
@@ -203,14 +202,14 @@ const Test: React.FC = () => {
                       onChange={() => handleAnswerChange(index, "no")}
                       className="hidden"
                     />
-                    <div className="relative rounded-full w-6 h-6 border border-gray-200 transition-transform duration-300 transform scale-100 bg-white dark:bg-gray-800 dark:border-gray-700 dark:ring-offset-gray-800">
+                    <div className="relative h-6 w-6 scale-100 transform rounded-full border border-gray-200 bg-white transition-transform duration-300 dark:border-gray-700 dark:bg-gray-800 dark:ring-offset-gray-800">
                       {answers[index] === "no" && (
                         <div className="absolute inset-0 flex items-center justify-center rounded-full bg-blue-500 dark:bg-blue-500">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 20 20"
                             fill="currentColor"
-                            className="w-4 h-4 text-white"
+                            className="h-4 w-4 text-white"
                           >
                             <path
                               fillRule="evenodd"
@@ -224,7 +223,6 @@ const Test: React.FC = () => {
                     <span className="ml-3 text-sm text-gray-700">{descNo}</span>
                   </label>
                 </div>
-
               </div>
             );
           })}

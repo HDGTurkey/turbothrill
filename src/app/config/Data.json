@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 17,
+  "schemaVersion": 3,
   "permissions": [
     {
       "permissions": [
@@ -27,6 +27,15 @@
         { "role": "Administrator", "rights": ["Read", "Upsert", "Delete"] }
       ],
       "objectTypeName": "university"
+    },
+    {
+      "permissions": [
+        { "role": "World", "rights": ["Read", "Upsert", "Delete"] },
+        { "role": "Authenticated", "rights": ["Read", "Upsert", "Delete"] },
+        { "role": "Creator", "rights": ["Read", "Upsert", "Delete"] },
+        { "role": "Administrator", "rights": ["Read", "Upsert", "Delete"] }
+      ],
+      "objectTypeName": "medium"
     },
     {
       "permissions": [
@@ -144,6 +153,103 @@
           "isSensitive": false,
           "belongPrimaryKey": false,
           "fieldType": "String"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "descriptions",
+          "notNull": false,
+          "isSensitive": false,
+          "belongPrimaryKey": false,
+          "fieldType": "Text"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "slug_name",
+          "notNull": false,
+          "isSensitive": false,
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        }
+      ]
+    },
+    {
+      "indexes": [],
+      "objectTypeName": "university",
+      "fields": [
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "id",
+          "notNull": true,
+          "isSensitive": false,
+          "belongPrimaryKey": true,
+          "fieldType": "IntAutoIncrement"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "name",
+          "notNull": true,
+          "isSensitive": false,
+          "defaultValue": "",
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "city",
+          "notNull": true,
+          "isSensitive": false,
+          "defaultValue": "",
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "medium_link",
+          "notNull": false,
+          "isSensitive": false,
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "linkedin_link",
+          "notNull": false,
+          "isSensitive": false,
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "twitter_link",
+          "notNull": false,
+          "isSensitive": false,
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "instagram_link",
+          "notNull": false,
+          "isSensitive": false,
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "github_link",
+          "notNull": false,
+          "isSensitive": false,
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "logo",
+          "notNull": true,
+          "isSensitive": false,
+          "defaultValue": "",
+          "belongPrimaryKey": false,
+          "fieldType": "String"
         }
       ]
     },
@@ -235,87 +341,6 @@
     },
     {
       "indexes": [],
-      "objectTypeName": "university",
-      "fields": [
-        {
-          "isNeedEncrypt": false,
-          "fieldName": "id",
-          "notNull": true,
-          "isSensitive": false,
-          "belongPrimaryKey": true,
-          "fieldType": "IntAutoIncrement"
-        },
-        {
-          "isNeedEncrypt": false,
-          "fieldName": "name",
-          "notNull": true,
-          "isSensitive": false,
-          "defaultValue": "",
-          "belongPrimaryKey": false,
-          "fieldType": "String"
-        },
-        {
-          "isNeedEncrypt": false,
-          "fieldName": "city",
-          "notNull": true,
-          "isSensitive": false,
-          "defaultValue": "",
-          "belongPrimaryKey": false,
-          "fieldType": "String"
-        },
-        {
-          "isNeedEncrypt": false,
-          "fieldName": "medium_link",
-          "notNull": false,
-          "isSensitive": false,
-          "belongPrimaryKey": false,
-          "fieldType": "String"
-        },
-        {
-          "isNeedEncrypt": false,
-          "fieldName": "linkedin_link",
-          "notNull": false,
-          "isSensitive": false,
-          "belongPrimaryKey": false,
-          "fieldType": "String"
-        },
-        {
-          "isNeedEncrypt": false,
-          "fieldName": "twitter_link",
-          "notNull": false,
-          "isSensitive": false,
-          "belongPrimaryKey": false,
-          "fieldType": "String"
-        },
-        {
-          "isNeedEncrypt": false,
-          "fieldName": "instagram_link",
-          "notNull": false,
-          "isSensitive": false,
-          "belongPrimaryKey": false,
-          "fieldType": "String"
-        },
-        {
-          "isNeedEncrypt": false,
-          "fieldName": "github_link",
-          "notNull": false,
-          "isSensitive": false,
-          "belongPrimaryKey": false,
-          "fieldType": "String"
-        },
-        {
-          "isNeedEncrypt": false,
-          "fieldName": "logo",
-          "notNull": true,
-          "isSensitive": false,
-          "defaultValue": "",
-          "belongPrimaryKey": false,
-          "fieldType": "String"
-        }
-      ]
-    },
-    {
-      "indexes": [],
       "objectTypeName": "ambassador",
       "fields": [
         {
@@ -373,6 +398,28 @@
         {
           "isNeedEncrypt": false,
           "fieldName": "web_url",
+          "notNull": false,
+          "isSensitive": false,
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        }
+      ]
+    },
+    {
+      "indexes": [],
+      "objectTypeName": "medium",
+      "fields": [
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "id",
+          "notNull": true,
+          "isSensitive": false,
+          "belongPrimaryKey": true,
+          "fieldType": "IntAutoIncrement"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "api",
           "notNull": false,
           "isSensitive": false,
           "belongPrimaryKey": false,
@@ -477,6 +524,22 @@
         {
           "isNeedEncrypt": false,
           "fieldName": "state",
+          "notNull": false,
+          "isSensitive": false,
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "status_event",
+          "notNull": false,
+          "isSensitive": false,
+          "belongPrimaryKey": false,
+          "fieldType": "String"
+        },
+        {
+          "isNeedEncrypt": false,
+          "fieldName": "quota",
           "notNull": false,
           "isSensitive": false,
           "belongPrimaryKey": false,
