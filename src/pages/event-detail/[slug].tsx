@@ -95,8 +95,8 @@ const EventDetailPage: React.FC = () => {
         <div className={`container grid grid-cols-1 shadow-lg  lg:grid-cols-3`}>
           <div className={`col-span-2 `}>
             <div className="">
-              <div className="mx-auto flex  p-2 ">
-                <TeamImage imgPath={img} width="250px" alt="" />
+              <div className="mx-auto flex  p-5 ">
+                <TeamImage imgPath={img} width="1250px" alt="" />
               </div>
               <p className="container my-8 px-5 text-left ">
                 {eventData[0]?.description}Buradaki kod, React'ta işlevsel
@@ -235,7 +235,7 @@ const EventDetailPage: React.FC = () => {
             >
               <div className="flex">
                 <CalendarTodayIcon></CalendarTodayIcon>
-                <p className=" px-1">
+                <p className="mr-1 pl-3 bg-gray-200 px-3 rounded-md">
                   {eventData[0]?.date
                     ? new Date(eventData[0]?.date).toLocaleDateString()
                     : ""}
@@ -243,7 +243,7 @@ const EventDetailPage: React.FC = () => {
               </div>
               <div className="flex">
                 <AccessTimeIcon></AccessTimeIcon>
-                <p className=" px-1">{formattedTime}</p>
+                <p className="mr-1 pl-3 bg-gray-200 px-3 rounded-md">{formattedTime}</p>
               </div>
             </div>
             <div
