@@ -51,7 +51,7 @@ const TeamArea: React.FC = () => {
               </span>
             </h2>
           </div>
-          <div className="row mx-auto space-x-3">
+          <div className="row mx-auto space-x-5">
             {teamData.map((team, key) => (
               <SingleTeam key={key} team={team} />
             ))}

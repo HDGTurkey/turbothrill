@@ -15,6 +15,13 @@ import { AGCContext } from "../../app/context/AGCProvider";
 import { events as eventsModel } from "../../app/model/events.js";
 import Breadcrumb from "@/app/components/breadcrumb";
 
+
+import "@agconnect/instance";
+import "@agconnect/auth";
+import "@agconnect/cloudstorage";
+import { TeamImage } from "@/pages/team/TeamImage";
+
+
 const EventDetailPage: React.FC = () => {
   const themeData = useSite();
 
@@ -24,8 +31,12 @@ const EventDetailPage: React.FC = () => {
 
   const router = useRouter();
 
+  const [img, setImg] = useState("");
+
+
   interface Events {
     name: string;
+    imgs: string;
     slug_name: string;
     description: string;
     date: Date;
@@ -37,12 +48,19 @@ const EventDetailPage: React.FC = () => {
 
   async function getEvent(slugName: string) {
     setLoading(true);
-    const data = await agcContext.executeQueryWhere(
-      eventsModel,
-      "slug_name",
-      slugName,
-    );
-    setEventData(data);
+    try {
+      const data = await agcContext.executeQueryWhere(
+        eventsModel,
+        "slug_name",
+        slugName,
+      );
+      setEventData(data);
+      if (data.length > 0) {
+        setImg(data[0].imgs);
+      }
+    } catch (error) {
+      console.error("An error occurred while fetching the event:", error);
+    }
   }
 
   useEffect(() => {
@@ -78,11 +96,7 @@ const EventDetailPage: React.FC = () => {
           <div className={`col-span-2 `}>
             <div className="">
               <div className="mx-auto flex  p-2 ">
-                <img
-                  alt="img"
-                  className=" mx-auto mt-8 rounded-md bg-gray-300 p-2 "
-                  src="https://www.meetup.com/_next/image/?url=https%3A%2F%2Fsecure-content.meetupstatic.com%2Fimages%2Fclassic-events%2F508957542%2F676x380.webp&w=3840&q=75"
-                ></img>
+                <TeamImage imgPath={img} width="250px" alt="" />
               </div>
               <p className="container my-8 px-5 text-left ">
                 {eventData[0]?.description}Buradaki kod, React'ta işlevsel
@@ -145,11 +159,10 @@ const EventDetailPage: React.FC = () => {
           </div>
           <div className={` m-5 space-y-4 p-2.5`}>
             <div
-              className={`mx-auto mb-3 flex rounded-lg p-2 text-lg font-bold text-black ${
-                eventData[0]?.status_event === "active"
-                  ? "bg-green-300"
-                  : "bg-red-500"
-              }`}
+              className={`mx-auto mb-3 flex rounded-lg p-2 text-lg font-bold text-black ${eventData[0]?.status_event === "active"
+                ? "bg-green-300"
+                : "bg-red-500"
+                }`}
             >
               <div>
                 {eventData[0]?.status_event === "active" ? (
@@ -246,11 +259,10 @@ const EventDetailPage: React.FC = () => {
               </div>
             </div>
             <div
-              className={`b-5 flex w-auto  items-start space-x-4 rounded-lg border-2 border-solid px-3 py-2 shadow-md ${
-                themeData.theme === "light"
-                  ? "bg-white text-black"
-                  : "bg-black text-white"
-              }`}
+              className={`b-5 flex w-auto  items-start space-x-4 rounded-lg border-2 border-solid px-3 py-2 shadow-md ${themeData.theme === "light"
+                ? "bg-white text-black"
+                : "bg-black text-white"
+                }`}
             >
               <MapIcon></MapIcon>
               <div className="text-left ">
