@@ -47,9 +47,7 @@ export const AGCProvider: React.FC<x> = ({ children }) => {
 
   //@ts-ignore
   async function executeQueryWhere(query, fieldName, value) {
-    console.log("execute query");
     const zoneQuery = CloudDBZoneQuery.where(query).equalTo(fieldName, value);
-    console.log(zoneQuery);
     //@ts-ignore
     const snapshot = await cloudDbZone.executeQuery(zoneQuery);
     return snapshot.getSnapshotObjects();

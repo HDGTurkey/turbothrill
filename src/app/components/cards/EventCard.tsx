@@ -32,7 +32,6 @@ export const EventCard = (events: any) => {
     date,
     description,
   } = events.events;
-  console.log(events.events);
   const eventDate = new Date(date);
 
   // Gün, Ay ve Yıl bilgilerini al

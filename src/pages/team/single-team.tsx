@@ -20,7 +20,7 @@ const SingleTeam: React.FC<SingleTeamProps> = ({ team }: any) => {
   const [showModal, setShowModal] = React.useState(false);
   return (
     <div
-      className="col-xl-3 col-lg-3 col-md-6 mx-auto  wow tpfadeUp mr-5 "
+      className="col-xl-3 col-lg-3 col-md-6 wow  tpfadeUp mx-auto mr-5 "
       data-wow-duration={"0.7s"}
       data-wow-delay={"0.7s"}
     >

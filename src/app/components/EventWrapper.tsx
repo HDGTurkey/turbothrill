@@ -56,7 +56,6 @@ function EventWrapper() {
 
   useEffect(() => {
     setEventsLength(events.length);
-    console.log(eventsLength);
   }, [events]);
 
   useEffect(() => {

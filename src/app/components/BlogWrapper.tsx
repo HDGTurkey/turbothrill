@@ -49,7 +49,6 @@ export const BlogWrapper = () => {
 
   useEffect(() => {
     setBlogsLength(blogs.length);
-    console.log(blogsLength);
   }, [blogs, blogsLength]);
 
   useEffect(() => {
