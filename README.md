@@ -13,7 +13,7 @@ We used the following technologies when developing the project:
 - Huawei Cloud Auth: Integrated for authentication and authorization processes.
 - Tailwind CSS: Used to create the user interface in a fast and customizable way.
 
-  For more information about Huawei Cloud DB, please visit.[Huawei Cloud DB Dokümantasyonu](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-clouddb-introduction-0000001054212760)
+  For more information about [Huawei Cloud DB ](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-clouddb-introduction-0000001054212760), please visit.
 ## Install and Contribute 🤝
 
 ### Run on Your Computer
