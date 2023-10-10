@@ -1,0 +1,126 @@
+.mm-menu{
+	ul{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		li{
+			display: block;
+			&:hover{
+				> a,button{
+					padding-left: 3px;
+					color: #2b4eff;
+				}
+			}
+			a,button{
+				padding: 12px 0;
+				display: block;
+				border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+				font-size: 14px;
+				color: #fff;
+				font-weight: 600;
+				text-transform: uppercase;
+				position: relative;
+        width: 100%;
+        text-align: left;
+			}
+
+			a.active,button.active{
+				padding-left: 3px;
+				color: #2b4eff;
+			}
+		}
+		
+		li.has-droupdown{
+			> a,button{
+				&::after{
+					position: absolute;
+					content: "";
+					width: 8px;
+					height: 8px;
+					border-width: 2px 0 0 2px;
+					border-style: solid;
+					border-color: initial;
+					right: 16px;
+					top: 50%;
+					-webkit-transform: rotate(-45deg) translateY(-50%);
+					transform: rotate(-45deg) translateY(-50%);
+					-webkit-transform-origin: top;
+					transform-origin: top;
+					transition: all 0.3s ease-out;
+				}
+			}
+			ul.sub-menu{
+				padding-left: 0;
+				list-style: none;
+        height: 0;
+        &.active{
+          height: 100%;
+        }
+				li{
+					padding-left: 15px;
+					&:hover{
+						> a{
+							padding: 0 0 0 18px;
+							color: #2b4eff;
+							&:before{
+								background: #2b4eff;
+								border-color: #2b4eff;
+							}
+						}
+					}
+					a{
+						position: relative;
+						padding: 0 0 0 15px;
+						text-transform: capitalize;
+						font-size: 13px;
+						height: 0;
+						line-height: 46px;
+						visibility: hidden;
+						opacity: 0;
+						transition: all 0.3s;
+						
+						&:before{
+							content: "";
+							width: 8px;
+							height: 8px;
+							position: absolute;
+							left: 0;
+							top: 50%;
+							transform: translateY(-50%);
+							border: 2px solid #6d8397;
+							border-radius: 50%;
+							visibility: hidden;
+							opacity: 0;
+							transition: all 0.3s;
+						}
+					}
+				}
+			}
+		}
+
+		li.has-droupdown.active{
+			> a{
+				color: #2b4eff;
+				&:after{
+					-webkit-transform: rotate(-135deg) translateY(-50%);
+					transform: rotate(-135deg) translateY(-50%);
+				}
+			}
+			ul.sub-menu.active{
+				li{
+					a{
+						height: 46px;
+						visibility: visible;
+						opacity: 1;
+						&:before{
+							visibility: visible;
+							opacity: 1;
+						}
+					}
+				}
+			}
+		}
+
+		
+	}
+}

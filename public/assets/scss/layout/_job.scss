@@ -1,0 +1,91 @@
+/*----------------------------------------*/
+/*  16. job CSS START
+/*----------------------------------------*/
+
+
+@use '../utils' as *;
+
+.jobdetails{
+    &__subtitle{
+        padding-bottom: 20px;
+        margin-bottom: 50px;
+        border-bottom: 1px solid #ECEFF4;;
+    }
+    &__title{
+        & span{
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            padding-bottom: 45px;
+            display: inline-block;
+        }
+    }
+    &__paragraph{
+        & p{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 30px;
+            & b{
+                color: var(--tp-common-black);
+            }
+        }
+    }
+    &__img{
+        padding-top: 30px;
+        padding-bottom: 60px;
+        & img{
+            max-width: 100%;
+            border-radius: 20px;
+        }
+    }
+    &__feature{
+        & ul{
+            & li{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 26px;
+                position: relative;
+                padding-left: 30px;
+                margin-bottom: 25px;
+                & span{
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: var(--tp-common-black);
+                }
+                & i{
+                    height: 20px;
+                    width: 20px;
+                    border-radius: 50%;
+                    background-color: var(--tp-theme-primary);
+                    text-align: center;
+                    line-height: 20px;
+                    font-size: 10px;
+                    color: var(--tp-common-black);
+                    position: absolute;
+                    top: 3px;
+                    left: 0;
+                    margin-right: 20px;
+                }
+            }
+        }
+        &-2{
+            & ul{
+                & li{
+                    margin-bottom: 45px;
+                }
+            }
+        }
+    }
+}
+.jb-subtitle{
+    color: #FF2449;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.job-title{
+    color: var(--tp-common-black);
+    font-size: 26px;
+    font-weight: 500;
+}

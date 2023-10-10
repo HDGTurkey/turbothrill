@@ -1,0 +1,136 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  17. MEANMENU CSS START
+/*----------------------------------------*/
+.mobile-menu.mean-container {
+	overflow: hidden;
+	@media #{$xs} {
+		margin-bottom: 30px;
+	}
+
+}	
+.mobile-menu {
+	& .sidebar-list {
+		clear: both;
+		& li {
+			position: relative;
+			padding-left: 20px;
+			margin-bottom: 5px;
+			color: var(--tp-common-white);
+			&::after {
+				top: 10px;
+				left: 0;
+				width: 6px;
+				height: 6px;
+				border-radius: 50%;
+				border: 1px solid #888888;
+				background-color: transparent;
+				content: "";
+				display: inline-block;
+				position: absolute;
+			}
+		}
+	}
+	& .tp-sidebar-social{
+		margin-top: 20px;
+		& a{
+			margin-right: 5px;
+			background-color: var(--tp-theme-primary);
+			color: #fff;
+			display: inline-block;
+			width: 35px;
+			height: 35px;
+			text-align: center;
+			font-size: 14px;
+			line-height: 34px;
+		}
+	}
+}
+.sidebar-title{
+	& h3{
+		color: var(--tp-common-white);
+	}
+}
+
+/* mean menu customize */
+.mean-container a.meanmenu-reveal {
+	display: none;
+}
+.mean-container .mean-nav {
+	background: none;
+	margin-top: 0;
+}
+.mean-container .mean-bar {
+	padding: 0;
+	min-height: auto;
+	background: none;
+}
+.mean-container .mean-nav > ul {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	list-style-type: none;
+	display: block !important;
+}
+.mean-container a.meanmenu-reveal {
+	display: none !important;
+}
+.mean-container .mean-nav ul li a {
+	width: 100%;
+	padding: 15px 0;
+	color: #fff;
+	border-top: 1px solid #353535;
+	font-size: 14px;
+	line-height: 1.5;
+	font-weight: 700;
+    &:hover{
+        color: var(--tp-theme-primary);
+    }
+}
+
+
+.mean-container .mean-nav ul li a.mean-expand {
+	margin-top: 10px;
+	padding: 0 !important;
+	line-height: 14px;
+	border: 1px solid #888888 !important;
+	height: 30px;
+	width: 30px;
+    line-height: 30px;
+	color: #fff;
+	line-height: 30px;
+	top: 0;
+	font-weight: 400;
+    &:hover{
+        background: var(--clr-theme-1);
+        color: var(--clr-common-white);
+        border-color: #888888;
+    }
+}
+
+.mean-container .mean-nav ul li > a > i {
+    display: none;
+}
+.mean-container .mean-nav ul li > a.mean-expand i{
+    display: inline-block;
+}
+
+.mean-container .mean-nav > ul > li:first-child > a{
+	border-top: 0;
+}
+
+
+
+.mean-container .mean-nav ul li a.mean-expand.mean-clicked{
+    color: var(--clr-common-black);
+}
+.mean-container .mean-nav ul li a.mean-expand.mean-clicked i{
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    color: var(--tp-common-white);
+}
+

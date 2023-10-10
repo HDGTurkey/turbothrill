@@ -1,0 +1,107 @@
+[
+    {
+        "id": 1,
+        "title": "Services",
+        "list": [
+            {
+            "id": 1,
+            "text": "Marketing",
+            "url": "/"
+            },
+            {
+            "id": 2,
+            "text": "SEO/SEM",
+            "url": "/"
+            },
+            {
+            "id": 3,
+            "text": "Development",
+            "url": "/"
+            },
+            {
+            "id": 4,
+            "text": "UX Design",
+            "url": "/"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Products",
+        "list": [
+            {
+            "id": 1,
+            "text": "Elementor Guru",
+            "url": "/"
+            },
+            {
+            "id": 2,
+            "text": "WooLentor Pro",
+            "url": "/"
+            },
+            {
+            "id": 3,
+            "text": "Plugins",
+            "badge": "New",
+            "url": "/"
+            },
+            {
+            "id": 4,
+            "text": "Page Builder",
+            "url": "/"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "About",
+        "list": [
+            {
+            "id": 1,
+            "text": "Features",
+            "url": "/"
+            },
+            {
+            "id": 2,
+            "text": "Our Partners",
+            "url": "/"
+            },
+            {
+            "id": 3,
+            "text": "Affiliate Program",
+            "url": "/"
+            },
+            {
+            "id": 4,
+            "text": "Pricing",
+            "url": "/"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Contact",
+        "list": [
+            {
+            "id": 1,
+            "text": "Support Ticket",
+            "url": "/"
+            },
+            {
+            "id": 2,
+            "text": "Help Desk",
+            "url": "/"
+            },
+            {
+            "id": 3,
+            "text": "Live Chat",
+            "url": "/"
+            },
+            {
+            "id": 4,
+            "text": "FAQs",
+            "url": "/"
+            }
+        ]
+    }
+]

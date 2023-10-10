@@ -1,0 +1,67 @@
+/*----------------------------------------*/
+/*  03. brand CSS START
+/*----------------------------------------*/
+
+@use '../utils' as *;
+
+.tp-brands-item{
+	text-align: center;
+    & img{
+        max-width: 100%;
+    }
+}
+
+.tp-brand-title{
+    color: var(--tp-common-black);
+    font-weight: 700;
+    font-size: 20px;
+    @media #{$xs} {
+        font-size: 17px;
+    }
+}
+.tp-brands-title-two{
+    & h3{
+        font-size: 22px;
+        font-weight: 500;
+        color: var(--tp-common-white);
+    }
+    & span{
+        color: var(--tp-theme-primary);
+    }
+}
+.tp-brand-title-four{
+   & h4{
+    color: #8A90A2;
+    font-size: 20px;
+   }
+   & b{
+    font-weight: 700;
+    color: var(--tp-common-black);
+   }
+}
+.tp-brand-build-title{
+    color: var(--tp-common-black);
+    font-weight: 700;
+    font-size: 20px;
+    @media #{$xs} {
+        font-size: 18px;
+    }
+}
+.bp-blog-shape-1{
+    position: absolute;
+    bottom: 72px;
+    right: 42px;
+    animation: rotate2 15s linear infinite;
+}
+.bp-blog-shape-2{
+    position: absolute;
+    right: 62px;
+    top: 53px ;
+    animation: moving 10s linear infinite;
+}
+.bp-blog-shape-3{
+    position: absolute;
+    bottom: -60px;
+    left: -100px;
+    animation: rotate2 15s linear infinite;
+}
