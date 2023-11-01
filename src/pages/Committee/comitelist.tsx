@@ -123,8 +123,9 @@ const ServiceArea = () => {
                 <div
                   key={id}
                   onClick={() => handleServiceItemClick(id)} // Pass the id as a parameter to handleServiceItemClick
-                  className={`col-xl-3 col-lg-4 col-md-6 wow tpfadeUp ${active === id ? "active" : ""
-                    }`}
+                  className={`col-xl-3 col-lg-4 col-md-6 wow tpfadeUp ${
+                    active === id ? "active" : ""
+                  }`}
                   data-wow-duration={duration}
                   data-wow-delay={delay}
                 >
@@ -132,7 +133,7 @@ const ServiceArea = () => {
                     <div
                       className={`tp-service-item-four sv-color-${i + 1} mb-30`}
                     >
-                      <img src="/assets/img/news/news-7.1.png" alt="" />
+                      <div className="tp-service-item-four__img  mb-40"></div>
                       <div className="tp-service-item-four__title">
                         <h3 className="tp-sv-sm-title">
                           <a>{title}</a>

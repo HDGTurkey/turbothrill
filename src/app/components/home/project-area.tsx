@@ -23,7 +23,7 @@ const ProjectArea = () => {
   const { title, subtitle, highlight_text } = project_contents;
   return (
     <>
-      <div className="tp-project-area tp-cc-project white-bg pb-100">
+      <div className="tp-project-area tp-cc-project white-bg pt-130 pb-100">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-xl-8">
@@ -58,10 +58,11 @@ const ProjectArea = () => {
               return (
                 <div
                   key={id}
-                  className={`${big
-                    ? "col-xl-4 col-lg-4 col-md-6"
-                    : "col-xl-4 col-lg-4 col-md-6"
-                    }`}
+                  className={`${
+                    big
+                      ? "col-xl-4 col-lg-4 col-md-6"
+                      : "col-xl-4 col-lg-4 col-md-6"
+                  }`}
                 >
                   <div className="tp-project-item-four mb-30">
                     <div className="tp-project-item-four__img fix">

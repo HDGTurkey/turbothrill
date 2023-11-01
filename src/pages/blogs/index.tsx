@@ -1,43 +1,37 @@
 import React, { useEffect, useState } from "react";
 import BlogItems from "./blog-items";
 import Breadcrumb from "@/app/components/breadcrumb";
-import { AGCContext } from "@/app/context/AGCProvider";
-import { medium } from "../../app/model/medium";
-import { useContext } from "react";
-
-interface Api {
-  id: string;
-  api: string;
-}
 
 const BlogArea = () => {
   const [mediumData, setMediumData] = useState([]);
-  const agcContext = useContext(AGCContext);
-  const [mediumApi, setMediumApi] = useState<Array<Api>>([]);
+  const [blogsLength, setBlogsLength] = useState(0);
+  const [isLoading, setIsLoading] = useState(true);
+  const [currentPage, setCurrentPage] = useState(1);
+  const blogsPerPage = 6;
 
-  const [loading, setLoading] = useState(false);
-
-  async function getApi() {
-    setLoading(true);
-    setMediumApi(await agcContext.executeQuery(medium));
-    setLoading(false);
-  }
   useEffect(() => {
-    getApi();
+    fetch(
+      `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@elselif`,
+    )
+      .then((res) => res.json())
+      .then((response) => {
+        setMediumData(response.items);
+        setBlogsLength(response.items.length);
+        setIsLoading(false);
+      })
+      .catch((err) => console.log(err));
   }, []);
-
-  useEffect(() => {
-    if (mediumApi.length > 0) {
-      fetch(mediumApi[0].api)
-        .then((res) => res.json())
-        .then((response) => {
-          setMediumData(response.items);
-        })
-        .catch((err) => console.log(err));
-    }
-  }, [mediumApi]);
-
   const finalData = mediumData.slice(0, 10);
+
+  const paginateBlogs = () => {
+    const indexOfLastBlog = currentPage * blogsPerPage;
+    const indexOfFirstBlog = indexOfLastBlog - blogsPerPage;
+    const currentBlogs = mediumData.slice(indexOfFirstBlog, indexOfLastBlog);
+    return currentBlogs;
+  };
+  const _setCurrentPage = (currentPage: number) => {
+    setCurrentPage(currentPage);
+  };
 
   return (
     <>
@@ -58,6 +52,11 @@ const BlogArea = () => {
                 ))}
               </div>
             </div>
+            {/* <div className="col-xxl-4 col-xl-4 col-lg-4">
+              
+              <BlogSidebar />
+              
+            </div> */}
           </div>
         </div>
       </div>

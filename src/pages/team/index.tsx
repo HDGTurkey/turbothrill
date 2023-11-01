@@ -1,5 +1,3 @@
-"useclient";
-
 import React, { useContext, useEffect, useState } from "react";
 import SingleTeam from "./single-team";
 import Breadcrumb from "@/app/components/breadcrumb";
@@ -9,11 +7,6 @@ import { AGCContext } from "@/app/context/AGCProvider";
 import { teams } from "../../app/model/teams";
 import TestimonialArea from "./testiminioal-area";
 import ClientFeedback from "./testiminioal-area";
-
-import agconnect from "@agconnect/api";
-import "@agconnect/instance";
-import "@agconnect/auth";
-import "@agconnect/cloudstorage";
 
 const TeamArea: React.FC = () => {
   const agcContext = useContext(AGCContext);
@@ -51,11 +44,25 @@ const TeamArea: React.FC = () => {
               </span>
             </h2>
           </div>
-          <div className="row mx-auto space-x-5">
+          <div className="row mx-auto space-x-3">
             {teamData.map((team, key) => (
               <SingleTeam key={key} team={team} />
             ))}
           </div>
+
+          {/* <div className="col-xl-3 col-md-6">
+              <div className="tp-team-overlay p-relative mb-30">
+                <div className="tp-team-overlay__img">
+                  <img className="w-100" src="/assets/img/team/team-1.jpg" alt="" />
+                </div>
+                <div className="tp-team-overlay__info text-center">
+                  <h6 className="team-title">
+                      <a>Join our Team</a>
+                  </h6>
+                    <a><i className="fal fa-long-arrow-up"></i></a>
+                </div>
+              </div>
+            </div> */}
         </div>
         <TestimonialArea />
       </div>

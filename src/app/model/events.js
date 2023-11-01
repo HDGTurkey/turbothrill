@@ -17,8 +17,6 @@ class events {
     this.organizer = undefined;
     this.imgs = undefined;
     this.state = undefined;
-    this.status_event = undefined;
-    this.quota = undefined;
   }
 
   setId(id) {
@@ -115,22 +113,6 @@ class events {
 
   getState() {
     return this.state;
-  }
-
-  setStatus_event(status_event) {
-    this.status_event = status_event;
-  }
-
-  getStatus_event() {
-    return this.status_event;
-  }
-
-  setQuota(quota) {
-    this.quota = quota;
-  }
-
-  getQuota() {
-    return this.quota;
   }
 }
 

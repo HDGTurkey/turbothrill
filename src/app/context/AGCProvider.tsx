@@ -5,12 +5,11 @@ import {
   CloudDBZoneConfig,
   CloudDBZone,
 } from "@hw-agconnect/database";
-
-import agconnect from "@agconnect/api";
-import "@agconnect/auth";
-import "@agconnect/instance";
+import agconnect from "@hw-agconnect/api";
+import "@hw-agconnect/auth";
+import "@hw-agconnect/instance";
 import { agConnectConfig } from "../config/agconnect-services.js";
-import { async } from "@agconnect/cloudstorage/dist/src/task.js";
+import "../../app/assets/Css/splash-screen.css";
 
 export const AGCContext = createContext<any>({ executeQuery: undefined });
 type x = {
@@ -47,28 +46,12 @@ export const AGCProvider: React.FC<x> = ({ children }) => {
 
   //@ts-ignore
   async function executeQueryWhere(query, fieldName, value) {
+    console.log("execute query");
     const zoneQuery = CloudDBZoneQuery.where(query).equalTo(fieldName, value);
+    console.log(zoneQuery);
     //@ts-ignore
     const snapshot = await cloudDbZone.executeQuery(zoneQuery);
     return snapshot.getSnapshotObjects();
-  }
-
-  async function getImageUrl(getPath: any) {
-    try {
-      await agconnect.auth().signInAnonymously();
-
-      const downloadURL = await agconnect
-        //@ts-ignore
-
-        .cloudStorage()
-        .storageReference()
-        .child(getPath)
-        .getDownloadURL();
-      return downloadURL;
-    } catch (err) {
-      console.error(err);
-      return null;
-    }
   }
 
   useEffect(() => {
@@ -91,9 +74,7 @@ export const AGCProvider: React.FC<x> = ({ children }) => {
   }
 
   return (
-    <AGCContext.Provider
-      value={{ executeQuery, executeQueryWhere, getImageUrl }}
-    >
+    <AGCContext.Provider value={{ executeQuery, executeQueryWhere }}>
       {children}
     </AGCContext.Provider>
   );

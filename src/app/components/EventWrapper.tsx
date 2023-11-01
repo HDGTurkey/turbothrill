@@ -7,16 +7,10 @@ import { events as eventsModel } from "../model/events.js";
 
 import MyLoader from "../utils/MyLoader";
 
-import "@agconnect/instance";
-import "@agconnect/auth";
-import "@agconnect/cloudstorage";
-import { TeamImage } from "@/pages/team/TeamImage";
-
 interface Events {
   id: string;
   slug_name: string;
   state: string;
-  imgs: string;
   local_name: string;
   local_address: string;
   name: string;
@@ -56,6 +50,7 @@ function EventWrapper() {
 
   useEffect(() => {
     setEventsLength(events.length);
+    console.log(eventsLength);
   }, [events]);
 
   useEffect(() => {
@@ -91,7 +86,7 @@ function EventWrapper() {
       >
         <div className="mx-auto flex max-w-6xl py-3">
           <div className="mx-auto items-start text-start">
-            <div className=" mx-auto grid grid-cols-1 gap-3 lg:grid-cols-4">
+            <div className=" mx-auto grid grid-cols-1 gap-3 lg:grid-cols-3">
               {events.map((event, key) => {
                 if (isEventActiveAsDate(new Date(), new Date(event.date))) {
                   return (
@@ -112,7 +107,7 @@ function EventWrapper() {
       <div className="mx-auto mt-10 flex max-w-6xl justify-between pt-8 text-left">
         <div className="">
           <span className="mx-5 text-3xl font-bold text-black md:ml-5">
-            Events
+            Etkinliklerimiz
             <br />
           </span>
         </div>
@@ -123,11 +118,10 @@ function EventWrapper() {
         ) : (
           <table className="mx-5 w-full table-auto shadow-2xl ">
             <thead>
-              <tr className="text-lg">
-                <th className="">Image</th>
-                <th className="">Event Name</th>
-                <th className="">Event Location</th>
-                <th className="">Date</th>
+              <tr>
+                <th className="p-5 text-lg ">Image</th>
+                <th className="w-[50%] text-lg">Event Name</th>
+                <th className="text-lg">Date</th>
               </tr>
             </thead>
             <tbody className="">
@@ -150,15 +144,21 @@ function EventWrapper() {
                       }`}
                       onClick={handleClick}
                     >
-                      <td className="p-2">
-                        <TeamImage imgPath={event.imgs} width="250px" alt="" />
+                      <td>
+                        <img
+                          className="w-[100px] p-3 md:w-[200px]"
+                          src={
+                            require("../assets/Images/emplo.jpg").default.src
+                          }
+                          height=""
+                          alt=""
+                        />
                       </td>
                       <td className="text-md text-black">
                         {event.name.length > 15
-                          ? `${event.name.substring(0, 50)}...`
+                          ? `${event.name.substring(0, 20)}...`
                           : event.name}
                       </td>
-                      <td>{event.local_name}</td>{" "}
                       <td>{event.date.toLocaleDateString()}</td>{" "}
                     </tr>
                   );

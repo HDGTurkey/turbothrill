@@ -11,8 +11,6 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "@agconnect/api": "^1.3.2",
-    "@agconnect/cloudstorage": "^1.0.0-beta2",
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
     "@headlessui/react": "^1.7.14",
