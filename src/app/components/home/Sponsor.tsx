@@ -25,7 +25,7 @@ const Sponsor = () => {
             <div className="row align-items-center">
               <div className="">
                 <div className="tp-newsletter-title ">
-                  <h3 className="tp-news-title">
+                  <h3 className="tp-news-title mb-10">
                     Thanks to all our supporters and partners!
                   </h3>
                   <p className="pt-5 text-white">
@@ -33,7 +33,7 @@ const Sponsor = () => {
                       type="button"
                       className="hover:bg-[#cc2e32 inline-flex items-center rounded-md  bg-[#ec373c] px-5 py-2.5 pb-3 text-center text-sm font-medium text-white"
                     >
-                      deneme
+                      Be a sponsor
                       <svg
                         aria-hidden="true"
                         className="-mr-1 ml-2 h-5 w-5"

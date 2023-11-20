@@ -13,7 +13,7 @@ const SingleServiceTwo = ({ service, border }: any) => {
           <div className="tp-sv-img">
             <img src={service.img} alt="" />
           </div>
-          <div className="tp-sv-content pl-60">
+          <div className="tp-sv-content pl-12">
             <h3 className=" tp-sv-title mb-35">
               <Link href={`/service-details/${service.id}`}>
                 {service.title}

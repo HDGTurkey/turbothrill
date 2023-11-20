@@ -50,7 +50,7 @@ const Footer: React.FC = () => {
                   <p className="">{text}</p>
                   <Button
                     href="https://id5.cloud.huawei.com/CAS/portal/loginAuth.html?reqClientType=89&loginChannel=89000400&regionCode=hk&loginUrl=https%3A%2F%2Fid5.cloud.huawei.com%3A443%2FCAS%2Fportal%2FloginAuth.html&lang=en-us&themeName=red&clientID=6099200&state=8696331&service=https%3A%2F%2Foauth-login5.cloud.huawei.com%2Foauth2%2Fv2%2FloginCallback%3Faccess_type%3Doffline%26client_id%3D6099200%26display%3Dpage%26flowID%3D4ccd6ecd9210402695300aa33b62189a%26h%3D1690120953.0880%26lang%3Den-us%26redirect_uri%3Dhttps%253A%252F%252Fdeveloper.huawei.com%252Fconsumer%252Fen%252Fprograms%252F%26response_type%3Dcode%26scope%3Dopenid%2Bhttps%253A%252F%252Fwww.huawei.com%252Fauth%252Faccount%252Fcountry%2Bhttps%253A%252F%252Fwww.huawei.com%252Fauth%252Faccount%252Fbase.profile%2Bhttps%253A%252F%252Fwww.huawei.com%252Fauth%252Faccount%252Floginid%2Bhttps%253A%252F%252Fwww.huawei.com%252Fauth%252Faccount%252Faccount.flags%2Bhttps%253A%252F%252Fwww.huawei.com%252Fauth%252Faccount%252Fstate.register%2Bhttps%253A%252F%252Fwww.huawei.com%252Fauth%252Faccount%252Frealname%252Fstate%2Bhttps%253A%252F%252Fwww.huawei.com%252Fauth%252Faccount%252Frealname%252Fidentity%2Bhttps%253A%252F%252Fwww.huawei.com%252Fauth%252Faccount%252Frealname%252Fctf.type%26state%3D8696331%26v%3D1b5af53acc070a992843b51c3228e957ee42cfa74316a224b4dbf2e9279d10a2&validated=true"
-                    className="tp-btn-yellow mb-2 rounded-sm"
+                    className="tp-btn-yellow mb-2 rounded-sm "
                   >
                     Join Now
                   </Button>

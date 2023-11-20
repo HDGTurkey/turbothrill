@@ -29,7 +29,7 @@ const Committe: FC = () => {
         <div className="row justify-content-center">
           <div className="col-xl-10">
             <div className="tp-project-section-box text-center">
-              <h2 className="tp-title-sm pb-60">Committee</h2>
+              <h2 className="tp-title-sm pb-16">Committee</h2>
             </div>
           </div>
         </div>
