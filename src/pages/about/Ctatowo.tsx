@@ -30,7 +30,7 @@ const CtaTwo = () => {
                 data-wow-duration=".7s"
                 data-wow-delay="1s"
               >
-                <a href="" className="tp-btn-sky">
+                <a href="https://www.instagram.com/hsdturkiye" className="tp-btn-sky">
                   Join Us
                 </a>
               </div>
