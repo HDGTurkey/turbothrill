@@ -81,6 +81,11 @@ const news_letter_contents = {
   shape_img: ''
 }
 
+function finishTestScroll() {
+
+  window.scrollTo(400, document.documentElement.scrollHeight);
+}
+
 const { bg_img, btn_text, news_l_img, shape_img, subtitle, title } = news_letter_contents;
 
 const Test: React.FC = () => {
@@ -104,6 +109,7 @@ const Test: React.FC = () => {
 
   const finishTest = () => {
     setShowResult(true);
+    finishTestScroll();
   };
 
   const getResultMessage = () => {
@@ -154,15 +160,15 @@ const Test: React.FC = () => {
           {accordion_items.map((item, index) => {
             const { id, show, title, desc, descNo } = item;
             return (
-              <div key={index} className="card w-full rounded-md shadow- my-16 p-6">
+              <div key={index} className="card w-full rounded-md shadow-  p-6">
                 <p className="text-black text-xl">{title}</p>
                 <div className="grid sm:grid-cols-2 gap-2 p-5">
-                  <label className="flex p-3 block w-[%50] bg-white border border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
+                  <label className="flex p-3 block w-[%50] bg-white rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
                     <input type="radio" name={`question-${index}`} value="yes" checked={answers[index] === "yes"} onChange={() => handleAnswerChange(index, "yes")} className="shrink-0 mt-0.5 border-gray-200 rounded-full text-blue-600 pointer-events-none focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800" id="hs-radio-in-form" />
                     <span className="text-sm text-gray-700 ml-3 ">{desc}</span>
                   </label>
 
-                  <label className="flex p-3 block w-full bg-white border border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
+                  <label className="flex p-3 block w-full bg-white rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
                     <input type="radio" name={`question-${index}`} value="no" checked={answers[index] === "no"} onChange={() => handleAnswerChange(index, "no")} className="shrink-0 mt-0.5 border-gray-200 rounded-full text-blue-600 pointer-events-none focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800" id="hs-radio-checked-in-form" />
                     <span className="text-sm text-gray-700 ml-3 ">{descNo}</span>
                   </label>
@@ -175,7 +181,7 @@ const Test: React.FC = () => {
 
           {typeof showResult === "undefined" || showResult === false ? (
             <div className="post__button">
-              <button onClick={finishTest} className="tp-btn-yellow text-white">
+              <button onClick={finishTest} className="tp-btn-yellow my-5 text-white">
                 Finish Test
               </button>
             </div>
