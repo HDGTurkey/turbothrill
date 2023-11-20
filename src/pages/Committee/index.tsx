@@ -8,10 +8,10 @@ const Committee = () => {
     <>
       {/* <HeaderSix /> */}
       <Breadcrumb title={"Committee"} />
-      <CommitteAbout></CommitteAbout>
+      <CommitteAbout />
 
-      <ServiceArea></ServiceArea>
-      <NewsLetter></NewsLetter>
+      <ServiceArea />
+      <NewsLetter />
     </>
   );
 };

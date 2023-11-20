@@ -87,7 +87,7 @@ const ServiceArea = () => {
 
   return (
     <>
-      <div className="tp-service-section-box text-center pb-40">
+      <div className="tp-service-section-box text-center pb-24">
         <h2 className="tp-title-sm">Let's Get to Know
           <span className="tp-section-highlight">
             the Committees Closer
@@ -110,10 +110,10 @@ const ServiceArea = () => {
                 >
                   <div className={`tp-sv-border-effect  ${border_effect}`}>
                     <div
-                      className={`tp-service-item-four sv-color-${i + 1} mb-30`}
+                      className={`tp-service-item-four border-2 sv-color-${i + 1} mb-30`}
                     >
 
-                      <div className="tp-service-item-four__img  mb-40">
+                      <div className="tp-service-item-four__img mb-40">
                       </div>
                       <div className="tp-service-item-four__title">
                         <h3 className="tp-sv-sm-title">

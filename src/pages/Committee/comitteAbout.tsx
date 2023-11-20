@@ -19,7 +19,7 @@ const CommitteAbout = () => {
   return (
     <>
 
-      <div className="ac-about-content-area pt-130">
+      <div className="ac-about-content-area pt-48">
         <div className="container">
           <div className=" ">
             <div className="row">
@@ -47,7 +47,7 @@ const CommitteAbout = () => {
               </div>
             </div>
           </div>
-          <div className="row ac-testimonial-space">
+          <div className="row mb-40">
             <div
               className="col-xl-6 col-lg-6 wow tpfadeLeft"
               data-wow-duration=".3s"

@@ -27,7 +27,7 @@ const NewsLetter = () => {
             <div className="col-xl-6 col-lg-6 col-md-6">
               <div className="tp-news-letter-section-box-two pt-135 pb-145 wow tpfadeUp" data-wow-duration=".5s" data-wow-delay=".7s">
                 <h2 className="tp-title tp-white-text pb-10">{title}</h2>
-                <Link href="/test">
+                <Link href="/committe-test">
                   <div className="post__button">
                     <a className="tp-btn-border text-white" >
                       {" "}
