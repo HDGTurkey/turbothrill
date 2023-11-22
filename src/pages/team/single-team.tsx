@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { TeamImage } from "./TeamImage";
+import TeamImage from "./TeamImage";
 
 interface SingleTeamProps {
   team: {
@@ -34,7 +34,7 @@ const SingleTeam: React.FC<SingleTeamProps> = ({ team }: any) => {
         <div className="tpteam__thumb h-[300px] w-full overflow-hidden">
           {team.img ? (
             <div>
-              <TeamImage imgPath={team.img} width="450px" alt="" />
+              <TeamImage imgPath={team.img as string} width="450px" alt="" />
             </div>
           ) : (
             <div>No image available</div>

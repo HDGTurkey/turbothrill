@@ -1,7 +1,7 @@
 import agconnect from "@agconnect/api";
 import React, { useEffect, useState } from "react";
 
-export const TeamImage = ({ imgPath, width, height, alt }: any) => {
+const TeamImage = ({ imgPath, width, height, alt }: any) => {
   const [imageUrl, setImageUrl] = useState(null);
 
   useEffect(() => {
@@ -11,7 +11,6 @@ export const TeamImage = ({ imgPath, width, height, alt }: any) => {
 
         const downloadURL = await agconnect
           //@ts-ignore
-
           .cloudStorage()
           .storageReference()
           .child(imgPath)
@@ -33,3 +32,4 @@ export const TeamImage = ({ imgPath, width, height, alt }: any) => {
 
   return <img src={imageUrl} width={width} height={height} alt={alt} />;
 };
+export default TeamImage;

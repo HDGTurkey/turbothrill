@@ -10,7 +10,7 @@ import MyLoader from "../utils/MyLoader";
 import "@agconnect/instance";
 import "@agconnect/auth";
 import "@agconnect/cloudstorage";
-import { TeamImage } from "@/pages/team/TeamImage";
+import TeamImage from "@/pages/team/TeamImage";
 
 interface Events {
   id: string;
@@ -74,7 +74,7 @@ function EventWrapper() {
     } else if (eventsLength % eventsPerPage != 0) {
       setTotalPage(Math.floor(eventsLength / eventsPerPage) + 1);
     }
-    return () => {};
+    return () => { };
   }, [eventsLength]);
 
   //backward currentPage set fonksiyonu
@@ -85,9 +85,8 @@ function EventWrapper() {
   return (
     <>
       <div
-        className={`' py-3 shadow-sm ${
-          data.theme === "light" ? " bg-[#F6F8FD]" : "bg-[#151515]"
-        }`}
+        className={`' py-3 shadow-sm ${data.theme === "light" ? " bg-[#F6F8FD]" : "bg-[#151515]"
+          }`}
       >
         <div className="mx-auto flex max-w-6xl py-3">
           <div className="mx-auto items-start text-start">
@@ -143,11 +142,10 @@ function EventWrapper() {
                   return (
                     <tr
                       key={key}
-                      className={`my-3 rounded border-2 border-b-2 border-gray-50 bg-gray-100 p-2 transition-colors ${
-                        data.theme === "light"
+                      className={`my-3 rounded border-2 border-b-2 border-gray-50 bg-gray-100 p-2 transition-colors ${data.theme === "light"
                           ? "hover:bg-gray-200"
                           : "hover:bg-gray-800"
-                      }`}
+                        }`}
                       onClick={handleClick}
                     >
                       <td className="p-2">

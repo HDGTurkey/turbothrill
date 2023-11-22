@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
-    "format": "prettier --write src/"
+    "format": "prettier --write src/",
+    "start:prod": "next start -p 3000"
   },
   "dependencies": {
     "@agconnect/api": "^1.3.2",

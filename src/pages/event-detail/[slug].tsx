@@ -18,7 +18,7 @@ import Breadcrumb from "@/app/components/breadcrumb";
 import "@agconnect/instance";
 import "@agconnect/auth";
 import "@agconnect/cloudstorage";
-import { TeamImage } from "@/pages/team/TeamImage";
+import TeamImage from "@/pages/team/TeamImage";
 
 const EventDetailPage: React.FC = () => {
   const themeData = useSite();
@@ -157,11 +157,10 @@ const EventDetailPage: React.FC = () => {
           </div>
           <div className={` m-5 space-y-4 p-2.5`}>
             <div
-              className={`mx-auto mb-3 flex rounded-lg p-2 text-lg font-bold text-black ${
-                eventData[0]?.status_event === "active"
+              className={`mx-auto mb-3 flex rounded-lg p-2 text-lg font-bold text-black ${eventData[0]?.status_event === "active"
                   ? "bg-green-300"
                   : "bg-red-500"
-              }`}
+                }`}
             >
               <div>
                 {eventData[0]?.status_event === "active" ? (
@@ -260,11 +259,10 @@ const EventDetailPage: React.FC = () => {
               </div>
             </div>
             <div
-              className={`b-5 flex w-auto  items-start space-x-4 rounded-lg border-2 border-solid px-3 py-2 shadow-md ${
-                themeData.theme === "light"
+              className={`b-5 flex w-auto  items-start space-x-4 rounded-lg border-2 border-solid px-3 py-2 shadow-md ${themeData.theme === "light"
                   ? "bg-white text-black"
                   : "bg-black text-white"
-              }`}
+                }`}
             >
               <MapIcon></MapIcon>
               <div className="text-left ">

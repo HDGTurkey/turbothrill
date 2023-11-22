@@ -2,7 +2,7 @@ import Link from "next/link";
 // import EventClassic from "../../data/event/EventClassic.json";
 
 import { events as eventsModel } from "../../model/events";
-import { TeamImage } from "@/pages/team/TeamImage";
+import TeamImage from "@/pages/team/TeamImage";
 import "@agconnect/instance";
 import "@agconnect/auth";
 import "@agconnect/cloudstorage";
@@ -85,11 +85,10 @@ export const EventCard = (events: any) => {
             <div className="flex-1"></div>
             <div className="relative float-right text-green-700">
               <span
-                className={`rounded-sm p-2 text-lg font-bold capitalize shadow-lg ${
-                  status_event === "active"
-                    ? "text-green-500 "
-                    : "text-red-500 "
-                }`}
+                className={`rounded-sm p-2 text-lg font-bold capitalize shadow-lg ${status_event === "active"
+                  ? "text-green-500 "
+                  : "text-red-500 "
+                  }`}
               >
                 {status_event}
               </span>
