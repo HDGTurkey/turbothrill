@@ -42,6 +42,9 @@ Open your browser and go to http://localhost:3000. 🌐
 
 ## Contribution
 
+
+This project exists thanks to all the [people who contribute.](https://github.com/HDGTurkey/turbothrill/graphs/contributors)
+
 Contributions are always welcome! If you want to contribute to the project, please do not forget to fork and open a Pull Request (PR) and send your contributions. 🚧
 
 Fork this repository. 🍴
