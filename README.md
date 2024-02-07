@@ -76,9 +76,10 @@ Open a Pull Request (PR) and start discussing your changes. 📣
 https://developer.huawei.com/consumer/en/service/josp/agc/index.html#/
 
 Buraya elçi giriş yapmalı
-![Ekran görüntüsü 2024-02-07 212607](https://github.com/HDGTurkey/turbothrill/assets/61888196/d1905993-815a-4133-9eca-e9204945a42f){:width="200px" height="150px"}
+![Ekran görüntüsü 2024-02-07 212607](https://github.com/HDGTurkey/turbothrill/assets/61888196/d1905993-815a-4133-9eca-e9204945a42f | width=100)
 
-![Resim Açıklaması](https://github.com/HDGTurkey/turbothrill/assets/61888196/09920308-48f2-4c50-8f52-b538afd3243f){:width="200px" height="150px"}
+
+
 
 
  1-  Aşağıda her elçinin kendisi için oluşturmuş olacağı agConnectConfig ayarlarını plus projemizde config klasörü içinde agconnect-services.js dosyasına yapıştırması gerek
