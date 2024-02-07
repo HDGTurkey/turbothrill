@@ -1,7 +1,8 @@
 # HDG Plus Project README 🚀
 
-## Project Description 📜
-The HDG Plus project aims to develop a platform for HSD (Huawei Student Developers) campus ambassadors that allows them to publish their activities and articles and facilitates interaction. This platform helps campus ambassadors manage and share their content and engage with their communities.
+## Overview 📜
+
+HDG Plus is a user-friendly web-based platform where members of the Huawei Student Developers campus can gather information about events and blogs. This project aims to provide campus students with an interactive environment and share the work of the Huawei Student Developers team with the community in an open manner.
 
 ## Technologies Used 🛠️
 We used the following technologies when developing the project:
