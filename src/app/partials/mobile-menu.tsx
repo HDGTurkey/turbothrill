@@ -36,7 +36,7 @@ const MobileMenu = ({
     <React.Fragment>
       <div
         id="header-sticky-mobile"
-        className={`tp-md-menu ${
+        className={`tp-md-menu mr-5 ${
           transparent ? "header-transparent" : ""
         } d-lg-none ${bg ? bg : ""} ${headerSticky ? "header-sticky" : ""}`}
       >

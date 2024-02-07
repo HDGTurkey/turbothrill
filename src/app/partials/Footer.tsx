@@ -21,6 +21,7 @@ const footer_contents = {
       icon: "fab fa-youtube",
       link: "https://www.youtube.com/@HuaweiDeveloperGroupsTurkiye",
     },
+    { icon: "fab fa-twitter", link: "https://x.com/turkiye_hsd?s=21&t=bRupjTcOn7Q9ggQKzaHZbg" },
   ],
 };
 const { shapes, btn_text, copy_right_text, social_links, text, title } =

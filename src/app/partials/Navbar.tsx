@@ -52,7 +52,7 @@ const Header = () => {
                       {loading ? (
                         <div>Loading...</div>
                       ) : (
-                        <div className="rounded-md bg-[#ec373c] px-1.5 font-DMSans font-normal uppercase text-white">
+                        <div className="rounded-md bg-[#ec373c] px-1.5 font-DMSans font-normal text-[24px] my-auto uppercase text-white">
                           {logoData?.name}
                         </div>
                       )}
