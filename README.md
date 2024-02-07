@@ -14,7 +14,7 @@ We used the following technologies when developing the project:
 - Huawei Cloud Auth: Integrated for authentication and authorization processes.
 - Tailwind CSS: Used to create the user interface in a fast and customizable way.
 
-  For more information about [Huawei Cloud DB ](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-clouddb-introduction-0000001054212760), please visit.
+  For more information about [Huawei Cloud DB ](https://developer.huawei.com/consumer/en/agconnect/), please visit.
 ## Install and Contribute 🤝
 
 ### Run on Your Computer
@@ -72,5 +72,27 @@ Open a Pull Request (PR) and start discussing your changes. 📣
 
 
 
+https://developer.huawei.com/consumer/en/service/josp/agc/index.html#/
 
-  
+Buraya elçi giriş yapmalı
+  ![Ekran görüntüsü 2024-02-07 212607](https://github.com/HDGTurkey/turbothrill/assets/61888196/d1905993-815a-4133-9eca-e9204945a42f)
+
+ 1-  Aşağıda her elçinin kendisi için oluşturmuş olacağı agConnectConfig ayarlarını plus projemizde config klasörü içinde agconnect-services.js dosyasına yapıştırması gerek
+
+![Ekran görüntüsü 2024-02-07 212904](https://github.com/HDGTurkey/turbothrill/assets/61888196/09920308-48f2-4c50-8f52-b538afd3243f)
+
+![Ekran görüntüsü 2024-02-07 213031](https://github.com/HDGTurkey/turbothrill/assets/61888196/400b2971-51af-423a-83da-134519fe1b08)
+
+2- Aşağıdaki modelleri de export etmemiz gerek. Json olarak çıkardıklarımızı config altındaki Data.json ile değiştirmemiz gerek.
+
+![Ekran görüntüsü 2024-02-07 213720](https://github.com/HDGTurkey/turbothrill/assets/61888196/c0175cb4-6c0c-4e0b-b4e9-78cccb3532fa)
+
+![Ekran görüntüsü 2024-02-07 213930](https://github.com/HDGTurkey/turbothrill/assets/61888196/a4b19cf4-28b9-45fe-91f8-b5c5c1b764db)
+
+3- Aşağıdaki modelleri de export etmemiz gerek. Json olarak çıkardıklarımızı config altındaki Data.json ile değiştirmemiz gerek.
+
+![Ekran görüntüsü 2024-02-07 214031](https://github.com/HDGTurkey/turbothrill/assets/61888196/a5bba452-e007-498f-a3bf-4966fb748a4d)
+![Ekran görüntüsü 2024-02-07 213426](https://github.com/HDGTurkey/turbothrill/assets/61888196/6411fd6a-2701-407d-8ee3-9a64927a0a6d)
+
+3- 
+
