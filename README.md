@@ -1,7 +1,7 @@
 # Turbo Thrill Project README 🚀
 
 ## Overview 📜
-![fresh](https://github.com/HDGTurkey/turbothrill/assets/61888196/67ae0c9e-f213-463d-abc4-092c911090ae)
+![fresh](https://github.com/HDGTurkey/turbothrill/assets/fresh.png)
 
 HDG Plus is a user-friendly web-based platform where members of the Huawei Student Developers campus can gather information about events and blogs. This project aims to provide campus students with an interactive environment and share the work of the Huawei Student Developers team with the community in an open manner.
 
