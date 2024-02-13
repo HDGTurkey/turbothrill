@@ -2,7 +2,7 @@
 
 ## Overview 📜
 ![fresh](https://github.com/HDGTurkey/turbothrill/assets/78614794/cb781a22-7583-47a3-a310-2099af096e9f)
-HDG Plus is a user-friendly web-based platform where members of the Huawei Student Developers campus can gather information about events and blogs. This project aims to provide campus students with an interactive environment and share the work of the Huawei Student Developers team with the community in an open manner.
+Turbo Thrill is a user-friendly web-based platform where members of the Huawei Student Developers campus can gather information about events and blogs. This project aims to provide campus students with an interactive environment and share the work of the Huawei Student Developers & Huawei Developer Groups team with the community in an open manner.
 
 [View Demo](http://159.138.129.253/)
 ## Technologies Used 🛠️
@@ -22,7 +22,7 @@ We used the following technologies when developing the project:
 
 Clone the project: 🧬
 ```bash
-   git clone https://github.com/HDGTurkey/HDGPlus-Next
+   git clone https://github.com/HDGTurkey/turbothrill
 ```
 
 
@@ -74,7 +74,7 @@ Open a Pull Request (PR) and start discussing your changes. 📣
 
 https://developer.huawei.com/consumer/en/service/josp/agc/index.html#/
 
-This page requires our Hsd ambassador/ HDG Organizer login
+This page requires our HSD ambassador/ HDG Organizer login
 
 ![Ekran görüntüsü 2024-02-07 212607](https://github.com/HDGTurkey/turbothrill/assets/61888196/d1905993-815a-4133-9eca-e9204945a42f)
 
