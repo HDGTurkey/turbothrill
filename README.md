@@ -1,4 +1,4 @@
-# HDG Plus Project README 🚀
+# Turbo Thrill Project README 🚀
 
 ## Overview 📜
 ![fresh](https://github.com/HDGTurkey/turbothrill/assets/61888196/67ae0c9e-f213-463d-abc4-092c911090ae)
@@ -74,7 +74,7 @@ Open a Pull Request (PR) and start discussing your changes. 📣
 
 https://developer.huawei.com/consumer/en/service/josp/agc/index.html#/
 
-This page requires our HSD Campus Ambassador login
+This page requires our Hsd ambassador/ HDG Organizer login
 
 ![Ekran görüntüsü 2024-02-07 212607](https://github.com/HDGTurkey/turbothrill/assets/61888196/d1905993-815a-4133-9eca-e9204945a42f)
 
