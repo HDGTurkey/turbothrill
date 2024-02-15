@@ -96,4 +96,8 @@ This page requires our HSD ambassador/ HDG Organizer login
 ![Ekran görüntüsü 2024-02-07 214031](https://github.com/HDGTurkey/turbothrill/assets/61888196/a5bba452-e007-498f-a3bf-4966fb748a4d)
 ![Ekran görüntüsü 2024-02-07 213426](https://github.com/HDGTurkey/turbothrill/assets/61888196/6411fd6a-2701-407d-8ee3-9a64927a0a6d)
 
+## Licence
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
 
