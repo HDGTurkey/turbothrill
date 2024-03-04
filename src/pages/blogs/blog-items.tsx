@@ -39,20 +39,22 @@ const BlogItem: React.FC<Props> = ({ blog }) => {
     cleanDescription.length > maxLength
       ? cleanDescription.slice(0, maxLength) + "..." // İlk 100 karakter + "..." ekleniyor
       : cleanDescription;
+  const blogImage = description.match(/<img[^>]+src="([^">]+)"/)?.[1];
+  
   return (
     <article key={id} className="postbox__item format-image mb-50 transition-3">
       <div className="postbox__thumb w-img">
-        <a href={link}>
+        <Link href={link}>
           <div className="flex min-h-[300px]  w-full items-center justify-center overflow-hidden">
-            <a href={link}>
+            <Link href={link}>
               <img
                 className="h-full w-full object-contain"
-                src={thumbnail}
+                src={blogImage}
                 alt=""
               />
-            </a>
+            </Link>
           </div>
-        </a>
+        </Link>
       </div>
       <div className="postbox__content ">
         <div className="postbox__meta">
@@ -65,16 +67,16 @@ const BlogItem: React.FC<Props> = ({ blog }) => {
           </span>
         </div>
         <h3 className="postbox__title">
-          <a href={link}>{title}</a>
+          <Link href={link}>{title}</Link>
         </h3>
         <div className="postbox__text">
           <p>{truncatedDescription}</p>
         </div>
         <div className="post__button">
-          <a className="tp-btn-yellow text-white" href={link}>
+          <Link className="tp-btn-yellow text-white" href={link}>
             {" "}
             Daha Fazla
-          </a>
+          </Link>
         </div>
       </div>
     </article>
