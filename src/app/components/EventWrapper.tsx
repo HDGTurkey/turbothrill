@@ -120,50 +120,41 @@ function EventWrapper() {
         {loading ? (
           <MyLoader />
         ) : (
-          <table className="mx-5 w-full table-auto shadow-2xl ">
-            <thead>
-              <tr className="text-lg">
-                <th className="">Image</th>
-                <th className="">Event Name</th>
-                <th className="">Event Location</th>
-                <th className="">Date</th>
-              </tr>
-            </thead>
-            <tbody className="">
-              {events.map((event, key) => {
-                if (
-                  totalPages >= 1 &&
-                  key >= (currentPage - 1) * eventsPerPage &&
-                  key < currentPage * eventsPerPage
-                ) {
-                  const handleClick = () => {
-                    window.location.href = `/event-detail/${event.slug_name}`;
-                  };
-                  return (
-                    <tr
-                      key={key}
-                      className={`my-3 rounded border-2 border-b-2 border-gray-50 bg-gray-100 p-2 transition-colors ${data.theme === "light"
-                          ? "hover:bg-gray-200"
-                          : "hover:bg-gray-800"
-                        }`}
-                      onClick={handleClick}
-                    >
-                      <td className="p-2">
-                        <TeamImage imgPath={event.imgs} width="250px" alt="" />
-                      </td>
-                      <td className="text-md text-black">
-                        {event.name.length > 15
-                          ? `${event.name.substring(0, 50)}...`
-                          : event.name}
-                      </td>
-                      <td>{event.local_name}</td>{" "}
-                      <td>{event.date.toLocaleDateString()}</td>{" "}
-                    </tr>
-                  );
-                }
-              })}
-            </tbody>
-          </table>
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+  {events.map((event, key) => {
+    if (
+      totalPages >= 1 &&
+      key >= (currentPage - 1) * eventsPerPage &&
+      key < currentPage * eventsPerPage
+    ) {
+      const handleClick = () => {
+        window.location.href = `/event-detail/${event.slug_name}`;
+      };
+
+      return (
+        <div
+          key={key}
+          className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow cursor-pointer"
+          onClick={handleClick}
+        >
+           <TeamImage imgPath={event.imgs} width="550px" alt="" />
+          <div className="p-4">
+            <h3 className="text-lg font-semibold text-gray-800 truncate mb-2">
+              {event.name}
+            </h3>
+            <p className="text-sm text-gray-600">{event.local_name}</p>
+            <p className="text-sm text-gray-600">
+              {event.date.toLocaleDateString()}
+            </p>
+          </div>
+        </div>
+      );
+    }
+  })}
+</div>
+
+
+
         )}
       </div>
       {/* <div className="max-w-7xl mx-auto mt-3 text-right flex align-right"> */}
